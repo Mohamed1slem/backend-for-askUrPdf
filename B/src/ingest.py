@@ -7,41 +7,46 @@ import faiss
 from sentence_transformers import SentenceTransformer
 
 from .config import (
-    CLEANED_DIR, EMBEDDINGS_DIR, FAISS_INDEX_PATH, FAISS_STORE_PATH,
-    EMBEDDING_MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP
+    DATA_DIR, EMBEDDINGS_DIR, FAISS_INDEX_PATH, FAISS_STORE_PATH,
+    EMBEDDING_MODEL_NAME, USE_OPENAI_EMBEDDINGS, OPENAI_EMBEDDING_MODEL
 )
-from .utils import load_text_files, chunk_text, rel_path_from_base
+from .pipeline import load_all_files, build_chunks_for_file
 
 def build_corpus() -> List[Dict[str, Any]]:
-    """
-    Load cleaned docs, chunk them, and return a corpus list of dicts:
-    {
-      'id': str,
-      'text': str,
-      'source': str,     # relative file path
-    }
-    """
-    corpus = []
-    files = load_text_files(CLEANED_DIR)
-    uid = 0
-    for path, content in files:
-        source = rel_path_from_base(CLEANED_DIR, path)
-        chunks = chunk_text(content, CHUNK_SIZE, CHUNK_OVERLAP)
-        for ch in chunks:
-            corpus.append({
-                "id": f"doc_{uid}",
-                "text": ch,
-                "source": source,
-            })
-            uid += 1
+    """Scan DATA_DIR/raw and DATA_DIR/cleaned for files, extract text, clean and chunk."""
+    corpus: List[Dict[str, Any]] = []
+    roots = [
+        os.path.join(DATA_DIR, "raw"),
+        os.path.join(DATA_DIR, "cleaned"),
+    ]
+    for root in roots:
+        if not os.path.isdir(root):
+            continue
+        for path in load_all_files(root):
+            try:
+                corpus.extend(build_chunks_for_file(path))
+            except Exception:
+                continue
     return corpus
 
 def embed_corpus(corpus: List[Dict[str, Any]]) -> np.ndarray:
-    """
-    Create embeddings for all corpus texts.
-    """
-    model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+    """Create embeddings for all corpus texts using ST model or OpenAI if enabled."""
     texts = [c["text"] for c in corpus]
+    if USE_OPENAI_EMBEDDINGS and os.getenv("OPENAI_API_KEY"):
+        try:
+            from openai import OpenAI
+            client = OpenAI()
+            vectors = []
+            batch = 128
+            for i in range(0, len(texts), batch):
+                chunk = texts[i:i+batch]
+                resp = client.embeddings.create(model=OPENAI_EMBEDDING_MODEL, input=chunk)
+                vectors.extend([d.embedding for d in resp.data])
+            return np.array(vectors, dtype="float32")
+        except Exception:
+            pass
+    # Fallback to SentenceTransformers
+    model = SentenceTransformer(EMBEDDING_MODEL_NAME)
     vectors = model.encode(texts, batch_size=32, show_progress_bar=True, normalize_embeddings=True)
     return np.array(vectors, dtype="float32")
 
@@ -59,12 +64,15 @@ def save_faiss_index(vectors: np.ndarray, corpus: List[Dict[str, Any]]):
         "ids": [c["id"] for c in corpus],
         "texts": [c["text"] for c in corpus],
         "sources": [c["source"] for c in corpus],
+        "original_sources": [c.get("original_source", "") for c in corpus],
+        "pages": [c.get("page", 0) for c in corpus],
+        "metadata": [c.get("metadata", {}) for c in corpus],
     }
     with open(FAISS_STORE_PATH, "wb") as fh:
         pickle.dump(store, fh)
 
 def main():
-    print(f"Loading cleaned docs from: {CLEANED_DIR}")
+    print("Scanning and building corpus from data/raw and data/cleaned...")
     corpus = build_corpus()
     print(f"Total chunks: {len(corpus)}")
 

@@ -2,4 +2,15 @@ faiss-cpu
 sentence-transformers
 requests
 python-dotenv
+pdfminer.six
+python-docx
+docx2txt
+pytesseract
+Pillow
+arabic-reshaper
+python-bidi
+PyPDF2
+unidecode
+openai
+pymupdf
 
