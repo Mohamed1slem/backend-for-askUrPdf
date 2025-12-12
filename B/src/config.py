@@ -12,8 +12,8 @@ FAISS_STORE_PATH = os.path.join(EMBEDDINGS_DIR, "faiss_store.pkl")
 
 EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
-CHUNK_SIZE = 1000
-CHUNK_OVERLAP = 200
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 80
 TOP_K = 5
 
 # DeepSeek API
@@ -25,3 +25,20 @@ SYSTEM_PROMPT = (
     "Always base your answer strictly on the given context. If the answer is not "
     "present, say you don't have sufficient information. Keep answers clear and concise."
 )
+
+# OCR / Tesseract
+TESSERACT_LANGS = "ara+fra"
+TESSERACT_CONFIG = "--psm 6"
+
+# Categories mapping for folder names
+CATEGORY_FOLDERS = [
+    "Convention",
+    "Dépot Vente",
+    "Guide NGBSS",
+    "Offres",
+    "Offres en arabe",
+]
+
+# Optional OpenAI embeddings
+USE_OPENAI_EMBEDDINGS = bool(int(os.getenv("USE_OPENAI_EMBEDDINGS", "0")))
+OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")

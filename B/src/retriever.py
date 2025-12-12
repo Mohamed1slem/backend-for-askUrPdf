@@ -52,6 +52,10 @@ class Retriever:
                 continue
             src = self.store["sources"][idx]
             txt = self.store["texts"][idx]
+            orig = self.store.get("original_sources", [""])[idx]
+            page = self.store.get("pages", [0])[idx]
+            meta = self.store.get("metadata", [{}])[idx]
+            hsh = self.store.get("hashes", [""])[idx]
 
             src_name = os.path.basename(src)
 
@@ -66,8 +70,11 @@ class Retriever:
             if boosted_percentage >= min_similarity:
                 results.append({
                     "text": txt,
-                    "source": src_name,  # cleaned chunk filename
-                    "original_source": src,  # full path to original DOCX/PDF
+                    "source": src_name,
+                    "original_source": orig or src,
+                    "page": page,
+                    "metadata": meta,
+                    "hash": hsh,
                     "score": float(score),
                     "similarity": percentage,
                     "boosted_similarity": boosted_percentage,
