@@ -1,0 +1,2305 @@
+Guide d’Utilisation NGBSS
+« Inventaire »
+Pôle Commercial, Marketing & Innovation
+Direction Support Commercial
+DSC_Décembre 2018
+Première Partie :
+Distribuer une ressource
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Cliquer sur « Inventaire »;
+2-Ensuite sur « Distribuer une ressource ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Choisir la méthode voulu par «rang, liste ou fichier » ;
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Première méthode
+Par rang
+Vente par lot
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Choisir dans « Type de ressource » la ressources voulu Ex : Voucher Card ;
+2-Puis sur « code d’article » l’article a distribuer;
+3-Et l’ « Etat » doit être normal;
+4-Dans « Département émetteur » vous trouverez la structure qui va distribuer la ressources,
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Dans « Département  cessionnaire» cocher sur recherche;
+2-Ensuite sur « Dép.nom » saisir le département puis (ex :ACTEL) puis cliquer sur « Consulter »;
+3-Cocher sur le résultat puis cliquer sur « OK ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Introduire sur  « Voucher Card No» le début de série « De » à fin de série « Vers »;
+2-La «Quantité » apparaîtra automatiquement;
+3-Cliquer sur « Consulter».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Vous pouvez consulter par « enregistrement » et par « page ». 
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1- Cocher sur « Sélectionner tous »;
+2-Ensuite cliquer sur « Soumettre ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Deuxième méthode
+Par liste
+Vente par lot
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Dans « Liste», écrire les numéros de série l’un après l’autre;
+2-Puis choisir le « Département émetteur» et le « Département cessionnaire »;
+3-Cliquer sur « Soumettre ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Troisième méthode
+Par fichier
+Vente par lot
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+On peut insérer les numéros de série en utilisant un fichier de format texte « txt»;
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Format du fichier texte.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Choisir le « Département émetteur» et le « Département cessionnaire »;
+2-Cliquer sur « Soumettre ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Lancer une opération»;
+Inventaire
+Deuxième Partie :
+Prendre une note
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Cliquer sur « Inventaire»;
+2-Ensuite sur « Prendre une note ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Choisir le « Département émetteur» et le « Département cessionnaire » ou une autre condition de 
+recherche;
+2-Cliquer sur « Soumettre »;
+3-Cocher sur le résultat ensuite cliquer sur soumettre.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Prendre »;
+NB : Vous pouvez voir le détails de la note.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Confirmer l’opération en appuyant sur «OK».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Lancer une opération»;
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Cliquer sur « Inventaire »;
+2-Ensuite sur « Imprimer une note ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Choisir le « Département émetteur» et le « Département cessionnaire » ou une autre condition de 
+recherche;
+2-Cliquer sur « Consulter »;
+3-Le résultat s’affiche ensuite cliquer sur « Détail ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Cocher sur « AT »;
+2-Cliquer sur « Imprimer note ».
+NB : Vous pouvez voir le détails de la note.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La note imprimer.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Attachement ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Cocher sur « Pick Note »;
+2-Ensuite cliquer sur « Fichier » pour rechercher la note après sa signature.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La note signé par le département émetteur.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Après le téléchargement de la note dans « Fichier », cliquer sur « Soumettre ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Lancer une opération»;
+Inventaire
+Troisième Partie :
+Recevoir une note
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Cliquer sur « Inventaire »;
+2-Ensuite sur « Recevoir une note ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Choisir le « Département cessionnaire » ou une autre condition de recherche;
+2-Cliquer sur « Consulter »;
+3-Cocher sur le résultat (la note) qui s’affiche ensuite cliquer sur « Soumettre ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Recevoir ».
+NB : Vous pouvez voir le détails de la note.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Confirmer l’opération en appuyant sur «OK».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Lancer une opération».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Cliquer sur « Inventaire »;
+2-Ensuite sur « Consulter une note ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Choisir le « Département émetteur» ou une autre condition de recherche;
+2-Cocher sur « Historique » puis cliquer sur « Consulter » ;
+3-Le résultat (la note) s’affiche ensuite cliquer sur « Détail ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Retour »;
+NB : Vous pouvez voir seulement le détails de la note.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Attachement ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Dans « Attachements Info » cliquer sur « Téléchargement »;
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Cocher sur « Receive Note »;
+2-Ensuite cliquer sur « Fichier » pour rechercher la note après sa signature par le « Département 
+cessionnaire ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La note signé par les deux parties .
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Après le téléchargement de la note dans « Fichier », cliquer sur « Soumettre ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Lancer une opération».
+Inventaire
+Quatrième Partie :
+Retourner une note
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Cliquer sur « Inventaire »;
+2-Ensuite sur « Retourner une ressource ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Choisir l’une des condition de recherche et la méthode voulu par « rang, liste ou fichier »;
+1-EX : Introduire sur  « Voucher Card No» le début de série « De » à fin de série « Vers »;
+2-La «Quantité » apparaîtra automatiquement;
+3-Cliquer sur « Consulter».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1- Cocher sur « Sélectionner tous »;
+2-Ensuite cliquer sur « Soumettre ».
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur « Lancer une opération »;
+NB : On à le Numéro de la note quand peut consulter ou imprimer dans « consulter une note » page 
+suivante.
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+1-Choisir le « Département émetteur» ou une autre condition de recherche;
+2-Cocher sur « Historique » puis cliquer sur « Consulter » ;
+3-Le résultat (la note) s’affiche ensuite on peut consulter ou imprimer la note .
+Inventaire
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Vérification dans « Inventaire de ressource »:  
+1-Choisir condition de recherche, puis cliquer sur « Consulter »;
+2-Ensuite le résultat s’affiche.
+Inventaire
+
+
+
+
+
+
+
+& e we
+
+Systemème de gestion unifié
+Catalogue des produits unifié
+Comptes Débiteurs
+
+Invoicing
+
+Debt Collection
+
+Service clientele
+
+Client corporate
+
+Gestion de batch
+
+Gestion d'ordre
+
+Configuration
+Règles des numé
+Code d'article
+Fournisseur
+
+Stack
+Recevoir une ressource
+Retourner une ressource vers le fournisseur
+
+Note
+Recevoir une note
+Annuler une note
+
+Maintenance
+
+Changer létat d'une ressource
+
+Recycler une ressource
+
+Verrouiller / déverrouiller une ressource
+
+Package
+Consulter package
+
+Consulter
+
+Opération de ressource par batch
+Historique d'opération
+
+Historique de transfert
+
+Préfixe
+Permission de département
+
+Type de ressource
+
+Modifier une note
+Prendre une note
+
+Réserver / annuler la réservation d‘un MSISDN
+Changer les état des ressources DOA
+Changer le niveau d'MSISDN
+
+Historique de recyclage
+Règle ‏عل‎ numéro
+Trace de ressource
+
+Règle de recyclage
+Règle d'alarme d'inventaire
+Département des resources partagées
+
+Transférer une ressource Retourner une ressouroe DOA
+
+Retourner une ressource
+
+Consulter une note Rejeter une note
+
+Imprimer une note
+
+Changer un article ‏عل‎ ressource
+Changer le type télécom
+Consommer / libérer une ressource
+
+Inventaire de ressource Moniteur de tache
+Tache
+
+Historique d'inventaire ‏عل‎ ressource
+
+
+
+Accueil > Inventaire > Stock > Distribuer une ressource
+
++ Condition ‏عل‎ recherche
+
+Type ‏عل‎ ressource
+
+voucher Card
+
+Fournisseur
+
++ Code de conditios
+
+Voucher Card No.
+
+De
+
+= Remarque
+
+Code d'article
+
+* Département
+émetteur
+
+Vers
+
+Magasin DO MEDEA
+
+État
+
+* Département
+cessionnaire
+
+Quantité
+
+Normal
+
+Consulter
+
+Remarque
+
+
+
+
+
+
+Accueil > Inventaire > Stock > Distribuer une ressource
+
+Type de ressource … [voucher Card
+
+Fournisseur
+
+Code d'article CARTE ADSL PREPAYEE 1000 ‏خم‎
+
+Parrang / Parliste _ Par fichier
+État Normal
+
+«| } Département Magasin DO MEDEA ; * Département pn
+émetteur cessionnaire
+‏د‎ Code ‏عل‎ con
+Voucher Card No. Vers Quantité
+De
+Consulter  _Réinitialiser _ Voir la liste
+> Remarque
+
+Remarque
+
+
+
+
+Select Department
+
+- Condition ‏عل‎ recherche
+
+Dép.nom berrouaghia Dept. Code
+
+Consuiter | Réi
+
+Dept. Code-
+
+301-201209207212201202 ACTEL BERROUAGHIA
+
+Total d'enregistrements: 1 enregistrements/page [< < L 1 [ale] >
+
+Quantité
+
+@Parrang O Parliste © Par fichie
+
+Normal
+
+Consulter Voir la |
+
+
+
+
+- Condition ‏عل‎ recherche
+
+Type ‏عل‎ ressource
+
+voucher Card
+
+Fournisseur
+
+‎Code de conditio‏ د
+
+‎Voucher Card No.
+
+‎8000000000
+
+‎De
+
+‎1 Remarone
+
+‎Code d'article
+
+‎* Département
+émetteur
+
+‎Vers
+
+‎CARTE ADSL PREPAYEE 1000 DA
+
+‎Magasin DO MEDEA
+
+‎8000000019
+
+‎État
+
+‎* Département
+cessionnaire
+
+‎‘& Par rang
+
+‎* Par liste
+
+‎* Par fichier
+
+‎Normal
+
+‎|ACTEL BERROUAGHIA
+
+‎Voir la liste
+
+
+
+
+© Voucher Card ‏عملا‎
+‎C 8000000000
+( 8006000001
+C 8000000002
+( 8000000003
+C 8000000004
+( 8000000005
+C 8000000006
+( 8000000007
+C 8000000008
+( 8000000009
+
+Total d'enregistrements: 20
+
+© Sélectionner tous
+
+Ajouter à la liste
+
+Code d’article-
+
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+
+État-
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+
+Normal
+
+Face Value<
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+
+
+
+
+
+Voucher Card ‏عملا‎
+‎L 8000000000
+L 8000000001
+L 8000000002
+L 8000000003
+L 8000000004
+L 8000000005
+L 8000000006
+L 8000000007
+L 8000000008
+L 8000000009
+
+Total d'enregistrements: 20
+
+] Sélectionnertous
+
+Code d’article-
+
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+
+État-
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+
+Normal
+
+Face Value<
+
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+
+10
+
+enregistrements/page
+
+ع
+
+2 [ailer]
+
+
+
+
+
+
+Accueil > Inventaire > Stock > Distribuer une ressource
+
+( Parrang ) Par fichier
+
+ns de base
+
++ Informai
+
+Type de ressource — [Voucher Card
+
+*Liste 8000000000
+8000000001
+
+8000000002
+8000000003
+
+= Information d'operation.
+
+* Département |ACTEL BERROUAGHIA
+
+* Département Magasin DO MEDEA
+metteur,
+
+cessionnaire
+
+> Information d'execution.
+
+mode d'execution & lancer immédiatement.
+
+
+
+
+
+
+Accueil > Inventaire > Stock > Distribuer un
+
+- Informations ‏عل‎ base
+
+* Fichier
+
+‎Information d'operation.‏ ه
+
+‎* Département
+émetteur
+
+‎> Information d'execution.
+
+‎mode d'execution
+
+‎Remarque
+
+‎Magasin DO MEDEA
+
+‎@ lancer immédiate
+
+‎\eressource
+‎€ Ouvir
+€ v % » CePC > Bureau > Inventory
+Organiser < Nouveau dossier
+
+‎8000500089 *
+m Ce PC - | €
+
+‎x
+
+‎v D Rechercherdans:Inventory — P
+
+‎ë-
+
+‎œ
+
+‎v @
+
+‎OParrang C Par liste
+
+‎m Bureau 051 052
+Documents
+
+‎© Images
+d Musique
+» Objets 3D =
+
+‎+ Téléchargemer ps — ‏م‎
+‎Æ Vidéos
+
+‎& Disque local (C
+
+‎Data (D)‏ ب
+
+‎s& Lecteur DVD R
+
+‎DIS3 0154
+
+‎Modems Vouchers
+
+‎055
+
+‎Nom du fichier
+
+‎v| ‏ينام‎ les fichiers
+
+‎l |
+
+‎Ouvrir
+
+‎Annuler
+
+‎Soumettre
+
+
+
+
+“F Vouchers - Bloc-notes
+
+Fichier Edition Format Affichage ?
+86
+9061
+902
+8000080803
+8000060004
+88 5
+898089 96
+8000089007
+8o00000008
+8000060009
+8869 00
+89061
+8000080812
+8000060813
+8000060014
+88800905
+8000988816
+8000060817
+8000060818
+8000060019
+
+
+
+Accueil > Inventaire > Stock > Distribuer une ressource
+
+- Informations ‏عل‎ base
+
+Type de ressource … [voucher Card
+
+Fichier (akepath\Vouchers.bit
+
++ Information d'operation.
+
+Département Magasin DO MEDEA
+
+> Information d'execution.
+
+mode d'execution
+
+lancer immédiatement.
+
+(Z Lancer au.
+
+Département
+
+cessionnaire
+
+( Parrang
+
+(D Par liste
+
+Par fichier
+
+L u &
+
+|ACTEL BERROUAGHIA
+
+
+
+
+Q Réussi.
+
+Vous pouvez effectuer les opérations suivantes :
+
+Lancer une opération
+
+<< Voir es détails
+Tip
+NS service
+Numéro total
+Numéro succès
+Numéro défaillant
+Detail Information
+
+Num de Note
+
+The process of business is finished.
+34620281
+
+20
+
+20
+
+0
+
+Please refer to Inventory->Query->Operation History
+00000020400/2018
+
+
+
+
+
+
+& e we
+
+Systemème de gestion unifié
+Catalogue des produits unifié
+Comptes Débiteurs
+
+Invoicing
+
+Debt Collection
+
+Service clientele
+
+Client corporate
+
+Gestion de batch
+
+Gestion d'ordre
+
+Configuration
+Règles des numé
+Code d'article
+Fournisseur
+
+Stack
+Recevoir une ressource
+Retourner une ressource vers le fournisseur
+
+Note
+Recevoir une note
+Annuler une note
+
+Maintenance
+
+Changer létat d'une ressource
+
+Recycler une ressource
+
+Verrouiller / déverrouiller une ressource
+
+Package
+Consulter package
+
+Consulter
+
+Opération de ressource par batch
+Historique d'opération
+
+Historique de transfert
+
+Préfixe
+Permission de département
+Type de ressource
+
+Distribuer ‏عونا‎ ressource
+Rappeler une ressource
+
+Modifier une note,
+
+Réserver / annuler la réservation d‘un MSISDN
+Changer les état des ressources DOA
+Changer le niveau d'MSISDN
+
+Historique de recyclage
+Règle ‏عل‎ numéro
+Trace de ressource
+
+Règle de recyclage
+Règle d'alarme d'inventaire
+Département des resources partagées
+
+Transférer une ressource Retourner une ressouroe DOA
+
+Retourner une ressource
+
+Consulter une note Rejeter une note
+
+Imprimer une note
+
+Changer un article ‏عل‎ ressource
+Changer le type télécom
+Consommer / libérer une ressource
+
+Inventaire de ressource Moniteur de tache
+Tache
+
+Historique d'inventaire ‏عل‎ ressource
+
+
+
+Accueil > Inventaire > Note > Prendre une note
+
+Date de création
+
+Num de Note
+
+Type ‏عل‎ ressource
+
+» Export-
+ü Num ‏عل‎ Note-
+
+00000020400/2018
+
+Total d'enregistrements: 1
+
+Département cessionnaire
+F ‏لا‎
+
+Vers
+, Type d'opération
+
+Département
+émetteur-
+
+Magasin DO
+MEDEA
+
+Date de
+
+création -
+13/12/2018
+16:10:12
+
+Type de
+
+Département
+ressource-
+
+cessionnaire-,
+
+ACTEL
+BERROUAGHIA,
+
+Type d’opération-
+
+Distribute Resource Voucher Card
+
+|ACTEL BERROUAGHIA
+
+Création par-
+
+SOFIANE
+MAZOUZ,
+
+Utilisateur
+preneur,
+
+Date de
+
+réception-
+
+Utilisateur
+
+receveur,
+
+10
+
+Date
+d'annulation-,
+
+enregistrements/page
+
+État-
+
+Opération
+
+1 [aler]
+
+
+
+
+> Détails ‏عل‎ note
+ID de note 172309
+
+Type d'opération Distribute Resource
+
+Date de création 13/12/2018 16:10:12
+
+Date de la prise
+
+Date de réception
+
+Date d'annulation
+
+Raison d'annulation
+
+État Créer
+
+Département émetteur Magasin DO MEDEA
+
+Mode d'affichage section _ résumé _ Détails
+
+Type ‏عل‎ ressource-
+Voucher Card
+
+Total d'enregistrements: 1
+
+Retour
+
+Code d’article-
+
+CARTE ADSL PREPAYEE 1000 DA
+
+Voucher Card No.-
+8000000000 to 8000000019
+
+Num de Note 00000020400/2018
+Type de ressource Voucher Card
+utilisateur de ‏ما‎ création SOFIANE MAZOUZ
+Utilisateur preneur
+
+Utilisateur receveur
+
+Utilisateur d'annulation
+
+Remarque
+
+Département cessionnaire ACTEL BERROUAGHIA
+
+10
+
+enregistrements/page
+
+ع
+
+1 [aler]
+
+
+
+
+Date de réception
+Date d'annulation
+Raison d'annulation
+État
+
+Département émetteur
+
+Mode d'affichage
+Type ‏عل‎ ressource-
+Voucher Card
+
+Total d'enregistrements: 1
+
+Prendre
+
+Retour
+
+Créer
+Magasin DO MEDEA
+# section _ résumé …. Détails
+
+Code d'article-
+
+CARTE ADSL PREPAYEE 1000 DA
+
+Utilisateur receveur
+
+Utilisateur d'annulation
+
+Confirmer x
+
+_ Êtes-vous sur de vouloir continuer ‏قا‎ transaction?
+
+annuler
+
+00000000010 SUUDUUUUIS"
+
+ACTEL BERROUAGHIA
+
+Quantité-
+20
+10 » | enregistrements/page
+
+ا
+
+<
+
+Quantité reç
+
+1 [aler]
+
+
+
+
+… Accueil Plan du site X _ Prendreunenote *
+
+Q Réussi.
+
+srations suivantes :
+
+© Lancer une opération
+
+
+
+& e we
+
+Systemème de gestion unifié
+Catalogue des produits unifié
+Comptes Débiteurs
+
+Invoicing
+
+Debt Collection
+
+Service clientele
+
+Client corporate
+
+Gestion de batch
+
+Gestion d'ordre
+
+Configuration
+Règles des numé
+Code d'article
+Fournisseur
+
+Stack
+Recevoir une ressource
+Retourner une ressource vers le fournisseur
+
+Note
+Recevoir une note
+Annuler une note
+
+Maintenance
+
+Changer létat d'une ressource
+
+Recycler une ressource
+
+Verrouiller / déverrouiller une ressource
+
+Package
+Consulter package
+
+Consulter
+
+Opération de ressource par batch
+Historique d'opération
+
+Historique de transfert
+
+Préfixe
+Permission de département
+Type de ressource
+
+Distribuer ‏عونا‎ ressource
+Rappeler une ressource
+
+Modifier une note
+Prendre une note
+
+Réserver / annuler la réservation d‘un MSISDN
+Changer les état des ressources DOA
+Changer le niveau d'MSISDN
+
+Historique de recyclage
+Règle ‏عل‎ numéro
+Trace de ressource
+
+Règle de recyclage
+Règle d'alarme d'inventaire
+Département des resources partagées
+
+Transférer une ressource Retourner une ressouroe DOA
+
+Retourner une ressource
+
+Consulter une note
+
+Rejeter une note
+
+Changer un article ‏عل‎ ressource
+Changer le type télécom
+Consommer / libérer une ressource
+
+Inventaire de ressource Moniteur de tache
+Tache
+
+Historique d'inventaire ‏عل‎ ressource
+
+
+
+Accueil > Inventaire > Note > Imprimer une note
+
+= Condition ‏عل‎ recherche
+
+Département émetteur
+
+Date de création
+
+Magasin DO MEDEA
+
+Département cessionnaire
+
+Vers
+
+|ACTEL BERROUAGHIA
+
+Num de Note Vers
+
+Type d'opération
+
+Type ‏عل‎ ressource
+
+État Courant ; Historique
+Consulter | Réinitialiser
+» Export-
+NumdeNotes | Département Département ‏مور‎ d'opération- Type de Date de Créationpar- | Patedela — Utilisateur — Datede Utilisateur | Date — État- Opération
+Éémetteur - cessionnaire= ressources _ création- ‏عونا‎ reneurs __réception- receveur” _ d'annulation-
+Magasin DO ACTEL 13/12/2018 | SOFIANE 13/12/2018 — SOFIANE ,
+0000020400/2018  MEDEA BERROUAGHIA | Distribute Resource Voucher Card | e:10:2 MAZOUZ 16:22:03 MAZOUZ Prendre -
+10 » | enregistrements/page ‏كا‎ < |L 1 [ale| > ‏لد‎
+
+Total d'enregistrements: 1
+
+
+
+
++ Détails ‏عل‎ note
+10 de note
+
+Type d'opération
+Date de création
+
+Date de la prise
+
+Date ‏عل‎ réception
+
+Date d'annulation
+Raison d'annulation
+État
+
+Département émetteur
+
+Mode d'affichage
+
+Type ‏عل‎ ressource-
+Voucher Card
+
+Total d'enregistrements:
+
+‎Mobilis‏ تب
+
+‎1
+
+‎17209
+
+‎Distribute Resource
+13/12/2018 16:10:12
+13/12/2018 3
+
+‎Prendre
+‎Magasin DO MEDEA
+section _ résumé ‏د‎
+‎Code d’article-
+
+‎CARTE ADSL PREPAYEE 1000 DA
+
+‎Retour
+
+‎Voucher Card No.-
+8000000000 to 8000000019
+
+‎Num de Note
+
+‎Type ‏عل‎ ressource
+utilisateur de la création
+Utilisateur preneur
+Utilisateur receveur
+
+‎Utilisateur d'annulation
+
+‎Remarque
+
+‎Département cessionnaire
+
+‎00000020400/2018
+‎Voucher Card
+
+‎SOFIANE MAZOUZ
+SOFIANE MAZOUZ
+
+‎ACTEL BERROUAGHIA
+
+‎Quantité-
+
+‎20
+
+‎10 » | enregistrements/page
+
+‎L
+
+‎Quantité reçus-
+
+‎1 [aler]
+
+‎>
+
+‎0
+
+‎J
+
+
+
+Algeria Talecom
+
+Pôle Fonction Support Page: { sur1
+1 Direction des Achats et de ‏ها‎ Logistique
+Bon de Transfert
+N° Note : 00000020400/2018
+Date : 12/Dec/2018
+[Type ‏عل‎ ressources ‏مم‎ d'article [Voucher Card No. Jluantités
+80000000006
+loucher Card -ARTE ADSL PREPAYEE 1000 0
+8 ‏ممم‎
+‎Total 20
+Généré Par : Reçu Par:
+Nom: — SOFIANE MAZOUZ rom
+IN* CN : IN°CN:
+[Département: Magasin DO MEDEA Département: _ ACTEL BERROUAGHIA
+|Numéro ‏عل‎ téléphone : \Numéro de téléphone :
+|Numéro de fax : Numéto de fax :
+Cachat et Signature Laphet at Signature
+
+
+
+
+Accueil > Inventaire > Note > Imprimer une note
+
+= Condition ‏عل‎ recherche
+
+Département émetteur [Magasin DO MEDEA ; Département cessionnaire ;*
+Date de création Vers
+Num de Note Vers
+Type de ressource 5 Type d'opération 5
+État . «| & Courant © Historique
+Consulter
++ Export -
+NumdeNotes | Département | Département ‏مور‎ d'opération= Type de Date de Créationpar- | Patedela — Utilisateur — Datede Utilisateur | Date — État- Opération
+émetteur” cessionnaire= ressource” — création- prise- preneurs | réception- receveur” — d'annulation-
+Magasin DO ACTEL 13/12/2018 | SOFIANE 13/12/2018 — SOFIANE ,
+00000020400/2018  MEDEA BERROUAGHIA | Distribute Resource Voucher Card | e:10:2 MAZOUZ 16:22:03 MAZOUZ Prendre -
+10 » | enregistrements/page ‏كا‎ < |L 1 [ale| > A
+
+Total d'enregistrements: 1
+
+
+
+Accueil > Inventaire > Note > Imprimer une note
+= Attachments Info
+
+Document No Document Type
+
+> Information d'execution.
+
+© Receive Note *Fichier
+
+Nom du fichier
+
+Aucun enregistrement.
+
+Date de création
+
+9
+
+Opération
+
+Soumettre
+
+Annuler
+
+
+
+‎Foncéon Bupport Poge: r‏ علوم
+‎Logietique‏ ما ‎Dérection des Actots e d‏ 1
+‎Bon de Transfert‏
+‎N° Note : 00000020400/2018‏
+‎Date : 13/Dac/2018‏
+‎Card No. Fuanllles‏ ممما ‎|'ype de ressources 2 d'article‏
+‎JARTE ADSL PREPAYEE 1000 e‏ لسلا
+‎A 19‏
+‎Totat 20‏
+‎Généré Par : Reçu Par:‏
+يم ‎(Nom: — SOFIANE MAZOUZ‏
+‎CON‏ لحل
+‎[Dépertement: / Magasin DG MÉDEA |Oéperemere : _ ACTEL BERROUAGHIA‏
+‎de tétéghons :‏ مها | : ‎[Murméro ce téléphone‏
+‎[Murére e dc : [Numére de fax :‏
+مسسنس سس
+
+‎ce‏ ه007[
+
+
+
+
+Accueil > Inventaire > Note > Imprimer une note
+= Attachments Info
+Document No Document Type Nom du fichier Date de création Opération
+
+Aucun enregistrement.
+
+> Information d'execution.
+
+& Pick Note Ü Recive Note * Fichier C:\fakepathknote.pdf _ æ
+
+Æ ‏ممه‎
+
+
+
+| 4 Accueil Plan du site “  Imprimer unenote * ;
+
+s-euérations suivantes :
+
+© Lancer une opération
+
+
+
+
+
+Systemème de gestion unifié
+Catalogue des produits unifié
+Comptes Débiteurs
+
+Biling Configuration
+
+Invoicing
+
+General Ledger
+
+Task Scheduling Management
+NG OCG
+
+Debt Collection
+
+Emergency Maintenance Entry
+Order Management
+
+Data Extract Config
+
+Service clientele
+
+Client corporate
+
+Gestion de batch
+
+Ecare
+
+Trouble Ticket
+
+Configuration
+Règles des numé
+Code d'article
+Fournisseur
+
+Stock
+Recevoir une ressource
+Retourner une ressource vers le fournisseur
+
+Recevoir une note
+
+Annuler une note
+
+Maintenance
+
+Changer létat d'une ressource
+
+Recycler une ressource
+
+Verrouiller / déverrouiller une ressource
+
+Package
+Pack
+
+Consulter
+
+Opération de ressource unique
+Historique d'opération
+Historique de transfert
+
+Préfixe
+Permission de département
+Type de ressource
+
+Distribuer ‏عونا‎ ressource
+Rappeler une ressource
+
+Modifier une note
+Prendre une note
+
+Réserver / annuler la réservation d‘un MSISDN
+Changer les état des ressources DOA
+Changer le niveau d'MSISDN
+
+Modifier package
+
+Historique de recyclage
+Règle ‏عل‎ numéro
+Trace de ressource
+
+Règle de recyclage
+Règle d'alarme d'inventaire
+
+Département des resources partagées
+
+Transférer une ressource
+Retourner une ressource
+
+Consulter une note
+Imprimer une note
+
+Changer un article ‏عل‎ ressource
+Changer le type télécom
+Consommer / libérer une ressource
+
+Dé-package
+
+Inventaire de ressource
+Tache
+Historique d'inventaire ‏عل‎ ressource
+
+Retourner une ressouroe DOA
+
+Rejeter une note
+
+Consulter package
+
+Moniteur de tache
+
+
+
+
+Accueil > Inventaire > Note > Recevoir une note
+
+= Condition ‏عل‎ recherche
+
+Département cessionnaire ‏اعم‎ BERROUAGHIA
+
+Département émetteur
+
+Date de création Vers
+
+Num de Note Vers
+
+Type d'opération
+
+Type de ressource
+
++ Export -
+C  NumdeNote- | Département | Département Type d'opération- Typede Date de Créationpar-  Datedela — Utilisateur — Datede Utilisateur | Date — État- Opération
+émetteur” cessionnaire= ressource” _ création- prise- preneurs — réception- receveur” — d'annulation-
+Magasin DO ACTEL 13/12/2018 — SOFIANE 13/12/2018 — SOFIANE ,
+G … 00000020400/2018 ‏ناعم‎ BERRQUAGHIA | Distribute Resource Voucher Card L :10:12 MAZOUZ 16:22:08 MAZOUZ Prendre -
+10 » | enregistrements/page ‏كا‎ < |L 1 [ale| > H
+
+Total d'enregistrements: 1
+
+Soumettre
+
+
+
+
+
+> Détails ‏عل‎ note
+
+10 de note 172309 Num de Note 00000020400/2018
+Type d'opération Distribute Resource Type de ressource Voucher Card
+
+Date de création 13/12/2018 16:10:12 utilisateur de ‏ما‎ création SOFIANE MAZOUZ
+Date de la prise 13/12/2018 16:22:03 Utilisateur preneur SOFIANE MAZOUZ
+Date de réception Utilisateur receveur
+
+Date d'annulation Utilisateur d'annulation
+
+Raison d'annulation
+
+État Prendre Remarque
+
+Département émetteur Magasin DO MEDEA Département cessionnaire ACTEL BERROUAGHIA
+
+Mode d'affichage & section \ résumé . Détails
+Type ‏عل‎ ressource- Code d'article- Voucher Card No.- Quantité- Quantité reçus-
+Voucher Card CARTE ADSL PREPAYEE 1000 DA 8000000000 to 8000000019 20 0.
+
+Total d'enregistrements: 1 10
+
+لد > ألم 1 ‎L‏ < كا ‎enregistrements/page‏
+
+
+
+
+ID de note 172309 Num de Note 00000020400/2018
+
+Type d'opération Distribute Resource Type de ressource Voucher Card
+Date de création 13/12/2018 16:10:12 utilisateur de la création SOFIANE MAZOUZ
+Date de la prise 13/12/2018 3 Utilisateur preneur SOFIANE MAZOUZ
+Date de réception Utilisateur receveur
+
+Date d'annulation Utilisateur d'annulation
+
+Raison d’annulation
+
+État Prendre Confirmer x
+
+Département émetteur Magasin DO MEDEA - ACTEL BERROUAGHIA
+
+Mode d'affichage ® section _ résumé © Détails __ Étes-vous sur de vouloir continuer la transaction?
+
+Type de ressource- Code d'article- ‏الم‎ __annuler Quantité- Quantité reçus-
+Voucher Card CARTE ADSL PREPAYEE 1000 DA BOUOOUOOUT 75 SOOUOUUOIS 20 .
+Total d'enregistrements: 1 10 » | enregistrements/page < < L 1 [ale| > >l
+
+Recevoir _ _Réceptionparlots _ Retour
+
+
+
+
+x
+
+@ Accueil Plan du site * Recevoir une note
+
+Lancer une opération
+
+
+
+
+Systemème de gestion unifié
+Catalogue des produits unifié
+Comptes Débiteurs
+
+Biling Configuration
+
+Invoicing
+
+General Ledger
+
+Task Scheduling Management
+NG OCG
+
+Debt Collection
+
+Emergency Maintenance Entry
+Order Management
+
+Data Extract Config
+
+Service clientele
+
+Client corporate
+
+Gestion de batch
+
+Ecare
+
+Trouble Ticket
+
+Configuration
+Règles des numé
+Code d'article
+Fournisseur
+
+Stack
+Recevoir une ressource
+Retourner une ressource vers le fournisseur
+
+Note
+Recevoir une note
+Annuler une note
+
+Maintenance
+
+Changer létat d'une ressource
+
+Recycler une ressource
+
+Verrouiller / déverrouiller une ressource
+
+Package
+Pack
+
+Consulter
+
+Opération de ressource unique
+Historique d'opération
+Historique de transfert
+
+Préfixe
+Permission de département
+Type de ressource
+
+Distribuer ‏عونا‎ ressource
+Rappeler une ressource
+
+Modifier une note
+Prendre une note
+
+Réserver / annuler la réservation d‘un MSISDN
+Changer les état des ressources DOA
+Changer le niveau d'MSISDN
+
+Modifier package
+
+Historique de recyclage
+Règle ‏عل‎ numéro
+Trace de ressource
+
+Règle de recyclage
+Règle d'alarme d'inventaire
+Département des resources partagées
+
+Transférer une ressource
+Retourner une ressource
+
+Tmprimer une note
+
+Changer un article ‏عل‎ ressource
+Changer le type télécom
+Consommer / libérer une ressource
+
+Dé-package
+
+Inventaire de ressource
+Tache
+Historique d'inventaire ‏عل‎ ressource
+
+Retourner une ressouroe DOA
+
+Rejeter une note
+
+Consulter package
+
+Moniteur de tache
+
+
+
+Accueil > Inventaire > Note > Consulter ‏عدن‎ note
+
+Département émetteur Magasin DO MEDEA , — Département cessionnaire , 7
+
+Date de création @ Vers @
+
+Num de Note Vers
+
+Type de ressource , Type d'opération ,
+
+État | © Courant
+
++ 50007
+
+NumdeNote | Département Département | TyÜÙped'opération- | TYvede Date de Créationpar-  Vatedela | Utilisateur | Date de Utilisateur — Date — Étate
+émetteur* cessionnaire- ressource- _ création- prise= preneur+ réception- receveur* — d'annulation-
+Magasin DO 0 ACTEL 13/12/2018 | SOFIANE 13/12/2018 | SOFIANE 13/12/2018 BADREDDINE
+
+00000020400/2018 MEDEA BERROUAGHIA | Distribute Resource Voucher Card — 16:10-2 MAZOUZ 16:22:03 MAZOUZ 16:51:53 BOUSBATA Completer
+
+10 » | enregistrements/page
+
+Total d'enregistrements: 1
+
+Réinitialiser
+
+Opération
+
+1 [aler) > 01
+
+
+
+
+= Détails ‏عل‎ note
+10 de note 172309 Num de Note 00000020400/2018
+Type d'opération Distribute Resource Type de ressource Voucher Card
+
+Date de création 13/12/2018 16:10:12 utilisateur de ‏ما‎ création SOFIANE MAZOUZ
+
+Date de la prise 13/12/2018 3 Utilisateur preneur SOFIANE MAZOUZ
+
+Date de réception 13/12/2018 3 Utilisateur receveur BADREDDINE BOUSBATA
+Date d'annulation Utilisateur d'annulation
+
+Raison d'annulation
+
+État Completer Remarque
+
+Département émetteur Magasin DO MEDEA Département cessionnaire ACTEL BERROUAGHIA
+
+Mode d'affichage section _ résumé _ Détails
+
+‎ressource- Code d'article- Voucher Card No.- Quantité- Quantité reçus-‏ عل علا
+
+‎loucher Card CARTE ADSL PREPAYEE 1000 DA 8000000000 to 8000000019 20 20
+
+‎Total d'enregistrements: 1 107
+
+‎enregistrements/page < < L 1 ‏لد > ألم‎
+
+
+
+
++ Export y
+NumdeNote- | Département | Département
+émetteur- cessionnaire-
+
+Magasin DO ACTEL
+00000020400/2018 ‏مس 0ع‎
+
+Total d'enregistrements: 1
+
+‘opérati Type de Date de satie Datedela — Utilisateur | Datede Utilisateur — Date É
+Type d'opération< ‏عه‎ Création par- à ‘ate de 8 R État-
+ressource- _ création- prise= preneur+ réception- receveur* — d'annulation-
+13/12/2018 | SOFIANE 13/12/2018 | SOFIANE 13/12/2018 BADREDDINE
+Distribute Resource Voucher Card — 16:10-2 MAZOUZ 16:22:03 MAZOUZ 16:51:53 BOUSBATA Completer
+10 » | enregistrements/page
+
+Opération
+
+1 [aler]
+
+
+
+
+Accueil > Inventaire > Note > Consulter une note
+= Attachments Info
+Document ‏عملا‎ Document Type=
+
+571 PICK
+
+> Information d'execution.
+
+& ‏يوام‎ Note Ü Recive Note *Fichier
+
+Nom du fichier-
+
+note.pdf
+
+Date ‏عل‎ création-
+
+13/12/2018 16:28:43
+
+_ @
+
+Opération
+
+Soumettre
+
+Annuler
+
+
+
+Accueil > Inventaire > Note > Consulter une note
+= Attachments Info
+Document ‏عملا‎ Document Type=
+
+571 PICK
+
+- Information d'execui
+
+© Pick Note * Fichier
+
+Nom du fichier-
+
+note.pdf
+
+Date ‏عل‎ création-
+
+13/12/2018 16:28:43
+
+Opération
+
+#X
+
+Soumettre
+
+Annuler
+
+
+
+
+ساسج
+
+Pôle ‏ماد‎ Bupport Pog 1 ue 3
+ut mo) Diraction des Achats ‏اه‎ de ‏ما‎ Logietique
+Bon de Transfert
+N° Noté : 00000020400/2018
+Date : 13/Dec/2018
+[Type de ressources ‏مط‎ d'anicie ‏ممما‎ Card No. tités
+Moucher Card ARTE ADSL PREPAYEE 1000 ©
+A 19
+Total 20
+Généré Par : ‏بهو‎ Par:
+Nom: - SOFIANE MAZOUZ [Nom :
+[N" cH- rn
+[Département: Magasin DO MEDEA Dépersmer: ACTEL BERROUAGHIA
+|Numéro de tiiéphone ; |Numére de tétéphons :
+|Muméro de fenc : ‏سسا‎ de fac :
+‏بلسلا‎ Cachat ai Signehzn
+
+ع لا قو 07 -
+دي
+
+طفق ‎SBATA‏ ممح ده
+
+
+
+Accueil > Inventaire > Note > Consulter ‏عدن‎ note
+
+> Attachments Info
+Document ‏عملا‎ Document Type= Nom du fichier= Date ‏عل‎ création- Opération
+571 PICK note.pdf 13/12/2018 16:28:43 èl x
+> Information d'execution.
+* Fichier L æ
+Annuler
+
+© ‏ودام‎ Note & Recive Note
+
+
+
+x
+
+@ Accueil ; Plan du site Consulter une note _*
+
+3 Réussi.
+
+Vous pouvez effectuer les opérations suivantes :
+
+© Lancer une opération
+
+
+
+
+
+
+Systemème de gestion unifié
+Catalogue des produits unifié
+Comptes Débiteurs
+
+Invoicing
+
+Debt Collection
+
+Service clientele
+
+Client corporate
+
+Gestion de batch
+
+Gestion d'ordre
+
+Configuration
+Règles des numé
+Code d'article
+Fournisseur
+
+Stack
+Recevoir une ressource
+Retourner une ressource vers le fournisseur
+
+Note
+Recevoir une note
+Annuler une note
+
+Maintenance
+
+Changer létat d'une ressource
+
+Recycler une ressource
+
+Verrouiller / déverrouiller une ressource
+
+Package
+Consulter package
+
+Consulter
+
+Opération de ressource par batch
+Historique d'opération
+
+Historique de transfert
+
+Préfixe Règle de recyclage
+
+Permission de département Règle d'alarme d'inventaire
+
+Type de ressource Département des resources partagées
+
+Distribuer ‏عونا‎ ressource Transférer une ressource, Retourner une ressource DOA
+
+Rappeler une ressource
+
+Modifier une note Consulter une note Rejeter une note
+Prendre une note Imprimer une note
+
+Réserver / annuler ‏ها‎ réservation ‏سك‎ MSISDN _ Changer un article ‏عل‎ ressource
+
+Changer les état des ressources DOA Changer le type télécom
+
+Changer le niveau d'MSISDN Consommer / libérer une ressource
+
+Historique de recyclage Inventaire de ressource Moniteur de tache
+Règle ‏عل‎ numéro Tache
+
+Trace de ressource Historique d'inventaire de ressource
+
+
+
+@ Accueil Plan du site X _ Retourner une ress… *
+
+«
+
+Accueil > Inventaire > Stock > Retourner une ressource
+
+> Condition ‏عل‎ recherche © Parrang \ Parliste < Par fichier
+
+Type ‏عل‎ ressourœ | Voucher Card Code d'article CARTE ADSL PREPAYEE 1000 DA État Normal
+
+Fournisseur . * Département ‏اعم‎ BERROUAGHIA * Département |Magasin DO MEDEA
+émetteur cessionnaire
+
++ Code de condition
+
+Voucher Card No. _ |8000000000 Vers 8000000019 Quantité 20
+De
+
+Réinitialiser _ Voir la liste
+
++ Remarque
+
+Remarque
+
+
+
+
+
++ Export 7
+
+Voucher Card ‏عملا‎
+‎L 8000000000
+L 8000000001
+L 8000000002
+L 8000000003
+L 8000000004
+L 8000000005
+L 8000000006
+L 8000000007
+L 8000000008
+L 8000000009
+
+Total d'enregistrements: 20
+
+Code d’article-
+
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+CARTE ADSL PREPAYEE 1000 DA
+
+État-
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+Normal
+
+Normal
+
+Face Value-
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+1000,00DA
+
+1000,00DA
+
+
+
+
+‎Réussi.‏ و
+
+‎Vous pouvez effectuer les opérations suivantes :
+
+‎<< Voir les détails
+Tip
+
+‎NS service
+Numéro total
+Numéro succès
+Numéro défaillant
+Detail Information
+
+‎Num de Note
+
+‎The process of business is finished.
+34620285
+
+‎20
+
+‎20
+
+‎0
+
+‎Please refer to Inventory->Query->Operation History
+
+‎00000020401/2018
+
+
+
+
+Accueil > Inventaire > Note > Consulter ‏عدن‎ note
+
+Département cessionnaire ,>
+Date de création =} Vers =}
+Num de Note Vers
+Type de ressource 1 0 Type d'opération 1 0
+État . 4 _ Courant
+
+Réinitialiser
++ Export<
+Département | Département Type de Date de Créationpar- Patedela — Utilisateur — Datede Utilisateur | Date État= Opération
+
+Num ‏عل‎ Note- Type d’opération- 9 5 9 3 8
+ype Copé prise- preeur-—_réception- receveurs, — d'annulation-
+
+émetteur- cessionnaire- ressources — création-
+ACTEL Magasin DO 17/12/2018 | BADREDDINE | 17/12/2018 | BADREDDINE 17/12/2018 BADREDDINE -
+00000020401/2018 RERROUAGHIA | MEDEA ‏صرف‎ Resource Voucher Card — 09:26:52 BOUSBATA 09:26:53 BOUSBATA _ 09:26:53 BOUSBATA Completer -
+Total d'enregistrements: 1 10 » | enregistrements/page ‏كا‎ < |L 1 [ale| > ‏لد‎
+
+
+
+
+Accueil > Inventaire > Consulter > Inventaire de ressource
+
+= Condition ‏عل‎ recherche Ü Special
+
+Type de ressource Voucher Card Détails…>> + Département Magasin DO MEDEA Fournisseur 1 7
+
+État Normal
+
+» Export-
+
+Entité ‏عل‎ gestion- Voucher Card ‏عملا‎ Nom du code d'article- Département- État- Face Value- Fournisseur-
+Algerie Telecom Group 8000000000 CARTE ADSL PREPAYEE 1000 DA | Magasin DO MEDEA 1 000,00DA HB TECHNOLOGIE -
+Algerie Telecom Group 8000000001 CARTE ADSL PREPAYEE 1000 DA — Magasin DO MEDEA 1 000,00DA HB TECHNOLOGIE
+Algerie Telecom Group 8000000002 CARTE ADSL PREPAYEE 1000 DA | Magasin DO MEDEA 1 000,00DA HB TECHNOLOGIE
+Algerie Telecom Group 8000000003 CARTE ADSL PREPAYEE 1000 DA — Magasin DO MEDEA 1 000,00DA HB TECHNOLOGIE
+Algerie Telecom Group 8000000004 CARTE ADSL PREPAYEE 1000 DA | Magasin DO MEDEA 1 000,00DA HB TECHNOLOGIE
+Algerie Telecom Group 8000000005 CARTE ADSL PREPAYEE 1000 DA — Magasin DO MEDEA 1 000,00DA HB TECHNOLOGIE
+Algerie Telecom Group 8000000006 CARTE ADSL PREPAYEE 1000 DA | Magasin DO MEDEA 1 000,00DA HB TECHNOLOGIE
+Algerie Telecom Group 8000000007 CARTE ADSL PREPAYEE 1000 DA — Magasin DO MEDEA 1 000,00DA HB TECHNOLOGIE
+
+Algerie Telecom Group 8000000008 CARTE ADSL PREPAYEE 1000 DA Magasin DO MEDEA 1000,00DA HB TECHNOLOGIE
+
+Algerie Telecom Group 8000000009 CARTE ADSL PREPAYEE 1000 DA Magasin DO MEDEA 1000,00DA HB TECHNOLOGIE -
+
+Total d'enregistrements: 36 10 » | enregistrements/page ‏كا‎ < |L 4 [aler| > 2
+
+
+
+

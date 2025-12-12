@@ -40,6 +40,24 @@ export function DocumentSearchPanel({
         : [...prev, category]
     );
   };
+  // Highlight matching query words in the text
+  function highlightText(text: string, query: string): JSX.Element {
+    if (!query) return <>{text}</>;
+
+    // Escape regex special characters in query
+    const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+    // Create regex to find matches (case-insensitive)
+    const regex = new RegExp(`(${escapedQuery})`, "gi");
+
+    // Replace matched text with <mark> tags
+    const highlighted = text.replace(
+      regex,
+      `<mark class="bg-yellow-200">$1</mark>`
+    );
+
+    return <span dangerouslySetInnerHTML={{ __html: highlighted }} />;
+  }
 
   // Fetch documents from backend
   useEffect(() => {
@@ -50,13 +68,52 @@ export function DocumentSearchPanel({
       }
 
       setLoading(true);
-      try {
-        const response = await axios.post("http://127.0.0.1:8000/search", {
-          query: searchQuery || clientMessage?.content,
-          filters: activeFilters,
-        });
+      const query = searchQuery || clientMessage?.content;
 
-        setDocuments(response.data.results);
+      try {
+        // Call FAISS-based "predict" endpoint (returns array)
+        const predictResponse = await axios.post(
+          "http://127.0.0.1:8000/predict",
+          {
+            query,
+            filters: activeFilters,
+          }
+        );
+
+        // Call retriever-based "search" endpoint (returns { results: [...] })
+        const searchResponse = await axios.post(
+          "http://127.0.0.1:8000/search",
+          {
+            query,
+            filters: activeFilters,
+          }
+        );
+
+        // Merge results safely
+        const mergedDocs: Document[] = [
+          ...(Array.isArray(predictResponse.data)
+            ? predictResponse.data
+            : []
+          ).map((doc: any) => ({
+            id: doc.id,
+            title: doc.title,
+            chunk: doc.chunk || "",
+            similarity: doc.similarity || 0,
+            category: doc.category || "unknown",
+          })),
+          ...(searchResponse.data?.results || []).map((doc: any) => ({
+            id: doc.id,
+            title: doc.title,
+            chunk: doc.chunk || "", // retriever may not have chunk
+            similarity: doc.similarity || 0,
+            category: doc.category || "unknown",
+          })),
+        ];
+
+        // Optional: sort by similarity descending
+        mergedDocs.sort((a, b) => b.similarity - a.similarity);
+
+        setDocuments(mergedDocs);
       } catch (error) {
         console.error("Error fetching documents:", error);
         setDocuments([]);
@@ -169,10 +226,14 @@ export function DocumentSearchPanel({
                       </span>
                     </div>
                     <p className="text-sm text-muted-foreground line-clamp-2 mb-2">
-                      {doc.chunk.slice(0, 100)}...
+                      {highlightText(
+                        doc.chunk || "no excerpt available",
+                        searchQuery || clientMessage?.content || ""
+                      )}
                     </p>
+ 
                     <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
-                      {getCategoryLabel(doc.category)}
+                      {getCategoryLabel(doc.category || "unknown")}
                     </span>
                   </div>
                 </div>

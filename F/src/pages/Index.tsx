@@ -49,28 +49,31 @@ const Index = () => {
   const handleGenerateResponse = useCallback(async () => {
     const lastMessage = getLastClientMessage();
     if (!lastMessage) return;
-
+  
     setIsGenerating(true);
-
+  
     try {
       const response = await fetch("http://localhost:8000/query", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question: lastMessage.content }),
+        body: JSON.stringify({ question: lastMessage.content }), // ✅ use "question"
       });
-
+  
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.status}`);
+      }
+  
       const data = await response.json();
-
+  
       setGeneratedResponse(data.answer);
       setAiSources(
         (data.sources || []).map((src, index) => {
-          const match = src.match(/\(([\d.]+)%\)$/); // Extract the number inside parentheses
+          const match = src.match(/\(([\d.]+)%\)$/); // Extract similarity %
           return {
             id: `source-${index}`,
-            title: src.replace(/\s\([\d.]+%\)$/, ""), // Remove similarity from title
+            title: src.replace(/\s\([\d.]+%\)$/, ""),
             similarity: match ? parseFloat(match[1]) : undefined,
-            // category: "offers", // or set appropriately if your backend returns it
-            content: "", // optionally fetch later
+            content: "",
           };
         })
       );
@@ -80,9 +83,10 @@ const Index = () => {
       setGeneratedResponse("❌ Server error while generating answer.");
       setAiSources([]);
     }
-
+  
     setIsGenerating(false);
   }, [getLastClientMessage]);
+  
 
   const handleToggleAiSource = useCallback((docId: string) => {
     setSelectedAiSources((prev) =>

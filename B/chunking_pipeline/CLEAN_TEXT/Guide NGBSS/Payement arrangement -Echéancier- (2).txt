@@ -1,0 +1,4271 @@
+Guide d’utilisation NGBSS
+Gestion de Payement Arrangement
+-Echéancier-
+Guide d’utilisation NGBSS
+Gestion de Payement Arrangement
+-Echéancier-
+La Division Marketing , Communication et  Commerciale
+Afin de permettre aux clients résidentiels de régler leurs créances téléphoniques, le
+nouveau système d’information NGBSS propose deux types de « payement
+arrangement » :
+1-Arrangement de paiement (arrangement of debt AOD) : régler une ou plusieurs
+factures en plusieurs échéances à des dates déterminées en accord entre les 2
+parties.
+2- Promesse de paiement (P2P) : Ajourner le paiement par la prolongation de la date
+de paiement avec une durée qui ne dépasse pas les 30 jours.
+La création aura but pour que le client n'apparaisse pas dans le debt collection (les
+listes d'impayés) .
+Introduction
+Les règles de gestion
+Pour  Arrangement de paiement:
+1-le montant minimum  accordé pour établir un arrangement de paiement est à 
+partir de 5000,00 DA
+2-Le premier paiement « Down payment Amount » doit être Egal ou supérieur
+à 20% du montant global.
+3-Le reste des paiements doivent être Egal ou supérieur à 20 %
+4-Le premier paiement est obligatoire pour rétablir la ligne.
+Les règles de gestion
+Pour  promesse de paiement:
+la prolongation de la date de paiement ne doit pas dépasser les 30 jours
+5-tableau des paliers :
+Palier
+Nombre autorisé
+Observation
+De 5000,00  DA à 10000,00 DA
+02
+Le premier 
+versement est 
+inclus
+De 10001,00 DA à 20000,00 DA
+03
+Plus de 20000,00 DA
+04
+Création payement 
+Arrangement
+A
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Pour créer 
+Payement 
+Arrangement
+« arrangement de
+Paiement » ou 
+« promesse de 
+paiement »
+Cliquer sur :
+« Debt collection »
+« Payement
+Arrangement 
+Request »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Création Arrangement de paiement
+Arrangement of Debt (AOD)
+1
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Saisir le ND
+Ou le code de compte
+Cliquer sur :
+« rechercher »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدةCliquer sur :
+« Create payement
+arrangement
+Les factures 
+Impayées s’affichent
+Choisir une ou plusieurs
+factures
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Pour consulter
+Les conditions
+de 
+« Arrangement of
+Debt »
+Cliquer sur « la loupe »
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Pour établir
+Un « arrangement de
+Paiement »
+Sélectionner 
+« Arrangement of
+Debt »
+Cliquer sur
+« Next »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Les modes de “Arrangement de paiement”
+“Arrangement of Debt ”
+Equal installement
+1
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Le premier paiement
+« Down payment
+Amount » doit être 
+Egal ou supérieur
+à 20% du montant 
+global
+Ensuite
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Le Premier mode : Par Nombre de versement
+Introduire le Nombre
+de versement
+Sélectionner par 
+« Mois /Month »
+Cliquer sur « Next »
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Le Deuxième Mode : Par Montant
+Le premier paiement
+« Down payment
+Amount » doit être 
+Egal ou supérieur
+à 20% du montant 
+global
+Introduire le montant
+Egal ou supérieur à 20%
+Sélectionner par 
+« Mois /Month »
+Cliquer sur « Next »
+Ensuite
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Le Troisième Mode : Par Pourcentage
+Le premier paiement
+« Down payment
+Amount » doit être 
+Egal ou supérieur
+à 20% du montant 
+global
+Ensuite
+-Introduire un pourcentage
+Egal ou supérieur à 20% 
+-Saisir le nombre de
+Versement
+Sélectionner par 
+« Mois /Month »
+Cliquer sur « Next »
+Les modes d’ Arrangement de paiement
+“Arrangement of Debt »
+Non-Equal installement
+2
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Le premier paiement
+« Down payment
+Amount » doit être 
+Egal ou supérieur
+à 20% du montant 
+global
+Ensuite
+1-Choisir la date de 
+paiement
+2-Introduire le montant
+à payer 
+Le Premier mode : Par montant
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Cliquer sur « + »
+Pour ajouter le 
+Deuxième paiement
+Ou
+Cliquer sur « X »
+Pour supprimer
+Cliquer sur « Next »
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Le premier paiement
+« Down payment
+Amount » doit être 
+Egal ou supérieur
+à 20% du montant 
+global
+1-Choisir la date de 
+Paiement
+2-Saisir un pourcentage
+Égal ou supérieur à 20%
+3-Cliquer sur « Next »
+Le Deuxième Mode : Par Pourcentage
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur :
+« submit »
+La Division Marketing ,Communication et Commerciale  - Janvier 2019  -
+La Division Marketing ,Communication et Commerciale  - Janvier 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur :
+« Yes »
+Pour confirmer 
+L’établissement
+Arrangement de
+paiement
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Pour imprimer
+la lettre
+d’engagement
+Cliquer sur :
+« Print »
+Puis
+« Yes »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur :
+« Close »
+Pour quitter
+La page
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Création Promesse de paiement
+Promesse to paye (P2P)
+2
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Saisir le ND
+Ou le code de compte
+Cliquer sur :
+« rechercher »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur :
+« Create payement
+arrangement
+Les factures 
+Impayées s’affichent
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Sélectionner 
+« Promesse to 
+pay »
+Et cliquer sur 
+« Next »
+NB: pour consulter 
+les conditions de 
+promesse de 
+paiement cliquer 
+sur « la loupe »
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Choisir la nouvelle
+Date de paiement
+(ne dépasse pas 
+30 jours)
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Cliquer sur « Next »
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Cliquer sur
+« Submit »
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Pour confirmer
+l’opération
+Cliquer sur « Yes »
+L’opération a été
+effectuée avec 
+succès
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Pour éditer
+La lettre d’engagement
+Cliquer sur :
+« Print »
+Ensuite  :  « Yes »
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Validation payement      
+Arrangement
+(approval)
+B
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Pour Valider 
+« Arrangement de 
+paiement»
+Ou 
+« Promesse de 
+paiement »
+Cliquer sur :
+« Debt collection »
+« Payement arrangement
+Approval »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Saisir le ND
+Cliquer sur:
+« Search »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Pour consulter 
+Les différents détails
+de « Arrangement
+de paiement » 
+Ou « promesse de 
+Paiement »
+Cliquer sur :
+« la loupe »
+1-Payement 
+Arrangement :
+Consulter toutes
+Les informations :
+Montant ,nombre
+Statut …
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur :
+« la loupe »
+2-Installement 
+Détails :
+Pour  consulter 
+Les dates de 
+Paiement et
+Les factures
+Crées par 
+Le paiement
+Arrangement ou
+Promesse de
+paiement
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur :
+« la loupe »
+3-Outsanding 
+Invoice :
+Pour  consulter 
+Les factures
+Ayant font objet
+d’un
+arrangement
+de  paiement ou
+Promesse de
+paiement
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Pour valider ou rejeter
+« Arrangement de
+paiement »
+Ou
+« Promesse de
+paiement »
+Cliquer sur l’icone
+« Approval »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Pour Valider
+« Arrangement de
+paiement »
+Ou 
+« Promesse de paiement »
+Choisir « pass »
+Pour le rejeter
+Choisir
+« reject »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Choisir 
+« Pass »
+Et 
+Cliquer sur 
+« Save »
+Puis sur « Yes »
+Et l’opération a 
+été effectuée 
+avec succès
+Payement Arrangement – Echéancier-
+Encaissement payement 
+Arrangement
+C
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Pour encaisser 
+Un « Arrangement de
+paiement»
+Ou
+« Promesse de
+Paiement »
+Cliquer sur :
+« Compte Débiteurs »
+« Paiement »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Saisir le ND
+Cliquer sur :
+« Rechercher »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Un message
+S’affiche :
+« Effectuer un
+Paiement échelonné »
+Cliquer sur :
+« Oui »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Sélectionner 
+« le mode de
+Paiement »
+Introduire le 
+Montant à encaisser
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Encaissement « arrangement de paiement »
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Choisir le 
+Mode de paiement
+Et saisir le montant
+Et cliquer sur :
+« Soumettre »
+Encaissement « Promesse de paiement »
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur :
+« soumettre »
+Puis
+« Confirmer »
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Cliquer sur :
+« Imprimer »
+Pour éditer le
+Reçu de paiement
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Consultation payement 
+Arrangement
+D
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+Pour rechercher
+Et consulter tous 
+« Arrangement
+de paiement »
+Ou
+« Promesse de 
+Paiement »
+Avec les différents
+Statuts
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Pour la consultation
+Cliquer sur 
+« la loupe »
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Cliquer sur :
+« Payment 
+arrangement »
+Pour consulter les 
+différentes
+Informations de
+« arrangement de
+paiement »
+Ou  « promesse
+De paiement »
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Cliquer sur :
+« Installment détails »
+Pour Consulter :
+1-Dates de paiement
+2-Montants à payer
+3-Statut
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Pour Consulter :
+la date
+Et le montant payé
+Cliquer sur :
+« Payment logs »
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Cliquer sur :
+« Outstanding invoice »
+Pour Consulter les
+Factures impayées
+qui font
+Objet d’un « arrangement
+de paiement » ou
+« Promesse de paiement »
+نقطة حضور
+جندل
+نقطة حضور
+جليدة
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+La Division Marketing ,Communication et Commerciale  - Février 2019  -
+Payement Arrangement – Echéancier-
+Cliquer sur :
+« Approval info »
+Pour Consulter le
+Résultat de 
+L’approbation
+Merci 
+Merci 
+
+
+
+
+
+
+
+
+
+
+
+—h -
+
+Æ ® De
+
+À ‏اد‎ Plan du site
+
+Systemème de gestion unifié
+Catalogue des produits unifié
+Comptes Débiteurs
+
+Biling Configuration
+
+Invoicing
+
+General Ledger
+
+Task Scheduling Management
+
+NG OCG
+
+Collection Configuration
+Collection Date 200 Time Policy
+Collection Application
+Collection Action
+
+Collection Management
+Test Collection Request
+Test Collection Query
+
+wWork Order Management
+Work Order Approval
+Work Order Query
+
+Error Handling Management
+Transaction Notification Error Handling
+
+Payment Arrangement
+Debt Collection
+Payment Arrangement Request
+
+Emergency Maintenance Entry
+
+Batdh Synchronization Result Query
+
+[ | .ا قش
+
+Collection Hold
+Collection Object Selection Policy
+Payment Arrangement Policy
+
+Batch Collection
+Collection Hold Request
+
+Work Order Simulation Query
+Outgoing Call Collection File Export
+
+Collection Object Error Handiing
+
+Payment Arrangement Approval
+
+Root (UTC+1, 23/12/2018 18:03:10) ;
+
+Collection Hold Reason
+Data Permission
+Collection Group and ‏دقام‎
+
+Batch Collection Hold Request
+Batch Collection Unhold
+
+wWork Order Export
+wWork Order Asynchronous Export
+
+wWork Order Error Handiing
+
+Payment Arrangement Cancellation
+
+Algerie Telscom ‏نا‎ @ us
+Group
+
+Outgoing Call Collection Boundary
+
+Payment Arrangement Query
+
+
+
+
+
+æ
+
+&,
+
+À ‏اد‎ Plan du site
+
+Debt Collaction > Payment Arrangement > Payment Arrangement Request
+
+‎Search Criteria‏ كه
+‎Account Code‏
+
+‎Indude Direct Debit Amount
+
+‎+ Outstanding Invoice
+
+‎[ No. Invoice NO.
+
+‎«
+
+‎Total des enregistrements: 0
+
+‎Payment Arrange.
+
+‎À‏ ا قش
+
+‏مانا لان
+
+‎| Customer Name:
+
+‎Account Code
+
+‎Customer Code
+
+‎Service Number
+
+‎Object Type
+
+‎Root (UTC+1, 24/12/2018 17:21:40)
+
+‎Algerie Telecom
+Group
+
+‎bousba1
+
+‎© &
+
+‎Invoïce Date
+
+‎Due Date
+
+‎Total
+‎BillCycleID | Outstanding
+Amount
+10 * | Enregistrements
+
+‎Kc
+
+‎Payment
+‎Direct Debit Arrangemer
+Amount Execution
+status
+
+‎»
+
+‎E po e > >
+
+
+
+
+‘Group
+
+æ ‏اه‎ S projet (U [08 1064 24/12/2018 17:22:37) Algerie Telecom | boubai @ |
+©
+
+‎Plnduste — % Payment Arrange.‏ اننا
+
+‎Debt Colection > Payment Arrangement > Payment Arrangement Request
+
+‎Search Criteria‏ ب
+
+‎Account Code … [14185924160001 Serdce Number [23313815
+
+‎Inchade Direct Debit Amount ‏عدا‎ 1. No
+
+‏م # @
+
+‎Seards — Réinitialiser
+
+‎— Outstanding Invoice List] Customer Name:Badreddine
+
+‎Payment
+‎Total 1 8
+
+‎Operation‏ مسحي متي ‎m. InvoiceNO. | AccountCode _ Customer Code ce Number  ObjetType — Invoice Date Due Date BillCydeID | Outstanding‏ ل
+
+‏ممصم
+‎status‏
+
+‎@ 1 Rn 1418892410000110000041889241 | 23313819 31/08/2017 02/10/2017 20170712 316,69 08 000 08 ‏خلا‎ à
+
+‎2 000001019974 “
+
+‎2 Fs 1418892410000110000041889241 | 23313819 34/10/2017 15/12/2017 20170912 595,00 DA, 000 08 ‏خلا‎ %
+
+‎2 000000136760 “ 1
+
+‎à‏ خلا 08 000 ‎DA,‏ 595,00 20171112 19/02/2018 31/12/2017 23313819 | 1418892410000110000041889241 الس د
+
+‎2 000001446727 “ 1
+
+‏% خلا 08 000 ‎DA,‏ 595,00 20180112 1/04/2018 28/02/2018 23313819 | 1418892410000110000041889241 اساي ها
+
+‎2 000000874853 “ 1
+
+‎@s ‏مسي‎ 1418892410000110000041889241 | 23313819 30/04/2015 19/06/2015 20180312 595,00 DA, 000 08 ‏خلا‎ à
+
+‎2 000000223395 “ 1
+
+‎26 0016377034 | 14188924100001 16000041889241 23313819 24/12/2018 17/07/2018 20181112 39 000,00 DA 000 08 ‏خلا‎ %
+
+‎@ 7 ‏مسي‎ 1418892410000110000041889241 | 23313819 30/06/2015 19/08/2015 20180512 595,00 DA, 000 08 ‏خلا‎ à
+
+‎€ 000001651506 “ 1
+
+‎üs J 1418892410000110000041889241 | 23313819 34/08/2018 14/10/2018 20180712 595,00 DA, 000 08 ‏خلا‎ %
+
+‎2 000001287458 “ 1
+
+
+
+Payment Arrange… *
+
+-
+Select Payment Ar
+
+‎Search Criteria‏ د
+
+‎0 Max. Days of Promise
+
+‎Payment Arrangement Type [2
+‏.ملا‎ Percentage of Installment To
+Arourié
+Search Réinitialiser
+
+‎+ Payment Arrangement Policy List
+
+‎Payment Arrangement | Payment Arrangement
+Policy Name Type
+
+‎; ÊAVPZPVPARTICVPDHCV Name — promise ‏ما‎ pay %
+
+‎u. PA-AOD-PARTIC-Palicy fame | arrangement of debi 365
+
+‎Payment Arrangement Policy Code | PA-AOD-PARTIC-Policy Name 1
+
+‎Peyment Arrangesment Type _ Arrangement of debt
+
+‎Min. Installment Amount 500,00 DA
+
+‎Equal Installments
+
+‎Max. Non-Equal Installments ‏2د‎
+‎GraePeriod ‏ل‎
+‎Approval Mode … Manual
+Effective Date 08.07.2018
+
+‎Description
+
+‎Max. Days of Promise
+
+‎Payment Arrangement Polcy
+Name
+
+‎Min. Percentage of Instaliment
+Amount
+
+‎Equal Instaliment Unit
+Max. Interval for Non-Equal
+
+‎Instaliments (Day)
+Max. Days of Promise
+
+‎Processing Mode After Complefion
+
+‎Violation Approval Mode
+
+‎Expiration Date
+
+‎Min. Installment Amount
+
+‎Grace Period
+
+‎To
+
+‎To
+
+‎Operation
+
+‎PA-AOD-PARTIC-Palicy Name 1
+
+‎20
+
+‎»
+
+‎365
+‎Continue collection
+Manual
+
+‎31.12.2037
+
+
+
+
+L ‏اع‎
+
+عله ‎Plar du‏ اننا
+
+2017044
+000001019974
+
+2017058
+000000136760
+
+2017064
+000001446727
+
+2018018
+000000874953
+
+201802
+000000223395
+
+0016377054
+
+9 201803
+000001691506
+
+2018042"
+000001287455
+
+201805
+000000375902
+
+Total des enregistrements: 9
+
+تا
+
+m
+
+14188
+
+14188
+
+14188
+
+14188
+
+14188
+
+14188
+
+14188
+
+E Details
+
+Outstanding Invoice
+
+Payment Arrange.
+
+1
+
+Payment Arrangement Type
+
+Percentage f Installment
+‘Amourt
+
+— Payment Arrangement Policy List
+
+Payment Arrangement
+Policy Name
+
+PA-P2P-PARTIC-Palicy ‏عملا‎
+
+2
+
+©
+
+-AOD-PARTIC-Palicy Name,
+
+Root (UTC+1, 24/12/2018 17:25:16)
+
+Agarie Telecom … boubi @ E
+
+roup
+0 Max. Days cf Pronise T
+T in.Instaliment ‏ممم‎ T
+Seardi — _Réinitialiser
+Rémibaliser Payment
+Amrangement
+m Operation
+‏مسي‎ x. Daysof rc ‏لد ا‎ peation ‏ب‎
+‎8 ‏يا‎ à
+Promise ts pay E 1
+ps wa à
+Arrangement of debt 265 1
+‏خلا مط‎ à
+ps wa à
+‏خلا مط‎ à
+ps wa à
+‏خلا مط‎ à
+ps wa à
+‏خلا مط‎ à
+
+بكلا
+
+‎12J 29‏ كا & نكا
+
+
+
+
+—ES -
+
+L ‏مسيس سم‎ r
+
++
+
+—
+
+— cu ec Ex
+
+R A e ‏مسو مد‎
+
+9 © © » ةة.»
+
+©"
+
+B.
+
+‎Acx‏ الس
+
+‎2o1TOag
+‎000001015974
+
+‎2015
+‎000000136760
+
+‎2017068
+‎000001446727
+
+‎2018018
+‎000000674953
+
+‎2018028
+‎000000225395
+
+‎0016377034
+
+‎2018038c
+‎000001691506
+
+‎2018048
+‎000001287458
+
+‎2018088
+‎000000375902
+
+‎Tobl ds envegistrements: 9
+
+‎14188
+
+‎14188
+
+‎14188
+
+‎14188
+
+‎14188
+
+‎14188
+
+‎14188
+
+‎14188
+
+‎14188
+
+‎Payment Arrange.
+
+‎se ‏ماخرو‎
+
+‎Payment Arrangement
+
+‎> Payment Arrangement Palicy
+
+‎Paysment à‏ عام
+
+‎Adétional Setinge
+
+‏ماع ‎the oaÿment arangement‏ مه ‎se‏ مقع ‎can configure pavent arrangemment‏ اقلا
+
+‎< Payment Arrangement
+
+‎Paymvent Arrangement Type = «s Arongement ofdebt
+
+‎Payrant Mode = < Equalintalrment] ‏ب‎ Monrequalintaliment
+
+‎Agreod Amount =
+
+‎Dounpayment Mode «
+
+‎Derempayment Amount =
+
+‎Installment Mode +
+
+‎Installment Interval +
+
+‎Installment
+‎Period ID
+
+‎mt ( #} ct uTe+1, 2022018 17:28:34) AlgetieTalecom | boustal @
+
+‎B4 4s165
+es By Amount ; By Percartage
+53
+
+‎c instaliments‏ سات
+
+‎. Byamount
+
+‎1
+
+‏م
+
+‎Previenr‏ 3 8م ماو ذه
+‎Payment Date Payment Amount‏
+‎PE 50xs 24Ds‏
+3 3
+3 1
+3 1
+‎Previous Ccx‏
+
+‏ب
+
+‎[on
+
+‏ب
+
+‎[on
+
+‏ب
+
+‎2
+
+‎[on
+
+‏ب
+
+‎[on
+
+‎Payment
+
+‏باحق
+
+‎n
+
+‎n
+
+‎n
+
+‎n
+
+‎n
+‎n
+
+‎n
+
+‎k k k k k‏ حا & ع
+
+‎n
+
+‎n à
+7] ‏ل < < مسو‎ 8 20
+
+
+
+
+—ES -
+
+امس
+
+@
+
+888805686089 © ©
+
+10
+
+Plan dusite
+
+‎Acx‏ الس
+
+‎2015048
+‎000001165507
+
+‎2015058c
+‎000001130636
+
+‎2015068c
+‎000001101523
+
+‎201601
+‎000001253016
+
+‎201602
+‎000001713127
+
+‎20101
+‎000002643688
+
+‎2oxTos
+‎000002180065
+
+‎2017038
+‎000001774143
+
+‏امورو
+‏000001744230
+
+‎20170s
+‎000001381405
+
+‎es envecistrementss 16‏ لتنا"
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎Root(UTC+1, 1401/2019 D9:09:22) . MobiisAT  boustal @
+Payment Arronge. *
+Payment Arrangement | Adétina ‏عونتت‎ # Parment
+Arrangement
+operation
+> Payment Arrangement Palicy ‏اي‎
+‏دقع للا‎ contigure parventarmangement ‏مقع‎ ased ‏وه‎ the ‏امريد‎ arangement ‏د مم بجا مد‎ à
+— Payment Arrangement
+[0s n
+‏عرو‎ ArangementType > ‏بجا‎ Arangement ‏ا‎ cebt " $
+< on-equaistaliment [0s n à
+‏امسوم‎ Amount =[3 58200 >
+ps N &
+Dorinpayment Mode > ‏بع‎ By Amount . ByPercstage
+Dorenpayment Amount [1 5570 0n ‏م‎ ns à
+TnsliescMode + 5 y ‏ا لست‎ | [0s n à
+Intliment Payment +] 30020 p*
+[0s n
+InsalimentIteva #[ ns T " $
+‏د‎ Date +[156L205 5 Previenr ‏هذا‎ n à
+Inctaliment
+st Payment Date Payment Amount [0s n à
+1 ‏ميد‎ 115640 05
+‏هذا‎ n
+2 Grorzcs 5 |] 0 bs
+16_+] ‏سكو‎ < < [ JP 8 > 0
+3 ‏م‎ 3 ]2 5 De - =- ‏حت‎
+‎Previons ‏سن ال‎
+
+
+
+
+- لم ©
+
+Plan dusite
+
+امس
+
+لصرعصيا اه ©
+
+2015048
+
+000001165507
+
+2015058c
+000001130636
+
+2015068c
+000001101523
+
+201601
+000001253016
+
+201602
+000001713127
+
+20101
+000002643688
+
+2oxTos
+000002180065
+
+2017038
+000001774143
+
+امورو
+000001744230
+
+20170s
+000001381405
+
+888805686089 © ©
+
+10
+
+Tobl es envecistrementss 16
+
+مم
+
+10274
+
+10274
+
+10274
+
+10274
+
+10274
+
+10274
+
+10274
+
+10274
+
+10274
+
+10274
+
+Root{UTC+L, 14/01/2015 D9:10:36)
+
+MobilisAT ‏نت‎ @
+
+Payment ‏ومسي‎
+‎Payment Arangement ts ‏مده , عونت‎
+‏اليس‎
+‏نين‎
+‎> PaymantArrangementPoi en
+Paymont rrs …, —
+c can cn paymentamgement pn en ‏علا مه‎ smt arangaent ‏معد‎ Jn n à
+— Paymont ‏امسوم‎
+‎Jn n
+Peyment Arrangement Type = «# Arrangement of debt “ à
+y e ‏مم مط ا ا ل‎ à
+Agreed Amount =[3 sez,00 p
+[n ‏م‎ à
+Damnpaymet > ‏تميق ب‎ [ erreemmaae
+‏وماس ووس‎ «F3 ‏مم مط‎ à
+‏ا‎ en | 7 mt [n n à
+8
+‏مم مط‎
+‏ل‎ Montr M “ à
+st t [Fs 3 p [n ‏م‎ à
+‏مدهي‎
+‏ارجات‎ Payment Date ‏مم مط لمجم اميد‎ à
+1 ‏ممعي‎ 1156.40 D
+[n ‏م‎
+‎2 1 H EZN > bs
+T7 ‏مسو‎ K < ‏:ل‎ 8 20
+3 ps 0220s 5 E rz D ‏كدكن بد‎ 23
+Prevous _ ‏سه _ لله‎
+
+
+
+
+
+طحا
+
+ايو
+0
+
+ل
+سينا
+
+2
+0
+
+الال
+انا
+
+ا
+ا
+
+الال
+انا
+
+ل
+اا
+
+لاا
+ا
+
+ا
+ا
+
+ااا
+0
+
+سسا
+
+سسا
+
+نبسالد تب لمعه
+
+ا يي
+وال ايو ماهم اام جو جيم موا جا
+ل
+علدا ‎rr‏ « مرا لويد ميم
+المت المع
+550 تيميد
+‎areo‏ 7
+
+7
+اتسينا
+
+اميد
+و
+
+16012008
+
+kU 8 18258
+
+p
+
+"بي
+
+
+
+
+—E -
+
+امس
+
+نجه
+
+© © © #8 © © © « »ء »؟»
+
+@
+
+0
+
+Plan dusite
+
+Invoice MO
+2015048
+
+000001165507
+
+2015054
+000001130636
+
+2015068c
+000001101523
+
+21601
+000001253016
+
+201602
+000001713127
+
+21701
+000002643650
+
+2oxTos
+000002180065
+
+2017034
+000001774143
+
+امورو
+000001744230
+
+217054
+000001381408
+
+‎es envecistrementss 16‏ لتنا"
+
+‏مم
+
+‎10274
+
+‎20274
+
+‎10274
+
+‎20274
+
+‎10274
+
+‎20274
+
+‎10274
+
+‎20274
+
+‎10274
+
+‎20274
+
+‎Payment Arrange… *
+
+‎Payment-Arrangement ‏بلي‎
+
+‎> Payment Arrangement Palicy
+
+‏ماع ‎the oaÿment arangement‏ مه ‎se‏ مقع ‎can configure pavent arrangemment‏ اقلا
+
+‎À Payment Arrangement
+Poyment Arrngement Type
+‏سسا‎
+
+‎Amount‏ عدوم
+
+‏ليس سنا
+
+‏لب سسا
+
+‏لبللسس
+
+‏اسل ات الس
+
+‎] sez0
+
+‎* ByAmount | ‏ربيب‎
+
+‏ل
+
+‎Insalimant Mode ‏ات‎ Amount ‏سد‎
+
+‎L es
+
+‎Installment
+‏حادم‎ Poyment Date Payment Amoiunt
+
+‏05 115640 ميد 1
+
+‏مم © 1 2
+
+‎5 E [w
+
+‏وه عدم ‎Previous‏
+
+‎Ds @@ Supprimer
+‏ايان‎
+
+‎(UTC+1, 1401/2019 09:12:50 , Mobili-AT | bousbal @‏ نوم
+‎Payment‏
+‏ةامحب
+‎p‏
+‎n à‏ هذا
+‎[on A à‏
+‎n à‏ هذا
+‎[on A à‏
+‎n à‏ هذا
+‎[on A à‏
+‎n à‏ هذا
+‎[on A à‏
+‎n à‏ هذا
+‎[on A à‏
+‎K < L P 8 > 4‏ تددو |[ 0د
+
+
+
+
+—ES -
+
+امس
+
+@
+
+888805686089 © ©
+
+10
+
+Plan dusite
+
+Invoice MO
+2015048
+
+000001165507
+
+2015058c
+000001130636
+
+2015068c
+000001101523
+
+201601
+000001253016
+
+201602
+000001713127
+
+20101
+000002643688
+
+2oxTos
+000002180065
+
+2017038
+000001774143
+
+امورو
+000001744230
+
+20170s
+000001381405
+
+‎es envecistrementss 16‏ لتنا"
+
+‏مم
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎10274
+
+‎PaymentArrange… *
+
+‎Payment-Arrangement … ‏ديبل‎
+
+‎> Payment Arrangement Palicy
+
+‏ماع ‎the oaÿment arangement‏ مه ‎se‏ مقع ‎can configure pavent arrangemment‏ اقلا
+
+‎& Payment Arrangement
+
+‎Aanmen Tye 8 Arargment d‏ موري
+‎P d « E ds Noreq ns‏
+‎ut < FEETD‏ سوه
+مسي « له
+‎Donrpaynen Prstage [5‏
+‎y An‏ # ب
+لمم تسريه ‎Percentage‏ وريم ‎ pamentDste‏ لحن
+م مد 0 معد ‎A‏
+
+‎3
+
+‎_
+
+‎31.01.2019
+
+‏عون عدم ‎Previous‏
+
+‎Root (UTC+1. 14/01/2018 D9:14:21) | MobiisAT  طمافادا‎ @
+Poyment
+‏سه امب‎
+p
+[n ‏م‎ à
+[n ‏م‎ à
+[n ‏م‎ à
+[n ‏م‎ à
+[n ‏م‎ à
+[n ‏م‎ à
+[n ‏م‎ à
+ns à
+ns à
+ns à
+‏تسو | عد‎ < < [ P 8 > 0
+
+
+
+
+—E3 ‏ا ئس‎ F) ‏لط‎ 25132018172901 Algerie Telecom | boustal @
+
+r
+‏امد‎ Plandusite ‏أ‎ Paymentarrange.. *
+
+Aemunt Code [141805 = = z L
+Sead Paymentar. ‏يست نينانت‎
+
+0 شيعه ‎es‏ عمد
+
+> Bacic Information
+
+. — sn An 64015504 P mc 34815008
+R ps PoyrertArençenet = ‏سيد‎
+‏ليع‎ Payment Date Payment Amount: ‏تسيا‎
+‎@ LS InvoiceMO. — Ax en ‏الود‎ Operation
+1 258 6896.34 DA Excoution
+‏اط‎
+‎704 z 2018 ‏مه مودو‎
+@ : ‏الت‎ [pA ‏دبي‎ À
+3 s11208 s35208
+201705x
+1
+0 ‏ا‎ 29ÿo72015 ‏خب هأ مه يدوو‎ à
+20106
+@ ‏سيا‎ E ‏هذا‎ N &
+201801"
+9 + ‏عت هذا م مسف‎ &
+9 ‏ص يمشن‎ [pA ‏دبي‎ À
+Bs 0016277034 14188 ‏يدأ‎ A &
+201003x
+97 ‏ومو‎ E ‏خب هذا‎ &
++ Notfication Palicy
+2008064
+@s 000001287458 ‏ضع‎ L ServiceSetting ‏يدا‎ A À
+201005 Unbarñing es ‏ا تمصع‎
+9 ‏خب هذا عيطق‎ &
+Totaldesenvgirementss 9 107] Evrecitrements K < E HE > à
+‏ميمه‎ ce
+
+
+
+
+À acuei
+
+Plan dusite
+ecount Gode [141805
+
+Incude CirectDelit Amount | O Yes
+
+s=
+— Outstanding Imooice List| Customer
+
+لصوام صر سوه ا
+
+سم اسمس ال ا
+م م2 اد"
+ممست ات"
+م مس2 ات"
+1688 مش 14
+1688 مش :5"
+‎P‏
+‎1T mmms 168‏
+ا مس ‎S‏
+‏168 سس ء:.
+
+Totl ‏كل‎ enregisrements: 5
+
+Payment Arrange.
+
+Sead Paymentar. … CrestePayment . ‏مستت‎
+
+> Bacic Information
+
+Outstanding Amount 34 461,69 DA
+Rermaining Oustanding Amount _ 0,00 DA
++ Instaliment Details
+Installment
+instalimen Payment Date
+1 ‏اماو‎
+‎2 ‏اميد‎
+‎3 2401;2018
+4 25102:2018 ;
+
+canfiom
+
+projet
+
+Agrsed Amourt 3448165 DA.
+
+Paymmant Mode | Equal instlimant
+
+Payment Amount
+
+هم مدقو
+
+Are ‏ما تمق امي عا ام‎ parfrm ‏فلا‎ csration?
+
++ Notfication Policy
+
++ Service Setting
+
+Unbarfing ‏عا‎
+
+Previous
+
+لمشي
+
+Resumption ‏ع‎
+
+عون
+
+Reot (UTC+L, 25/12/2018 17:29:17) Algerie Telecom ‏بن نا‎
+Group
+Payment
+Arrangement  operation
+Status
+[pa ‏دن‎ =
+[pa ‏دب‎ -
+[pa ‏دن‎ =
+[pa ‏دب‎ -
+[pa ‏دن‎ =
+[pa ‏دب‎ -
+[pa ‏دن‎ =
+[pa ‏دب‎ -
+[pa ‏دن‎ =
+16 +] Evrogistements K € E A 89 > 01
+
+
+
+
+—E -
+
+له المسي ع ‎L‏
+
++
+
+—=
+
+— cu ec ‏أسسيسة‎
+
+CR e ‏مسو د‎
+
+@
+
+s660808085086
+
+»
+
+‎Acx‏ الس
+
+‎2o1TOag
+‎000001015974
+
+‎2017054
+‎000000135760
+
+‎2017068
+‎000001446727
+
+‎2018014
+‎000000874953
+
+‎2018028
+‎000000225395
+
+‎0016377034
+
+‎2018038c
+‎000001691506
+
+‎2015044
+‎00p001287450
+
+‎2018088
+‎000000375902
+
+‎Tobl ds envegisrements: 9
+
+‎14188
+
+‎24086
+
+‎14188
+
+‎24086
+
+‎14188
+
+‎24086
+
+‎14188
+
+‎24086
+
+‎14188
+
+‎Payment Arrange… *
+
+‎Sead Paymentar. ‏يست نينانت‎
+‏د‎ Bacic Information
+Outstanding Amount 34 461,69 DA
+Rermaining Outstanding Amount _ 0,00 DA
+‏هم وم‎
+
+‎Installment Details‏ د
+
+‎Payment Date‏ مومع
+اماو 1
+‎ayraroie‏ 2
+2401;2018 3
+‎28j02/2015‏ 4
+
+‎Notfication Policy‏ د
+
+‎Service Setting‏ د
+
+‎Unbarfing ‏عا‎
+
+‎ms ‏ا‎ E
+
+‎Payment arange
+
+‎Agrsed Amourt 3448165 DA.
+Poymmant Mode ‏لس يلت‎
+
+‎Paymant ArangementPalcy | PA-AOD-PARTIC-PlioyName 1
+
+‎Payment Amount:
+‏هم مدقو‎
+91951208
+‏هم دوقو‎
+919511 D8
+Resumption ‏علا‎
+
+‎Ract (UTC+1, 25/12/2018 17:29:51) Algerie Telecom | boustal @
+
+‏م
+
+‎[pa ‏دب‎
+
+‎[pa ‏عن‎
+
+‎[pa ‏دب‎
+
+‎[pa ‏عن‎
+
+‎[pa ‏دب‎
+‎[pa ‏مني‎
+
+‎[pa ‏دب‎
+
+‎[pa ‏عن‎
+
+‎[pa ‏دب‎
+
+‎k ‏جا حا حا‎ k k k k
+
+‎&
+
+‎1
+
+‎0 | ‏توم‎ K < K 6 > 4
+
+
+Confirm
+
+/ Â you sure you war: 20 pectomm this operation?
+
+E-
+
+
+
+Algérle Télécom
+
+Lettre d'engagement
+Le clent:
+Vätenteur ‏ناك‎ [des) compte (s) : 147868924100001
+Keprésenté parMr
+Agissant en qualité de
+S'engage à régler le montant des dus suivant : 54 481,69 ‏هنا‎
+‎- Immédistement : 6BY6,54
+- Vansundélaide: bâvVays
+
+Selon l'échéancier suivant :
+
+- Montant à régler avant le:
+- Montant à régler avant le:
+- Montant à régler avant le:
+
+Signature de l'émetteur :
+
+SUITZIZUIB : BI1VLIZ
+
+لا : 50/01/2019
+
+819511 : زلف تسرف
+‎signature et cachet du client :‏
+
+Vate:
+
+مر
+‎vA‏
+‏من
+
+
+
+—Ds proget [# J Reot (UTC+L, 25/12/2018 17:3L:50) Algerie Telecom — bousbal @
+
+ur
+‏انا‎ Plandusite ‏ا‎ PaymentArrange. “
+‏مض لد اعم‎ = z z z L
+‏الس‎ CraatePayment . ContrmParant. … ‏سييست‎
+‎“ ‏يه شك‎ DébtAraurt ‏اه‎
+‏د ب‎ BasicInformation
++ — Outstanding Amount 3448169 DA Agreed Amount 34 49165 DA
+‏بسي سه لسلست‎ 000 A ‏سيل ليسا‎
+5 ‏نا رسيت ادوس سمو‎ Payment Arrangement Policy _ PA-AOD-PARTIC-Palicy Name 1
++ Instaliment Detaïs Payment
+© ‏لبت يي دادر امم الصا اع‎
+‏مسي‎ Payment Date Payment Amount
+704 1 25522018 ‏مه مجو‎
+@ : ‏الت‎ [pA ‏دبي‎ À
+z 2018 21951208
+ë ‏غير يها 5285208 34/91/2019 د «مد سي‎ À
+« 29ÿo72015 21851108
+20106
+53 ‏ميب‎ [>s n à
+201801"
+&s ‏مد مسطقل2‎ [on ‏خب‎ à
+201002x
+8s ‏لصب‎ [>s n à
+8s ‏ل لعب‎ [on wa à
+ë7 p ‏سد‎ [pA ‏دبي‎ À
+2008064
+CR ‏ات ماه ندم هما مس‎ &
+ë> rrn | ‏ا‎ — * ServiceSettiog [pA ‏دبي‎ Es
+Unbarñing es ‏ا تمصع‎
+Totaldesenvgirementss 9 9 ‏حا رسا ل ناتك حك‎ > à
+
+
+
+
+
+
+æ
+
+&,
+
+À ‏اد‎ Plan du site
+
+Debt Collaction > Payment Arrangement > Payment Arrangement Request
+
+‎Search Criteria‏ كه
+‎Account Code‏
+
+‎Indude Direct Debit Amount
+
+‎+ Outstanding Invoice
+
+‎[ No. Invoice NO.
+
+‎«
+
+‎Total des enregistrements: 0
+
+‎Payment Arrange.
+
+‎À‏ ا قش
+
+‏مانا لان
+
+‎| Customer Name:
+
+‎Account Code
+
+‎Customer Code
+
+‎Service Number
+
+‎Object Type
+
+‎Root (UTC+1, 24/12/2018 17:21:40)
+
+‎Algerie Telecom
+Group
+
+‎bousba1
+
+‎© &
+
+‎Invoïce Date
+
+‎Due Date
+
+‎Total
+‎BillCycleID | Outstanding
+Amount
+10 * | Enregistrements
+
+‎Kc
+
+‎Payment
+‎Direct Debit Arrangemer
+Amount Execution
+status
+
+‎»
+
+‎E po e > >
+
+
+
+
+‘Group
+
+æ ‏اه‎ S projet (U [08 1064 24/12/2018 17:22:37) Algerie Telecom | boubai @ |
+©
+
+‎Plnduste — % Payment Arrange.‏ اننا
+
+‎Debt Colection > Payment Arrangement > Payment Arrangement Request
+
+‎Search Criteria‏ ب
+
+‎Account Code … [14185924160001 Serdce Number [23313815
+
+‎Inchade Direct Debit Amount ‏عدا‎ 1. No
+
+‏م # @
+
+‎Seards — Réinitialiser
+
+‎— Outstanding Invoice List] Customer Name:Badreddine
+
+‎Payment
+‎Total 1 8
+
+‎Operation‏ مسحي متي ‎m. InvoiceNO. | AccountCode _ Customer Code ce Number  ObjetType — Invoice Date Due Date BillCydeID | Outstanding‏ ل
+
+‏ممصم
+‎status‏
+
+‎@ 1 Rn 1418892410000110000041889241 | 23313819 31/08/2017 02/10/2017 20170712 316,69 08 000 08 ‏خلا‎ à
+
+‎2 000001019974 “
+
+‎2 Fs 1418892410000110000041889241 | 23313819 34/10/2017 15/12/2017 20170912 595,00 DA, 000 08 ‏خلا‎ %
+
+‎2 000000136760 “ 1
+
+‎à‏ خلا 08 000 ‎DA,‏ 595,00 20171112 19/02/2018 31/12/2017 23313819 | 1418892410000110000041889241 الس د
+
+‎2 000001446727 “ 1
+
+‏% خلا 08 000 ‎DA,‏ 595,00 20180112 1/04/2018 28/02/2018 23313819 | 1418892410000110000041889241 اساي ها
+
+‎2 000000874853 “ 1
+
+‎@s ‏مسي‎ 1418892410000110000041889241 | 23313819 30/04/2015 19/06/2015 20180312 595,00 DA, 000 08 ‏خلا‎ à
+
+‎2 000000223395 “ 1
+
+‎26 0016377034 | 14188924100001 16000041889241 23313819 24/12/2018 17/07/2018 20181112 39 000,00 DA 000 08 ‏خلا‎ %
+
+‎@ 7 ‏مسي‎ 1418892410000110000041889241 | 23313819 30/06/2015 19/08/2015 20180512 595,00 DA, 000 08 ‏خلا‎ à
+
+‎€ 000001651506 “ 1
+
+‎üs J 1418892410000110000041889241 | 23313819 34/08/2018 14/10/2018 20180712 595,00 DA, 000 08 ‏خلا‎ %
+
+‎2 000001287458 “ 1
+
+
+
+- 8م ©
+
+نا
+
+Payment Arrange.
+
+v r D mt " O
+
+—
+
+سمه امت سه ممه . ‎Æ‏
+
+الس سس سل ا
+
+© ؟© © © « » »
+
+©"
+
+@
+
+10
+
+‎Acx‏ الس
+
+‎2004060-
+‎000002008181
+
+‎2004020-
+‎000002044543
+
+‎2004038
+‎000002142663
+
+‎2004048
+‎000002127335
+
+‎2004088c
+‎000002085264
+
+‎2004068c
+‎000002020215
+
+‎2005014
+‎000002014527
+
+‎2005024
+‎000002266185
+
+‎2005038
+‎000002244577
+
+‎2005048
+‎000002238243
+
+‎Tobl es envecistrements: 21
+
+‎1021
+
+‎1021
+
+‎1021
+
+‎1021
+
+‎1021
+
+‎1021
+
+‎1021
+
+‎1021
+
+‎1021
+
+‎1021
+
+‎Siham . DJEDDAL ‏لقي‎ * Pl du se
+
+‎se ‏روط‎
+‎> Seardh Criteria
+Paymant Arrangement Type
+
+‎Min. Percentage oëInstaliment
+
+‏انا
+
+‎Payment Arrangement Policy List‏ د
+
+‎Payment Arrangement
+Polioy Name
+
+‎PÆAOD-PARTIC-Polcyfarme
+‎1
+
+‎Details‏ د
+‎Crde‏ ا ا
+‎Paymant Arrangement Type‏
+‎Grace Period‏
+
+‎Appraval Mode
+
+‎Date‏ مها
+
+‎Desciption
+
+‎mt ‏انام[ __ا‎ 02/01/2019 16:05:38) Algerie Telecom ‏نا‎ @
+
+‎Group
+
+‎7 Max. Days ofPromise 7
+T Wn ‏سس‎ Amourt 0
+‏فليا للم‎
+Payrment Arrangement ‏سا‎ f Promise Grace Period Operation
+
+‏35 سسا
+
+‎0 7
+
+‎Promiseto p
+1
+Mancal
+
+‎0ejo7/2016
+
+‎Payrmart Arangement P
+Fame
+
+‎Max, Days ‏أن‎ Prormise
+Pracessing Mode ‏بعلم‎ Compltion
+Vioation Spproval Mode
+
+‎Expiration Date
+
+‎Close
+
+‎PAPEPPARTIE Potey Name 2
+»
+
+‎Continue calection
+
+‏امد
+
+‎aufizj2087
+
+‏ب
+
+‎[on
+
+‏ب
+
+‎[on
+
+‏ب
+
+‎[on
+
+‏ب
+
+‎[on
+
+‏ب
+
+‎[on
+
+‎Payment
+
+‏باحق
+
+‎n
+
+‎n
+
+‎n
+
+‎n
+
+‎n
+
+‎n
+
+‎n
+
+‎n
+
+‎n
+
+‎n
+
+‎w
+
+‎k e ‏خا‎ k k k k k k
+
+‎à
+‎Evregisrements K < 8 88 > A
+
+
+
+سويد ‎éc = Pomese nn‏
+تسم فس —
+م تعس
+عن تر م حمر
+: ااي سس ا
+‎Pore hn Ss‏ …—
+
++ ts rrr
+
+‎rrr ;‏ سي مجر
+
+‎Partet ArargrenTipe * ‏ادا‎ 1 pès ‏حب‎
+‎% …  Imen. r - ce ‏لحم‎
+‎PS PE pn *
+‏ات"‎ W ps «
+02 E e ‏ا‎ pn «
+e 4 Ms ‏ص‎ ps +
+e ‏ات‎ e 00 ‏حاط‎ «
+0 Ms ‏احا‎ O ‏اط‎ 4
+‏صا المج ات‎ SS “
+"١ ‏ما اا ريطت‎ *
+PE E SS 0
+nn EN 0 ‏صا‎ ps *
+‏ا‎
+‏ل ل‎ _ Cm
+
+
+
+
+—Æ3 -
+
+لمعا يق ‎Pl‏ ايت * ‎Poyment Arange..‏ الحا
+ته مع د
+‎٠. °‏ عله م
+“ 2 ا
+لتخم اما ‎nc e‏
+
+Ax
+
+لكوي كيدا ع ‎e‏
+‏مالسا ‎m‏ ©
+مس ١ه‏
+ممت :5ه
+سمل :5ه
+ا امس هه
+ا اس ‎0s‏
+‎PRF‏
+‎P‏ 0ت
+مم ‎١‏
+‏ا الس :5ه
+‎A‏ هه
+
+لأسي سلا
+
+نا لل م
+
+جرد فج وه سعد ‎parant à“angamer=pla”‏ واه «
+
+— ‏عدي‎ Aerangement
+
+لنت ‎Arangement‏ عا
+
+> Payment Arrangement Policy
+
+nc pc
+
+‎t‏ جمدم 4 © ‎rrangement Type‏ عمو
+
+‎Payment Node * . Proniss t pas
+
+‏لولإأخخم التد - سس
+
+‎E) 60/1641 02012031‏ ااا اد
+
+‏اتات
+
+‎us
+
+‏عمط
+
+‏الوم
+
+‏خاي 8
+
+‎Promise Ameun * [G 0000
+
+‎Promised Days ‏ل‎
+
+‏عه
+
+‎“cing Arourt:él ‏فقا‎ 24 | Reraiing O-sanire An ‏20ت‎ 34
+
+‏خاي 8
+
+‏خاي 8
+
+‏خاي 8
+
+‏خاي 8
+
+‏خاي 8
+
+‏خاي 8
+
+‏خاي 8
+
+‏خاي 8
+
+‎k k k‏ خط جز جل ع اط اط
+
+‏خاي 8
+
+‏عمسو
+
+
+
+
+أ ‎bosx‏ … طمدءتوم :600641020120318 لع ا ‎—F3 ue‏
+
+us
+
+‎١ Darardenscuren *‏ نذا ابت “ ‎Poyment Amange..‏ لحنا
+سه مع د
+‎(S * ° °‏ مها —
+‎Cms Paent … C mt >‏ امم ا
+‎S vs‏ … نمم ‎nc t Dl‏ .
+‎BaciInformaton‏ —
+‎se‏
+‏لنب مله انل مسي —
+لديا لبها 0008 نس نس ايت _ ‎is[Cusomer‏ ساس
+‎Detis‏ سالتخا — ‎Arengemers‏ ما ‎p e‏
+ميم ‎Insaliment‏
+‎Poyant Dte Poyrent Amount‏
+ا اال
+ا لح م ارتسا ا ©
+ا ‎0c D‏ 50 ب 1
+‎us‏
+‏200060
+‎ns &‏ م 174 ‎t ns‏ @
+21002
+‎ns a‏ م 1 | ‎cmm‏ 2 @
+20002
+‎ns à‏ م 14 | ‎00en‏ 3@
+2000
+‎S à‏ ا امس ‎@s‏
+‎2000s‏
+‎S &‏ 121 اس ‎@s‏
+‏20006
+‎@s M us 124 S à‏
+‎noucntion Palcy‏ —
+‎20s‏
+‎ns à‏ م 14 | ا 7 @
+‎Seting‏ مي +
+20050
+‎S &‏ علا ‎Rasmpion‏ علا ‎0s 1024 Unbaming‏ 8 @
+‎200s‏
+‎S &‏ 121 اوس ‎@s‏
+‏سداد
+‎S à‏ 12 | مش ‎@n‏
+
+‏لأسي سلا
+
+‏ياد كا قل < < سهدت
+
+‏سو سر
+
+‏تعس عيب انع | 00004 ‎Teal Outs-cingArcunt:él‏ = 0010024 60 م
+
+
+
+—23 -
+
+>
+
+‎Demarde ajcarant‏ مايل وام د ين * ‎PaymentAmange..‏ | لين
+موه لعو —
+‎d‏ ب ‎[LnESRE La‏ ل
+‎n ce‏ النسري لنت ل نيس
+‎Ves‏ … لس ا
+‎BacicInformation‏ —
+‎se‏
+
+‎— Outstanding Invoiceist[Custamer
+
+‎e OastePayment Aangemen
+
+‎"
+
+‎».
+
+‎Imecioe NO.
+
+‎2004060
+‎000002008181
+
+‎2004020.
+‎000002044542
+
+‎200402
+‎000002142563
+
+‎200404
+‎000002127325
+
+‎2004058
+‎000002065264
+
+‎200406
+‎000002020215
+
+‎2005018
+‎000002034527
+
+‎2005022"
+‎000002266165
+
+‎2005028
+‎000002244577
+
+‎2005048
+‎000002250243
+
+‏21 ماود عل ات
+
+‏مم
+
+‎102
+
+‎102
+
+‎102
+
+‎102
+
+‎102
+
+‎102
+
+‎102
+
+‎102
+
+‎102
+
+‎102
+
+‎Amoure 63 001,00 34‏ وه
+
+‎erairing Ouistading Amourt 0.00 DA
+
+‎— Inctllment Derals
+
+‎Instalment
+‏ل‎
+
+‏ف
+
+‎— otifiation Policy
+
+‎— Senñor Seting
+
+‎Arcunt 62 001.00 ZA‏ لدوم
+
+‏الست عله
+ابم دعاص لاسي
+
+‎Payment Date Paymant Amoust
+50 02102 D4
+‏سا‎
+‎e ousra e ‏ما امع‎ srerm ‏عا‎ cp
+‏اع تيص‎
+Previous ‏نما كسد‎
+705 Ousts-cing ‏لوحم‎ 001.0024 | Reraining ‏200ت_ مجم يم تمه‎ 34
+
+‏علد
+
+‏بن حا سحت )16:09:30 02/01/20:5 لجعطا مة ‏ <
+الممسريم
+سين وام
+ل
+‎n &‏ هط
+‎n &‏ هط
+‎n &‏ هط
+‎n &‏ هط
+‎n &‏ هط
+‎n &‏ هط
+‎n &‏ هط
+‎n &‏ هط
+‎n &‏ هط
+‎n &‏ هط
+4 > 9 تلم < € ‎Evegisvemens‏
+
+
+
+
+
+— ‏دمدتصوة )16:0:08 02002078 00/641[ اا ااا‎ | boscaz
+
+us
+
+“ ةمحز ‎Payment Arrange.. * Sham . DIEDDAL ec Pa-duse Demande‏ انا
+‎rrh Cmn‏ »
+ب ‎٠. +. b‏ يهنا ‎A Account Code‏
+‎r‏ سعد مه ار
+سس
+‎Se‏
+‎À‏ 600000 سل 00000 60 سس ‎—S‏
+‎Pamiser p‏ ا ل ‎cu‏ يبه الا ا ب
+‎0D Ps Arançemen cy P F2-PARTI y Name 2‏ به ‎e C rrr‏
+محم ‎tncaliment Ds‏ —
+‎An 1stailment ps Operation‏ سلس ‎m‏ 5
+‎ps‏ مسرم ‎Date‏ سيم ‎ms‏
+‎se‏
+‏مض ‎cs‏ 1
+200606
+‎١8 N &‏ 10231 | 000002008191 !@
+دواد
+& قلا ‎١8‏ 10231 000002044943 92
+امود
+‎١8 N &‏ 10234 | 000007142662 3@
+امود
+‎ë 000002127335 | 10231 ١8 N &‏
+20005
+‎@s RR 4 102 Ë &‏
+20000
+‎@s 000002020215 | 10231 ١8 N &‏
+‎2osou‏
+‎pafiction Polioy 8 N à‏ ال لس 7@
+‎2s‏
+‎ServiceSeuirg ١8 N &‏ « ها لا ‎C‏
+‏علا توصت علا ‎Un‏
+‏& اد ‎ë‏ ° 102 سق ‎@s‏
+‎2n‏
+‎CIR Ë à‏
+
+Bregsvemens < < CR ‏اح‎ >
+
+لأسي سلا
+
+0ms T
+
+Baraed un 61000004 = Toal Ourse“cing Arounté 0010054 | Reraning O-sandre ‏ادح‎
+
+Confirm
+
+, NEVO ‏كد رو قل‎ DO ts ‏عزويو‎
+‎e
+
+=
+
+
+
+
+‎Algérie Télécom‏ في
+
+‏إحصالات الجزادو
+
+‎Lettre d'engagement
+
+‎Leclent:
+‎Vétenteur ‏ناك‎ (des) compte )5( : SILYZZUUOU
+
+‎Keprésenté par Mr.
+Aglssant en qualité ‏عه‎
+‎S'engage à régler ‏ما‎ montant des dus sulvant : 60001.00 ‏مر‎
+‎- Immédiatement : 0.00
+- Vansundélaide: Z/ Vays
+Selon l'échéancier suivant :
+- Montant à régler avant ‏جا‎ ZYIUTIZUIF : GUVUT.UU
+
+‎Signature de l'émetteur : signature ‏نات‎ cachet du client :
+Vate:
+
+
+
+
+
+2E3 ©
+
+@ ® e
+
+امد
+
+Systemème de gestion unifié
+Catalogue des produits unifié
+Comptes Débiteurs
+
+Biling Configuration
+Invoïcing
+
+General Ledger
+
+Task Scheduing Management
+
+NGOCG
+
+Plan dusite
+
+Callection Configuration
+Collection Date and Time Polcy
+Collection Application
+Collection Action
+
+Collection Management
+Test Collection Reguest
+Test Collection Query
+
+wWork Order Management
+Work Order Approval
+Work Order Query
+
+Error Handling Management
+Transaction Notification Error Handling
+
+Payment Arrangement
+Payment Arrangement Request
+
+Colection Hold
+Collection Object Selection Policy
+Payment Arrangement Palicy
+
+Batch Collection
+Collection Hold Request
+
+Work Order Simulation Query
+Outgoing Cal Collection File Export
+
+Collection Object Error Handiing
+
+Collection Hold Reason
+Data Permission
+Collection Group and Pian
+
+Batch Collection Hold Request
+Batch Collection Unhold
+
+Work Order Export
+Work Order Asynchranous Export
+
+Work Order Error Handling
+
+Payment Arrangement Cancellation
+
+Root (UTC+L, 25/12/2018 17:3
+
+Algerie Telecom
+‏مه‎
+
+Outgoing Call Collection Boundary
+
+Payment Arrangement Query
+
+bousbal
+
+°
+
+
+
+© ققد«
+
+اننا
+
+Debt Colection > Payment Arrangement > Payment Arrangement Approval
+
+Plan du se Payment Arrange.
+
+عه مس » &
+
+8
+& sr se = Beraans 8
+
+14188924100001
+
+— Payment Arrangement List
+
+اموت
+لسدي» | ‎AgreedAmount‏ | ليب ‎Eustomer Name‏
+‎Aocount Code | Customer Code " Outstanding | Unbaring‏
+‎Amou Amount‏
+‎Badreddine 3448L69DA | 3448169DM | 3448169 DA Ves‏ | 10000041889241 14188924100001
+
+Total des enregistrements: 1
+
+Root (UTC+L, 25/12/2018 17:33:10) AlgeñeTelecom | boutal © P
+up
+Customer Code
+Operator
+end Date =[251272015 2
+Resamption ‏...ىا ا الم سين بت‎
+es 25/12/2018 BADREDDINE
+175025 BOUSBATA
+
+10_+] Enregistrements ‏كا‎ <
+
+نيد ‎C c==‏ سس
+
+
+
+
+© قد«
+
+اننا
+
+— Payment Arrangement List
+
+Plan du se
+
+5
+سيور الل
+
+‎CustomerCoie‏ تمر الله
+ليما ممم اك
+
+‎Total des enregistrements: 1
+
+‎Details‏ ب
+
+‎Code‏ لمعم
+‎Currency‏
+
+‎Amourt‏ فوم
+
+‎Payrent Mode
+
+‎Payment Arrangement Pl
+Instliments
+
+‎in Advance for Notification‏ عرو
+‎Resumplion‏
+
+‎Handing Fee Colecion Result
+End Date
+
+‎Bxecution Status
+
+‎Creator
+
+‎Instaliment Details
+
+‎Payment Arrange.
+Customer — Outstanding
+Name Amount:
+Badraddine 34 481,69 DA
+
+‎Outstanding Imvoice
+
+‎14186924100001
+‎æn
+
+‎34 481,69 DA
+
+‎Equal instalimert
+PA-AOD-PARTIC-Policy Name 1
+
+‎3
+
+‎ves
+
+‎25/02/2019
+
+‎BEDREDDINE BOUSBATA
+
+‎Badk
+
+‎Agreed Amount
+
+‎34 481,69 DA
+
+‎Remaining
+
+‎Gutstanding | Unbarng | Resumption ‏سن لت‎
+mount
+25/12/2018
+2440160 ‏ذه‎ ves ves p ‏تمده‎
+‎©
+
+‎Customer ‏عقو‎
+‎Outstanding Amourt
+
+‎Remaining Outstanding Amourt
+Procescing Mode After Compltion
+Instllment ‏معلا‎
+
+‎Notihcation ‏متعم‎
+
+‎Unbarring
+
+‎Handing ‏ع‎
+
+‎StartDats
+
+‎Management Status
+
+‎Payment Arrangement ID
+
+‎10000041869241
+‎34 481,69 DA
+34 481,69 DA
+Continue collecion
+
+‎Month
+
+‎ves
+
+‎26/12/2018
+
+‎Created
+‎7640
+
+‎Root (UTE+L, 25/12/2018 17:34:13)
+
+‎Execution
+‎status
+
+‎Enregistrements
+
+‎AlgerieTelecom ‏نا‎ @
+‘Group
+Creator Operation
+BEDREDDINE 2
+BOUSBATA
+
+‏ع
+
+—E3 -
+
+M ccl Plan du se
+y \ Account code e
+
+52200001 1000000231
+
+Totai des enragistrements: 1
+
+« Details
+
+Payment Amange
+
+Outstanaina
+
+60 001,00 DA
+
+Outstanaing Invoics
+
+Agreed
+
+60 001,00 DA
+
+PRoot (UTC+3, 02/01/2019 17:27:33)
+
+‎Unbariog | Resumotion CTeationDate Management = Execution‏ الل ا
+مس
+‎ creama‏ دوعيو ‎ves‏ غيل هم 001,00 60
+
+‎[rO=] ‏موت‎
+
+‏دحتت
+‎Agreed amount‏
+
+‎Payment Mode
+
+‎Payment arrangement Palley
+Promised amount
+
+‎Daye in Advance for Notification
+Resumation
+
+‎Handling Fee Collection ‏نومع‎
+‎End Dats
+
+‏تمس
+‏لقم د ‎Promise‏
+
+‎60 001,00 DA
+
+‏عملا
+
+‎50/01/2019
+
+‏امع
+
+‏لحت
+‎amount‏ ووه ممعت
+
+‎Remaining Outstanding Amount
+Processing Mode Afer Complation
+Nonfication ‏ممعم‎
+
+‎Uabarino
+
+‎Hanaling ‏عم‎
+
+‎Start Date
+
+‎Managoment Status
+
+‏تتم
+‎Continise callection‏
+
+‎20/01/2018
+
+‎62,01/2015
+
+‏مسد
+
+‎Qa‏ سحت
+‎G 5‏ نس ع
+
+
+
+
+Q @ = projet (U [68 1064 25/12/2018 17:34:35) AlgerieTelecom  boutal © P
+©
+
+‘aroup
+
+‎Plndusie — % Payment Arrange.‏ اننا
+
+‎Debt Colection > Payment Arrangement > Payment Arrangement Approval
+
+‎Search Criteria‏ ب
+
+‏ما & @
+
+‏عله ممع 14165924100007[ - ‎Code‏ ممعم
+حص 23513815[ ‎Serdce Number‏
+‎Start Date =[26/11/2018 w End Date =[25/12/2015 3‏
+
+‎italiser‏ لمعك
+امنا ‎Payment Aerangement‏ —
+اموت
+‎Customer Outstanding | Agreed Amount Remaining Management Execution‏
+‎AocountCode | Customer Code Outstanding | Unbaring | Resumption — CrestionDate Crentor Operation‏
+‎Name Amount status Status‏
+‎Amount‏
+‎BADREDDINE‏ 25/12/2018
+& سحي ‎DE Vs ves DDUN cemes‏ 2440100 لاحن ال ‎Ecraiine‏ - 10000041680041 14166024100001
+01 > كلا لم < <1 معو *10 1 ‎Total des enregistrements:‏
+‎Peyment Arrangement Outstanding Ivoice v‏
+‎Instaliment Period ID Expected Payment Date Expected Payment Amount: Actual Payment Date Actual Payment Amount Status‏
+‎DA 0,00 DA [Open‏ 896,34 6 25/12/2018 1
+‎DA 0,00 DA [open Ç‏ 195,12 9 31/2208 2
+‎Impayée‏
+‎DA [Open‏ 0,00 08 195,12 9 31/01/2019 3
+‎DA [Open,‏ 0,00 08 195,11 9 28/02/2019 4
+
+‎Badk
+
+
+æ projet. — | Root (UTC+1, 02/01/2019 17:37:52) Algane Telecom | bousbal & r
+_ - ‏ل‎
+‏مدي‎ Planduste | <  Paymentarange ١ =
+‏اتاد ان‎ > Payinent Arranomment > Cayment Arrangement ADprOval n
+*s » ‏ما ممع‎
+f Account Code | Customer Code |
+service Number | | ‏الست‎ |
+æ start Date -[04/12/2018 ‏ممع‎ Date -[02/01/2019 [
+Search — _Rénn
+— Payment Arrangement List
+‏وير‎
+‎Remainina
+‎Curtomer | Customer — Outstanding | Agreed Greation Date Management | Exocution
+Aecoumecode ‏بين‎ en ‏حسم ليبا لسسيت  احي او‎ p e ‏الما‎ Oparation
+‘ 1 ‏الح - - ما‎ ce BADREBOINE
+0231502200001 10000002315022 Mostephs 80 001,00DA 60 001,00DA 60 001,00 DA V 7 ‏مات‎ Eroated ‏ح“سمجين:‎ Qs
+Total es enregistrements: 1 [5 +] ‏سس حت‎ 1< < fN 2
+
+Payment arrançement [Tnstaliment Derails [ Outstandino Invoice
+
+Expacted Payment Date
+
+Instaliment Period 1D
+
+Expected Payment Amount
+
+Actual Payment Date
+
+Actual Payment Amount Status
+
+GB0 BA_ Open
+
+7070177018
+
+عمو
+
+
+
+
+2E3 ©
+
+@ Accueil Plan ‏عله نك‎ Payment Arrange.
+2 Stort Date =Be/11/2015 8
+‏ده‎ se
+Œ . ‏ماسوو‎
+‎5 ‏تو‎
+‏يسن لسن راحب لسك(‎
+‏سس ا ا‎ rn 3441 D
+
+Totl des enregistrements: 1
+
+Payment Arrangement
+Invoice NO.
+0016377034
+|201705A-000000136760
+|2016042-000001287458
+|2017044-00000101974
+|201805A-000000375802
+|2016014-000000874953
+|2016024-000000223395
+|2016034-000001691506
+
+|2017062-000001446727
+
+Installment Details
+
+Due Date
+17072018
+15/12/2017
+14/10/2018
+02/10/2017
+15/12/2018
+14/04/2018
+14/06/2018
+
+14/08/2018
+
+14/02/2018
+
+ادم
+
+Agreed Amount
+
+34 481,69 DA
+
+ETE
+20170912
+20180712
+20170712
+20180912
+20180112
+20180512
+20180512
+
+20171112
+
+Remaining
+Outstanding
+Amount:
+
+34481,69 DA Yes
+
+Bill Cycle 1D
+
+‎C‏ @ ا حيست )17:34:59 25/12/2018 بلج ) # ]الم
+00
+‎L‏
+‎Date =[as/ia/2015 8‏ فر
+
+‎Excoution Greator Operation‏ | سين نت ‎Resumption‏ الحا
+
+‎25/12/2018 BADREDDINE
+es 17:3028 ‏سحت‎ BOUSBATA &
+‏قد‎ | Enregstrements 1< < E } ‏كلا‎ > 01
+Currency Total Outstanding Amount Operation
+
+‎3000000 DA
+59500 D8
+59500 D8
+316,69 D8
+59500 D8
+59500 D8
+59500 D8
+59500 D8
+
+‎595,00 08
+
+‏خا خا 6 خا 1 خا خا ‎e‏ &
+
+
+
+
+æ @ S ‏لام‎ [ w] Root(UTC+L, 25/12/2018 17:35:48) AlgeñieTelecom ‏لنت‎ Ÿ P
+©
+
+م0
+
+‎Plndusie — % Payment Arrange.‏ اننا
+
+‎Debt Colection > Payment Arrangement > Payment Arrangement Approval
+
+‎Search Criteria‏ ب
+
+‎@ ® te
+
+‎Account Code … [14188924100001 ‏مح‎
+‎Service Number 2331389 ‏مم‎
+‎sr ut “[eermos 5 End Date =[25/12/2015 35
+‏الك‎ itialiser
+
+‎— Payment Arrangement List
+
+‏موت
+‎Management | Exeoution‏ خم ليد للبت ‎Customer‏
+‎Account Code … Customes Code Outstanding | Unbarrñng | Resumption | CreationDate Creator Operation‏
+‎Name Amount: Status Status‏
+‎Amount:‏
+‏مسحي ‎Created‏ سحت فل ‎34491,69DA | 3449169 DA Ves‏ | ده مي ‎Badreddine‏ | 10000041888241 _ 14188924100001
+
+‎1
+
+‎29 BOUSBATA
+
+‎&
+‎Total des enregistrements: 1 ‏معو | قد‎ 1< < E H ‏كلا‎ > 01
+
+
+
+
+À Ac ‏مس عيد‎ - T Payment Arrange.
+Debt Coleion > Paymen: Arangemént: > Payment Arrangerme approe “ ‘
+= ‏فصو‎ rrs
+‏لسلس‎ *
+ccn Gode _ [18168724100001
+servce un ‏وان‎
+‎5
+‎% st Date *[a6/11/2018
+Search  ةقيشتتم‎
+> Porpmemt Berançement ‏اذا‎
+‏مدل‎ -
+Customer ‏عدون لى‎
+‏وسو ليست محلسيتها‎ " ps ur
+: BAOREDOINE
+‏اشيم : ب ليت دين‎
+٠ ‏,؟نبو7!ًييتسسمتتتهه+:-ط»‎
+‎Torai es ercegstrewerts: 1
+
+
+
+
+® | ‏اسم ; هده‎ ( +] Root(UTC+1, 02/01/2019 17:39:17) Algerie Telecom … ‏كنا‎ @ s;
+
+Group
+À Accuel Panduste — ” _ Payment Arrange
+Debt Collction > Payment Arrangement > Paymen approve x
+LS 2 Searchaiteria
+Approval ‏ماما‎
+‎; Account Code *
++ ‏با‎ Aonroval Date … 02/01/2019
+Sevice Number
+5 Start Date *[04/12/2015
+208 — Description
+search
+‏ب‎ Payment Arrangement List |
+BBvot- |
+Customer — Customer 1
+AccountCode | C ut Creator 0 Operation
+BADREDDINE
+10231592200001 10000002315922 Mostepha ‏لله لذ مهرم‎
+Tota des enregistrements: 1 «<«E e
+
+Payment Arrangement | Instaliment Details
+
+Confirm
+
+/ Â you sure you war: 20 pectomm this operation?
+
+E-
+
+Success
+
+/ 008000
+
+
+
+
+
+B # e
+
+@ Accueil Recherche ‏عل‎ diient
+
+Systemème de gestion unifié
+Catalogue des produits unifié
+Invoicing
+Debt Collection
+Service clientele
+Client corporate
+Gestion ‏عل‎ batch
+Trouble Ticket
+Inventaire
+
+Gestion d'ordre
+
+* Plan du site
+
+Caisse
+Ouvrir la caisse
+Ajuster la caisse
+
+Gestion des paiements
+
+Annulation de paiements
+
+Gestion des paiements non alloué
+
+Demande de paiement ‏صملا‎ alloué
+
+Gestion ajustement
+Demande ajustement
+
+Gestion de transfert
+Demande de transfert
+
+Gestion de remboursement
+Demande ‏عل‎ remboursement
+
+Gestion de caution
+Traitement des cautions
+
+Différend ‏عل‎ paiement
+Demande de contestation
+
+Fermer la Caisse
+Interroger la Caisse
+
+Paiement par batch
+Annulation de paiements par batch
+
+Ajustement par batch
+
+Remboursement par batch
+
+Imprimer le rapport sommaire de ‏ما‎ caisse
+Imprimer le rapport détails de la caisse
+
+Annulation et création d' un nouveau paiement
+
+Impres
+Impres
+
+
+
+—E3 - ‏ياه‎
+
+* Paiement
+
+À ‏اد‎ Plan du site
+Comptes Débiteurs > Gestion des païements > Païement
+
++ Critères ‏عل‎ recherche
+
+Code de compte
+
+Æ ® le
+
+N° de facture
+
+Code client
+
+Code de groupe
+
+Root (UTC+1, 25/12/2018 17:46:11) ; Algerie Telecom
+
+lx
+
+
+
+
+projet Ÿ ‏باجعالا وم‎ 25/12/2018 17:48:23) Ageñe Tlecom | boustel @ ‏بج‎
+‎©» ‏قم‎ «
+
+‎Planduste * Paiement * v‏ اننا
+
+‎Comptes Débiteurs > Gestion des paiements > Paiement
+
+‎— Critères de recherdhe
+
+‎z Code de compts Code clent
+MSISON [25313015 Code de groupe
+% ° defachre
+Rechercher _Réinitialiser
+confimmer x
+— Informations de base
+Compte Posipaid $ —- Effectuer un palement échelorré MSISON 23313819
+Code de compte _ 14186924100001 ‏اس ل متعم‎
+Mortantdue 34 461,69 DA Info complémentaires >>
+
+‎> Facture Infos MSISDN Rechercher
+
+‎= Méthode ‏عل‎ pañement
+
+‎Méthode de paiement Montant des droits pate
+
+‎p Montant ‏ماي‎ Codedelabanque ‏لت‎ d'expiration/Datedu | ‏لات‎ Mobilis RIB/RIP | Titulaire du compte opération
+‏امنا ءا‎ dreque
+‏فوع‎ ”[ |4413 ]pa 34500 0 +
+Surpaiements 0,00 DA
+
+‎Montant du pañement total … 34 826,69 DA Montart restant 0400 DA
+Manipulation des surpaiements | - Changer pour paîement artäcipé ٠١ Change Envoyer unSMS - Qui ‏ردي‎
+
+‎Description
+
+‎Soumettre _Réinitialiser
+
+
+
+—h3 t( [881041 25022018175039 ‏ل‎
+
+e
+Dn d
+Compte Posipaid ® Nom du client  Badreddine MSISDN 23313819
+(Code ‏عل‎ compbe … 14188924100001 Code dient _ 10000041889241 Étatdel'abonné Suspendre
+» é de pn
+5 Espèce 69,00 DA +
+
+Montant du paiement iotal | 6 4534 DA Surpaisments0,00DA Manipulation ds surpaiemerts < Changer pour palement antiipé 7 Changement
+
+Envoyerun sMS ‏نات‎ S Avan
+
+Desciption
+
+Pañement arangement N° ‏تداع‎ [7600 -
+
+à Mencualité Détails
+
+Total des versements 4
+
+Vercementsrestants 4 Montant versement otal | 34481,69 DA
+Restont Encours 34 461/69 DA Montant de ‏متام‎ prévue 16 09146 DA Paiament préués 0,00DA
+‏امعطم‎ Prévue Date de Païement- Montan de paiement prévue Paiernent prélevés Montant à recouvres au versement Montant du païement: ‏مد‎
+
+2 vor00r0T 519528
+
+‎Ouvet‏ 00008 519528 لسلتن
+‎21j01/2019 00:00:00 51951204 00004 51951204 000DA Ouvet‏ 3
+51951104 00:00:00 26/02/2019 4
+
+‎00004 51951104 000DA Ouvet
+
+
+
+© ققد«
+
+‎Payment Amangemen- * _ Payment Arrangemen-‏ | لقص
+‎Intormations de base‏ —
+‎Compte Posipaid ®‏ &
+‎Cade e compte s02200001‏ ;
+‎méthodedepaiement‏ » &
+سس 0 ‎Téhréede‏ اسيم
+
+‎Montant du pañement total
+Envoyer un SMS
+
+‎Description
+
+‎Paiement arrangement N ® de lot
+
+‎— Mensualité Détai
+
+‎Total des versements
+
+‎Restant Encours
+
+‎1 30/01/2019 00:00:00
+
+‎Prévue Date ‏عل‎ Paiement -
+
+‎60 602,00 DA
+
+‎Plan du se
+
+‎Montant des droits
+detimbre
+
+‎601,00 DA
+
+‎Paiement Versement
+Nom du client
+Cede diert 1000000231
+Prépaiement 0,00 DA
+Date
+Code delabanque  Carte/ChequeNo. | d'expiration/Daie
+du deque
+
+‎Suaiements _ 0,00 DA
+‏لاه‎ # Avn
+
+‎7662 -
+
+‎1 Versements restants 1
+
+‎60 01/00 DA Mortant de palement prévue … 60 001,00 DA
+
+‎Montant ‏عل‎ pañement prévue
+
+‎60 001,00 DA
+
+‎Paiement prélevés
+
+‎Root (UTC+1, 02/01/2019 17:45:35) Agarie Telecom ‏تمدن‎ Ÿ P
+Sroup
+MSISDN
+État de l'abonné — Suspendre
+Info complémentaires >>
+Cust-RIB/RIP ‏لت .تا‎ | Tulaireducompte ‏.ا‎
+‎+
+‎Manipulation des surpaiements .- Changer pour palemert antiipé ‏ليت‎
+‎Montant versement total 60 001,00 DA EN
+
+‎Paiement prélevés _ 0,00 DA
+
+‎Montant à recouvrer au versement
+
+‎‘actuel
+‎0,00 DA
+
+‎Montant du paîement
+
+‎0,00 DA 60 001,00 D8 Ouvert
+
+
+
+—ES -
+
+‎Planduste "‏ امد
+‎À Informations de bace‏
+‎ComptePospaid @‏
+‎Code de œmpte 14‏
+‎Montantdue 344816‏
+‎paiement‏ عل ‎Méthode‏ #
+
+‎Méthode de paies‏ عل دور
+
+‎[2n‏ |< لا
+
+‏,6965 اجام كلام ‎Montant du‏
+‎O‏ اتليس
+سا
+
+‏40ة7] لماعل ‎N*‏ سود سيم
+‎Mencualité Détails‏ د
+‎Total des versements 4‏
+
+‎Rastant Encours 34485
+
+‎Date de Païement‏ صمتب مص
+‎25j12/a018 00:00:00‏ 1
+‎31/12/201e 00s‏
+
+‎2 00
+3 a1j01/2019 00:00:00
+4
+
+‎Paiement Versement
+
+‎confirmer
+‎À Informations de base
+Code dient | 10000041605241.
+
+‎+ Info pañement
+Montant du paiementictal | 6:965,34 DA
+
+‎Changement 0,00 DA
+
+‎mt ( #) Roct uTE+1, asftaracse 17:51:07)
+
+‎Code de compte _ 14186324100001
+
+‎Encours 34481,69 DA
+
+‎MSISDN 23317019
+
+‎Monlantrestant _ 0,00 DA
+
+‎Algetie Talecom | boustal @ 1x
+‏مم‎
+
+‏سحا ‎compte‏ بل عبتا
+
+‏اس لس
+
+
+
+
++3 projet ‏لجعالة اقم«‎ 25/12/2018 175 Agerie Talecom | boustal ‏يها‎
+
+- Compte Posipaid # Nom du client  Badreddine MSISDN 23313819
+; (Code ‏عل‎ compbe _ 14188924100001 Code dient _ 10000041889241 Étatdel'abonné _ Suspendre
+À » Méthode de paiement
+Méthode de paiement Montant des droits de Date
++] [Esséce +] [2c De c00 D4 Informations * +
+Montant de paiement tl 0,00 DA Paiemert räussi, Yous pouvez affchar 25 Maripulation des surpaiements <# Changer pour paiement anticipé <. Changament
+Description Pass ‏عا‎
+‎Non.- Prévue Date de Paiement- Montant de paiement prévue Paiernent prélevés Montant à ps ‘versement Montant du paiement statut
+
+Soumettre _ Réinitaliser
+
+
+
+
+Numéro de ‏المع‎ | 972004153
+
+Reçu De Paiement
+
+Nom ‏عه‎ l'Agence: Orecor ‏نه‎ Support Commerciai
+um Tet Del‘Agerce:
+
+‎Parment: | 20181223 17:3225 Aaircsse de l'Agonce‏ ع ملت
+
+‎Code Ctere 1000004 1aBS2at Nom u Chent: ‏سينا‎
+
+‎um GelAbonne. … 23313819 Adresse du Chert Aégerta. Alges, 16091
+
+‎Code ce compte: | t4t88924100001 Nombre de Lignes
+
+‎Mooeoe Paiemert ‏موادي‎ Devse Devse ‏م .ردم ميا ومح‎ Mortare Tour
+
+‎Espece ‏ههه‎ 680 34DA | 0S00DA 6565.34 DA
+
+‎Date Facure Numore ‏مجم عه‎ serace PrcUntare Remise = MortareNel | ‏صمي‎
+
+‎20170831 | 2017044-000001019074 AT ADJUSTMENTDR CD.0ODA | OCODA 31565DA | ‏عه م316‎
+HARGECODE
+
+‎20171031 — 20)7054-000000130700 AT_ADJUSTMENTDR CODODA | GOODA 50500DA | ‏هم قم دق‎
+HARIGECODE
+
+‎20174231 — 2017064-000001446727 AT_ADJUSTMENTDR CD.0ODA | OCODA 56300DA | 59560DA
+HARGECODE
+
+‎20180228 — 2018014-000000874850 AT_ADJUSTMENTDR CODODA ‏ملي‎ 58500DA | 58500DA
+HARGECODE
+
+‎20180420 | 2018024-000000223395 AT_ADJUSTMENTDR CO.00DA | OOODA 20300DA | 5850004
+HARGECODE
+
+‎20180630 — 201803A-000001691506 AT_ADJUSTMENTDR ‏ليت لات‎ 56500DA | 59520DA
+HARIGECODE
+
+‎20180831 | 2018044-000001287436 AT ADJUSTMENTDR CO.0ODA | OOODA 20300DA | ‏م0 0م295‎
+HARGECODE
+
+‎20181031 — 2018054-000000275002 AT_ADJUSTMENTDR C O.DODA ‏ليف‎ 56500DA | 50500DA
+HARGECODE
+
+‎3000000DA 2414.6504‏ مليف ليل يتم سس 0010277034 — 20181224
+7
+
+‏مه بد فو ة ‎Mortant Totat‏
+0 00 حت اا
+‎dmgression: 2018-12-25 17 0 Sgnaure e l'Agert‏ ع0
+
+
+
+
+
+Q Œ projet v — Root(UTC+1,02/01/2019 15:16:20) ; Algerie Telecom | boustal @
+
+Group
+4 ‏الدع‎ Plan du ‏عاد‎ * Payment Arrangemen… “ _ Payment Arrange…. * 0
+Debt Collection > Payment Arrangement > Payment Arrangement Query 3°
+‏ته‎ = Search Criterta
+L Account Code Customer Code
+Service Number Operator
+5
+
+start Date x [04/12/2018 End Date » [02/01/2019
+
+Managernent Status Execution Status … [ai
+
+Created
+
+Approval failure
+Executing
+Closed
+
+
+
+
+Q ‏اه‎ S projet (U [0 ‏ب064‎ 02/01/2019 15:18:22) AlgerieTelecom | boutal © P
+©
+
+‘Group
+
+‎Pln duste — % PaymentAmangemen* | Payment Arrange‏ اننا
+
+‎Debt Colection > Payment Asrangement > Payment Arrangement Query
+
+‏عه مس » &
+
+‏عله مامه ‎Code‏ مد ;
+عامس جاص فيه ‎j‏
+‎Date «[oz/0172015 95‏ ات ‎Date <[oyn1272015 F‏ هد 5
+
+‎[n 7‏ سك صم ‎T‏ ]عد مسي
+
+‎Seards — Réinitialiser
+
+‎— Payment Arrangement List
+
+‎n Bpotr
+Customes ‏اللي لت‎ Lérainies Management | Execution
+Account Code … Customer Code Outstanding | Unbaring | Resumption | CreationDate Creator Operation
+Name Amount status status
+Amount
+oafouz2015 ‏ل‎ ©
+10275000100001 ‏الا ال اريس‎ 2146169 DA Yes ves 77 ‏فون‎ canceled ‏باسح‎
+‎22 violtion BADREDOINE 4 æ
+14166024100001 10000041680041 - Ecraiine ‏اسن ال‎ Vs ves pn ‏عد “لزي ميا .هه‎
+‏سي‎ 06122 BADREDDINE
+17215069100001. 10000072150581. Badreddine 287744 08 287744 08 1336,13 08 ‏65ل‎ ves Cosed Canceled âs
+1i:21:21 BOUSBATA
+BOUSBATA
+Badreddine 06/12/2018 BADREDOINE
+17215069100001. 10000072150581. Badreddine 287744 DA 287744 DA 287744 DA Yes ves Cosed Canceled às
+09:59:18 BOUSBATA
+BOUSBATA
+Badreddine 06/12/2018
+17215069100001 _ 10000072150691 | Badreddne 2877/4D8 ‏ايند‎ 28774DA Ves vs Anproval ‏عاط‎
+‎BOUSBATA 0952313
+
+‎Totl des enregistrements: 5 10°+] Enregistrements
+
+
+
+
+& [Fymencarangement , ‏مسمس‎ | Parment Logs | Outstnding ‏عم‎
+
+— Details
+Recount Cod
+
+Senûce Number
+
+Currency
+
+‎Amourt‏ فوم
+
+‎Payment Mode
+
+‎Payment Arrangement Pl
+Instllments
+
+‎[pays in Advance for Notifcation
+Resumplion
+
+‎Handing Fee Colecion ‏لك‎
+‎End ‏عاو‎
+
+‎Execution Stats
+
+‎Creator
+
+‎Approve Oparator
+
+‎Operator‏ عقوا
+
+‎10275000100001
+‎25313142
+
+‎æn
+
+‎21461,89 DA
+
+‎Equal installment
+
+‎PA-AOD-PARTIC-Policy Name 1
+
+‎3
+
+‎34/03/2019
+‎Canceled
+
+‎BEDREDDINE BOUSBATA
+802125
+
+‎802125
+
+‎Back
+
+‎ApprovalInfo
+
+‎Customer Code
+Subscriber Status
+
+‎Outstanding ‏تدهم‎
+
+‎Remaining Outstanding Amouri:
+Processing Mode After Completion
+Installment Unit
+
+‎Notfication ‏متعم‎
+
+‎Uribarring
+
+‎Handing Fee
+
+‎Start Date
+
+‎Management Stptus
+
+‎Payment Arrangement ID
+
+‎Date‏ عام
+
+‎Approve Date
+
+‎Cose Date
+
+‎100000275000
+‎Suspendre
+‎21461,89 DA
+21461,89 DA
+Continue collection
+
+‎Month
+
+‎03/01/2019
+‎Coced
+
+‎7660
+
+‎02/01/2019 15:06:28
+02/01/2019 15:11:18
+02f01/2019 15:
+
+
+=
+
+Payment Arrangemient | Inctaliment Details | PaymentLogs | Outstanding Invoice
+
+— Details
+Recourt Code
+
+Senûce Number
+
+Currency
+
+‎Amourt‏ فوم
+
+‎Payment Mode
+
+‎Payment Arrangement Pl
+Instllments
+
+‎in Advance for Notification‏ عرو
+‎Resumplion‏
+
+‎Handing Fee Colecion ‏لك‎
+‎End ‏عاو‎
+
+‎Execution Stats
+
+‎Creator
+
+‎Approve Oparator
+
+‎Operator‏ عقوا
+
+‎14186924100001
+‎25313819
+
+‎æn
+
+‎34 481,69 DA
+
+‎Equal installment
+
+‎PA-AOD-PARTIC-Policy Name 1
+
+‎3
+
+‎25/02/2019
+‎Violation confimation
+BEDREDDINE BOUSBATA
+802125
+
+‏دك
+
+‎Badk
+
+‎ApprovalInfo
+
+‎Customer Code
+Subscriber Status
+
+‎Outstanding ‏تدهم‎
+
+‎Remaining Outstanding Amouri:
+Processing Mode After Completion
+Installment Unit
+
+‎Notfication ‏متعم‎
+
+‎Uribarring
+
+‎Handing Fee
+
+‎Start Date
+
+‎Management Stptus
+
+‎Payment Arrangement ID
+
+‎Date‏ عام
+
+‎Approve Date
+
+‎Cose Date
+
+‎10000041869241
+‎Suspendre
+
+‎34 481,69 DA
+
+‎18 585,35 D8
+Continue collection
+
+‎Month
+
+‎26/12/2018
+‎Bxecuting
+‎7640
+‎25/12/2018 17:
+25/12/2018 17:
+
+
+
+
+Hrstaliment ‏لمعمو لمعم‎ Payment Date Bxpected Poyment Amount
+02/01/2019 4 292,38 08
+31/01/2019 5723,17 08
+28/02/29 5723,17 08
+
+34/03/2019 57257 08
+
+Actual Payment Date
+
+Actual Payment Amount
+
+status
+
+Badk
+
+
+D0 DA Broke, ont Arrangement
+
+Tnstaliment Details ] Payment Logs — Outstanding Invoice
+
+Instaliment Period ID Expected Payment Date
+
+21/12/2018
+31/01/2018
+25/02/2019
+
+Badk
+
+مام لمهم
+
+Expected Payment Amount
+
+91952 08
+91952 08
+
+91951 08
+
+Actual Payment Date
+
+Actual Payment Amount
+
+0,00 DA Broke
+0,00 DA Broke
+
+0,00 DA Broke
+
+status
+
+
+
+Installment Period ID Payment Date
+
+Badk
+
+Payment Amount
+
+Aucun résultat trouvé,
+
+Cancellation Flag
+
+Cancellation Time
+
+Poyment Arangement _ ‏لاست‎ Oustandrs Ivocs … ‏ا‎
+
+Installment Period ID Payment Date
+
+Badk
+
+Payment Amount
+
+Cancellation Flag
+
+Cancellation Time
+
+
+
+Payment Arrangement … Installment Detsils — Payment Logs [ Outstanding Tave ApprovalInfo
+
+Invoice NO.
+
+0016382060
+
+0016382059
+
+2018034-000002976155
+
+2018054-000002493808
+
+2018042-000002776250
+
+11/11/2018
+11/11/2018
+14/08/2018
+
+15/12/2018
+
+14/10/2018
+
+Back
+
+Due Date
+
+20180912
+
+20180912
+
+20180512
+
+20180912
+
+20180712
+
+Bill Cycle D
+
+Currency
+
+Total Outstanding Amount
+20 000,00 DA
+
+37185 D8
+
+37604 D8
+
+357,00 D8
+
+357,00 08
+
+Operation
+
+
+
+Payment Arrangement ‏لبي‎ | PaymentLogs | Outstanding Invoice [Approval Info
+
+Approval Date _02/01/2018 15:11:18
+
+Description
+
+Badk
+
+
+
