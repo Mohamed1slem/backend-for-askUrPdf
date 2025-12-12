@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from src.chatbot import answer_query
 from src.ingest import main as ingest_main
+from src.search import search_documents  # Create this file
 
 app = FastAPI()
 
@@ -32,8 +33,30 @@ def root():
 def query(req: QueryRequest):
     result = answer_query(req.question)
     return QueryResponse(answer=result["answer"], sources=result["sources"])
+class SearchRequest(BaseModel):
+    query: str
+    filters: list[str] | None = []
 
+class SearchResult(BaseModel):
+    id: str
+    title: str
+    similarity: float
+
+class SearchResponse(BaseModel):
+    results: list[SearchResult]
+
+@app.post("/search", response_model=SearchResponse)
+def search_docs(req: SearchRequest):
+    """
+    This uses your RAG embeddings to find relevant documents
+    based on the employee's query.
+    """
+
+    docs = search_documents(req.query, req.filters)
+
+    return SearchResponse(results=docs)
 @app.post("/ingest")
 def ingest():
     ingest_main()
     return {"status": "ok", "message": "Embeddings rebuilt"}
+
