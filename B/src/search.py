@@ -1,25 +1,29 @@
-# Example search logic — replace with FAISS, Chroma, or your embedding DB
+from typing import List, Dict
 
-import json
+from .retriever import Retriever
 
-def search_documents(query: str, filters: list[str] = []):
+def search_documents(query: str, filters: list[str] = []) -> List[Dict]:
     """
-    Return documents + similarity score.
-    Connect this to your embeddings using FAISS or your RAG pipeline.
+    Perform semantic search using the FAISS-backed retriever and
+    return a simplified list of results compatible with the API schema:
+    [{"id": str, "title": str, "similarity": float}]
+
+    Notes:
+    - "filters" are currently not applied; implement category mapping
+      when metadata is available in the store.
     """
 
-    # Placeholder — replace with your real vector search
-    docs = [
-        {
-            "id": "1",
-            "title": "Convention 2024",
-            "similarity": 92.7
-        },
-        {
-            "id": "2",
-            "title": "Offre Entreprise Premium",
-            "similarity": 84.3
-        }
-    ]
+    retriever = Retriever()
+    chunks = retriever.search(query)
 
-    return docs
+    results: List[Dict] = []
+    for i, c in enumerate(chunks, start=1):
+        title = c.get("source") or c.get("original_source") or f"Result {i}"
+        sim = float(c.get("boosted_similarity", c.get("similarity", 0.0)))
+        results.append({
+            "id": str(i),
+            "title": title,
+            "similarity": sim,
+        })
+
+    return results
