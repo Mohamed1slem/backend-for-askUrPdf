@@ -23,6 +23,8 @@ export interface Document {
   content: string;
   similarity?: number;
   excerpt?: string;
+  chunk: string; // Add this property
+
 }
 
 export type DocumentCategory = 'offers' | 'conventions' | 'guide-ngbss' | 'depot-vente';

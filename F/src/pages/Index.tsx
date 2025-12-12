@@ -63,12 +63,18 @@ const Index = () => {
 
       setGeneratedResponse(data.answer);
       setAiSources(
-        (data.sources || []).map((src, index) => ({
-          id: `source-${index}`,
-          title: src,
-          content: "", // or fetch content later
-        }))
+        (data.sources || []).map((src, index) => {
+          const match = src.match(/\(([\d.]+)%\)$/); // Extract the number inside parentheses
+          return {
+            id: `source-${index}`,
+            title: src.replace(/\s\([\d.]+%\)$/, ""), // Remove similarity from title
+            similarity: match ? parseFloat(match[1]) : undefined,
+            // category: "offers", // or set appropriately if your backend returns it
+            content: "", // optionally fetch later
+          };
+        })
       );
+      
     } catch (error) {
       console.error("AI Generation Error:", error);
       setGeneratedResponse("❌ Server error while generating answer.");

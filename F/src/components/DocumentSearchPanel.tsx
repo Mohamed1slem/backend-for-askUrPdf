@@ -1,30 +1,37 @@
-import { Document, DocumentCategory, Message } from '@/types';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Search, FileText, Check, X } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { getCategoryLabel } from '@/data/mockData';
-import { useState, useMemo } from 'react';
+import { Document, DocumentCategory, Message } from "@/types";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Search, FileText, Check, X } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { getCategoryLabel } from "@/data/mockData";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 interface DocumentSearchPanelProps {
-  documents: Document[];
+  documents: Document[]; // Add this line
   selectedDocuments: string[];
   onToggleDocument: (docId: string) => void;
   onConfirmSelection: () => void;
-  clientMessage?: Message | null; // ← change from string to Message
+  clientMessage?: Message | null;
 }
 
-const categories: DocumentCategory[] = ['offers', 'conventions', 'guide-ngbss', 'depot-vente'];
+const categories: DocumentCategory[] = [
+  "offers",
+  "conventions",
+  "guide-ngbss",
+  "depot-vente",
+];
 
 export function DocumentSearchPanel({
-  documents,
   selectedDocuments,
   onToggleDocument,
   onConfirmSelection,
   clientMessage,
 }: DocumentSearchPanelProps) {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [activeFilters, setActiveFilters] = useState<DocumentCategory[]>([]);
+  const [documents, setDocuments] = useState<Document[]>([]);
+  const [loading, setLoading] = useState(false);
 
   const toggleFilter = (category: DocumentCategory) => {
     setActiveFilters((prev) =>
@@ -33,59 +40,33 @@ export function DocumentSearchPanel({
         : [...prev, category]
     );
   };
-  // Define the onSearch function or remove this block if unnecessary
-  // Example definition:
-  const onSearch = async (query: string, filters: DocumentCategory[]) => {
-    return documents.filter((doc) => 
-      (!filters.length || filters.includes(doc.category)) &&
-      (doc.title.toLowerCase().includes(query.toLowerCase()) || 
-       doc.content.toLowerCase().includes(query.toLowerCase()))
-    );
-  };
-  
-  // If setDisplayedDocs is undefined, ensure it's defined or remove this line
-  // setDisplayedDocs(results);
-  const calculateSimilarity = (doc: Document, query: string): number => {
-    // Use the clientMessage content if query is empty
-    const searchText = (query || clientMessage?.content || '').toLowerCase();
-    const docText = `${doc.title} ${doc.content}`.toLowerCase();
-  
-    if (!searchText) return Math.random() * 30 + 50;
-  
-    const words = searchText.split(/\s+/).filter(w => w.length > 2);
-    const matches = words.filter(word => docText.includes(word));
-  
-    const baseScore = (matches.length / Math.max(words.length, 1)) * 100;
-    return Math.min(Math.max(baseScore + Math.random() * 20, 10), 98);
-  };
 
-  const filteredDocuments = useMemo(() => {
-    let filtered = documents;
+  // Fetch documents from backend
+  useEffect(() => {
+    const fetchDocuments = async () => {
+      if (!clientMessage && !searchQuery) {
+        setDocuments([]);
+        return;
+      }
 
-    if (activeFilters.length > 0) {
-      filtered = filtered.filter((doc) => activeFilters.includes(doc.category));
-    }
+      setLoading(true);
+      try {
+        const response = await axios.post("http://127.0.0.1:8000/search", {
+          query: searchQuery || clientMessage?.content,
+          filters: activeFilters,
+        });
 
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(
-        (doc) =>
-          doc.title.toLowerCase().includes(query) ||
-          doc.content.toLowerCase().includes(query)
-      );
-    }
+        setDocuments(response.data.results);
+      } catch (error) {
+        console.error("Error fetching documents:", error);
+        setDocuments([]);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    return filtered.map((doc) => ({
-      ...doc,
-      similarity: calculateSimilarity(doc, searchQuery),
-    })).sort((a, b) => (b.similarity || 0) - (a.similarity || 0));
-  }, [documents, activeFilters, searchQuery, clientMessage]);
-
-  const getSimilarityClass = (similarity: number): string => {
-    if (similarity >= 70) return 'similarity-high';
-    if (similarity >= 40) return 'similarity-medium';
-    return 'similarity-low';
-  };
+    fetchDocuments();
+  }, [searchQuery, clientMessage, activeFilters]);
 
   return (
     <div className="flex flex-col h-full">
@@ -107,7 +88,7 @@ export function DocumentSearchPanel({
           />
           {searchQuery && (
             <button
-              onClick={() => setSearchQuery('')}
+              onClick={() => setSearchQuery("")}
               className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
             >
               <X className="w-4 h-4" />
@@ -134,14 +115,16 @@ export function DocumentSearchPanel({
 
       {/* Results */}
       <div className="flex-1 overflow-y-auto p-4">
-        {filteredDocuments.length === 0 ? (
+        {loading ? (
+          <p className="text-center py-12 text-muted-foreground">Loading...</p>
+        ) : documents.length === 0 ? (
           <div className="text-center py-12">
             <FileText className="w-12 h-12 text-muted-foreground mx-auto mb-3" />
             <p className="text-muted-foreground">No documents found</p>
           </div>
         ) : (
           <div className="space-y-3">
-            {filteredDocuments.map((doc, index) => (
+            {documents.map((doc, index) => (
               <button
                 key={doc.id}
                 onClick={() => onToggleDocument(doc.id)}
@@ -152,30 +135,41 @@ export function DocumentSearchPanel({
                 style={{ animationDelay: `${index * 30}ms` }}
               >
                 <div className="flex items-start gap-3">
-                  <div className={cn(
-                    "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0",
-                    selectedDocuments.includes(doc.id)
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted"
-                  )}>
+                  <div
+                    className={cn(
+                      "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0",
+                      selectedDocuments.includes(doc.id)
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-muted"
+                    )}
+                  >
                     {selectedDocuments.includes(doc.id) ? (
                       <Check className="w-4 h-4" />
                     ) : (
                       <FileText className="w-4 h-4 text-muted-foreground" />
                     )}
                   </div>
-                  
+
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="font-medium text-foreground truncate">
                         {doc.title}
                       </span>
-                      <span className={cn("similarity-badge", getSimilarityClass(doc.similarity || 0))}>
+                      <span
+                        className={cn(
+                          "similarity-badge",
+                          doc.similarity >= 70
+                            ? "similarity-high"
+                            : doc.similarity >= 40
+                            ? "similarity-medium"
+                            : "similarity-low"
+                        )}
+                      >
                         {Math.round(doc.similarity || 0)}%
                       </span>
                     </div>
                     <p className="text-sm text-muted-foreground line-clamp-2 mb-2">
-                      {doc.excerpt || doc.content.slice(0, 100)}...
+                      {doc.chunk.slice(0, 100)}...
                     </p>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
                       {getCategoryLabel(doc.category)}
@@ -193,7 +187,8 @@ export function DocumentSearchPanel({
         <div className="p-4 border-t border-border bg-card animate-fade-in">
           <div className="flex items-center justify-between">
             <span className="text-sm text-muted-foreground">
-              {selectedDocuments.length} document{selectedDocuments.length > 1 ? 's' : ''} selected
+              {selectedDocuments.length} document
+              {selectedDocuments.length > 1 ? "s" : ""} selected
             </span>
             <Button onClick={onConfirmSelection} className="gap-2">
               <Check className="w-4 h-4" />

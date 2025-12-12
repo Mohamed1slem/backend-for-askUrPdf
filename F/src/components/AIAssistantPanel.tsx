@@ -1,10 +1,17 @@
-import { Document, Message } from '@/types';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { Sparkles, FileText, Check, Loader2, Copy, ArrowRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { getCategoryLabel } from '@/data/mockData';
-import { useState, useEffect } from 'react';
+import { Document, Message } from "@/types";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import {
+  Sparkles,
+  FileText,
+  Check,
+  Loader2,
+  Copy,
+  ArrowRight,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
+import { getCategoryLabel } from "@/data/mockData";
+import { useState, useEffect } from "react";
 
 interface AIAssistantPanelProps {
   clientMessage: Message | null;
@@ -43,9 +50,12 @@ export function AIAssistantPanel({
         <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
           <Sparkles className="w-8 h-8 text-primary" />
         </div>
-        <h3 className="text-lg font-semibold text-foreground mb-2">AI Assistant</h3>
+        <h3 className="text-lg font-semibold text-foreground mb-2">
+          AI Assistant
+        </h3>
         <p className="text-muted-foreground max-w-sm">
-          Select a client message to generate an AI-powered response with relevant source documents.
+          Select a client message to generate an AI-powered response with
+          relevant source documents.
         </p>
       </div>
     );
@@ -60,7 +70,9 @@ export function AIAssistantPanel({
           <h3 className="font-semibold text-foreground">AI Assistant</h3>
         </div>
         <div className="p-3 bg-muted rounded-lg">
-          <p className="text-sm text-muted-foreground mb-1">Client's message:</p>
+          <p className="text-sm text-muted-foreground mb-1">
+            Client's message:
+          </p>
           <p className="text-sm text-foreground">{clientMessage.content}</p>
         </div>
       </div>
@@ -81,7 +93,9 @@ export function AIAssistantPanel({
         {isGenerating && (
           <div className="flex flex-col items-center justify-center py-12">
             <Loader2 className="w-8 h-8 text-primary animate-spin mb-4" />
-            <p className="text-muted-foreground">Analyzing message and finding relevant documents...</p>
+            <p className="text-muted-foreground">
+              Analyzing message and finding relevant documents...
+            </p>
           </div>
         )}
 
@@ -90,7 +104,9 @@ export function AIAssistantPanel({
             {/* Generated Response */}
             <Card className="p-4">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-medium text-foreground">Generated Response</h4>
+                <h4 className="font-medium text-foreground">
+                  Generated Response
+                </h4>
                 <Button
                   variant="ghost"
                   size="sm"
@@ -110,13 +126,17 @@ export function AIAssistantPanel({
                   )}
                 </Button>
               </div>
-              <p className="text-sm text-foreground whitespace-pre-wrap">{generatedResponse}</p>
+              <p className="text-sm text-foreground whitespace-pre-wrap">
+                {generatedResponse}
+              </p>
             </Card>
 
             {/* Sources */}
             {sources.length > 0 && (
               <div>
-                <h4 className="font-medium text-foreground mb-3">Source Documents</h4>
+                <h4 className="font-medium text-foreground mb-3">
+                  Source Documents
+                </h4>
                 <p className="text-sm text-muted-foreground mb-3">
                   Select documents to include in your response:
                 </p>
@@ -131,12 +151,14 @@ export function AIAssistantPanel({
                       )}
                     >
                       <div className="flex items-start gap-3">
-                        <div className={cn(
-                          "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0",
-                          selectedSources.includes(doc.id)
-                            ? "bg-primary text-primary-foreground"
-                            : "bg-muted"
-                        )}>
+                        <div
+                          className={cn(
+                            "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0",
+                            selectedSources.includes(doc.id)
+                              ? "bg-primary text-primary-foreground"
+                              : "bg-muted"
+                          )}
+                        >
                           {selectedSources.includes(doc.id) ? (
                             <Check className="w-4 h-4" />
                           ) : (
@@ -148,6 +170,20 @@ export function AIAssistantPanel({
                             <span className="font-medium text-foreground truncate">
                               {doc.title}
                             </span>
+                            {doc.similarity !== undefined && (
+                              <span
+                                className={cn(
+                                  "similarity-badge px-2 py-0.5 rounded-full text-xs",
+                                  doc.similarity >= 70
+                                    ? "bg-green-200 text-green-800"
+                                    : doc.similarity >= 40
+                                    ? "bg-yellow-200 text-yellow-800"
+                                    : "bg-red-200 text-red-800"
+                                )}
+                              >
+                                {Math.round(doc.similarity)}%
+                              </span>
+                            )}
                           </div>
                           <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
                             {getCategoryLabel(doc.category)}
