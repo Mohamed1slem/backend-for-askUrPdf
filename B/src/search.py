@@ -4,7 +4,9 @@ import faiss
 from typing import List, Dict
 from sentence_transformers import SentenceTransformer
 from .config import FAISS_INDEX_PATH, FAISS_STORE_PATH
+from .retriever import Retriever
 
+# ---------------- FAISS-based function ----------------
 # Load FAISS index and store
 index = faiss.read_index(FAISS_INDEX_PATH)
 with open(FAISS_STORE_PATH, "rb") as f:
@@ -12,7 +14,11 @@ with open(FAISS_STORE_PATH, "rb") as f:
 
 model = SentenceTransformer("all-MiniLM-L6-v2")  # same as ingest
 
-def search_documents(query: str, filters: List[str] = []) -> List[Dict]:
+def predict(query: str, filters: List[str] = []) -> List[Dict]:
+    """
+    FAISS-based semantic search returning detailed results
+    including chunk text and category.
+    """
     if not query:
         return []
 
@@ -45,6 +51,26 @@ def search_documents(query: str, filters: List[str] = []) -> List[Dict]:
             "category": category,
         })
 
-    # Optional: sort by similarity descending
     results.sort(key=lambda x: x["similarity"], reverse=True)
     return results[:10]
+
+# ---------------- Retriever-based function ----------------
+def search(query: str, filters: list[str] = []) -> List[Dict]:
+    """
+    Retriever-based semantic search returning simplified results
+    compatible with API schema: [{"id": str, "title": str, "similarity": float}]
+    """
+    retriever = Retriever()
+    chunks = retriever.search(query)
+
+    results: List[Dict] = []
+    for i, c in enumerate(chunks, start=1):
+        title = c.get("source") or c.get("original_source") or f"Result {i}"
+        sim = float(c.get("boosted_similarity", c.get("similarity", 0.0)))
+        results.append({
+            "id": str(i),
+            "title": title,
+            "similarity": sim,
+        })
+
+    return results
