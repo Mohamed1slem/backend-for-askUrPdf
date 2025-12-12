@@ -1,4 +1,4 @@
-import { Sparkles, Search, MessageSquare, Bot } from 'lucide-react';
+import { Sparkles, Search, MessageSquare, Bot, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
@@ -8,9 +8,10 @@ interface NavigationBarProps {
   activePanel: ActivePanel;
   onPanelChange: (panel: ActivePanel) => void;
   hasSelectedClient: boolean;
+  onDeselectClient?: () => void;
 }
 
-export function NavigationBar({ activePanel, onPanelChange, hasSelectedClient }: NavigationBarProps) {
+export function NavigationBar({ activePanel, onPanelChange, hasSelectedClient, onDeselectClient }: NavigationBarProps) {
   return (
     <header className="h-16 border-b border-border bg-card px-6 flex items-center justify-between">
       <div className="flex items-center gap-3">
@@ -21,14 +22,14 @@ export function NavigationBar({ activePanel, onPanelChange, hasSelectedClient }:
       </div>
 
       <nav className="flex items-center gap-2">
-        <Link to="/chatbot">
-          <button className="nav-button flex items-center gap-2">
-            <Bot className="w-4 h-4" />
-            <span>AI Chatbot</span>
-          </button>
-        </Link>
-        
-        {hasSelectedClient && (
+        {!hasSelectedClient ? (
+          <Link to="/chatbot">
+            <button className="nav-button flex items-center gap-2">
+              <Bot className="w-4 h-4" />
+              <span>AI Chatbot</span>
+            </button>
+          </Link>
+        ) : (
           <>
             <button
               onClick={() => onPanelChange('ai-assistant')}
@@ -51,6 +52,17 @@ export function NavigationBar({ activePanel, onPanelChange, hasSelectedClient }:
               <Search className="w-4 h-4" />
               <span>Search Documents</span>
             </button>
+            
+            {onDeselectClient && (
+              <button
+                onClick={onDeselectClient}
+                className="nav-button flex items-center gap-2 ml-2 hover:bg-destructive hover:text-destructive-foreground"
+                title="Close conversation"
+              >
+                <X className="w-4 h-4" />
+                <span>Close</span>
+              </button>
+            )}
           </>
         )}
       </nav>

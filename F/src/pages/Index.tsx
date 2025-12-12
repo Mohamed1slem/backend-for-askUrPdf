@@ -186,6 +186,16 @@ const Index = () => {
     [selectedClient, attachedDocuments]
   );
 
+  const handleDeselectClient = useCallback(() => {
+    setSelectedClient(null);
+    setGeneratedResponse(null);
+    setAiSources([]);
+    setSelectedAiSources([]);
+    setPendingResponse(null);
+    setAttachedDocuments([]);
+    setActivePanel('ai-assistant');
+  }, []);
+
   const currentMessages = selectedClient
     ? conversations[selectedClient.id] || []
     : [];
@@ -197,6 +207,7 @@ const Index = () => {
         activePanel={activePanel}
         onPanelChange={setActivePanel}
         hasSelectedClient={!!selectedClient}
+        onDeselectClient={handleDeselectClient}
       />
 
       <div className="flex-1 flex overflow-hidden">
