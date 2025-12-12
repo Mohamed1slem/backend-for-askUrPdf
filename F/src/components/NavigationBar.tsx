@@ -1,5 +1,6 @@
-import { Sparkles, Search, MessageSquare } from 'lucide-react';
+import { Sparkles, Search, MessageSquare, Bot } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 type ActivePanel = 'conversation' | 'ai-assistant' | 'document-search';
 
@@ -19,31 +20,40 @@ export function NavigationBar({ activePanel, onPanelChange, hasSelectedClient }:
         <h1 className="text-xl font-semibold text-foreground">ClientAssist AI</h1>
       </div>
 
-      {hasSelectedClient && (
-        <nav className="flex items-center gap-2">
-          <button
-            onClick={() => onPanelChange('ai-assistant')}
-            className={cn(
-              "nav-button flex items-center gap-2",
-              activePanel === 'ai-assistant' && "active"
-            )}
-          >
-            <Sparkles className="w-4 h-4" />
-            <span>AI Assistant</span>
+      <nav className="flex items-center gap-2">
+        <Link to="/chatbot">
+          <button className="nav-button flex items-center gap-2">
+            <Bot className="w-4 h-4" />
+            <span>AI Chatbot</span>
           </button>
-          
-          <button
-            onClick={() => onPanelChange('document-search')}
-            className={cn(
-              "nav-button flex items-center gap-2",
-              activePanel === 'document-search' && "active"
-            )}
-          >
-            <Search className="w-4 h-4" />
-            <span>Search Documents</span>
-          </button>
-        </nav>
-      )}
+        </Link>
+        
+        {hasSelectedClient && (
+          <>
+            <button
+              onClick={() => onPanelChange('ai-assistant')}
+              className={cn(
+                "nav-button flex items-center gap-2",
+                activePanel === 'ai-assistant' && "active"
+              )}
+            >
+              <Sparkles className="w-4 h-4" />
+              <span>AI Assistant</span>
+            </button>
+            
+            <button
+              onClick={() => onPanelChange('document-search')}
+              className={cn(
+                "nav-button flex items-center gap-2",
+                activePanel === 'document-search' && "active"
+              )}
+            >
+              <Search className="w-4 h-4" />
+              <span>Search Documents</span>
+            </button>
+          </>
+        )}
+      </nav>
 
       <div className="w-[200px]" /> {/* Spacer for balance */}
     </header>
