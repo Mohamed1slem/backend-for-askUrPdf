@@ -1,4 +1,4 @@
 query,filters,num_results,dup_chunks,dedup_rate_pct,metadata_complete_pct,latency_ms
-Convention,,10,0,0.0,70.0,5286.81
-facture TVA,Guide NGBSS,0,0,0.0,0.0,6062.19
-IDOOOM 4G LTE,Offres,0,0,0.0,0.0,6130.58
+Convention,,10,0,0.0,60.0,7077.81
+facture TVA,Guide NGBSS,10,0,0.0,0.0,6143.92
+IDOOOM 4G LTE,Offres,10,0,0.0,60.0,5360.71
