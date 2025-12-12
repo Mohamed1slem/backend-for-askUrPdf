@@ -1,36 +1,43 @@
+# search.py
 import os
 import unicodedata
-from typing import List, Dict
-
+import logging
+from typing import List, Dict, Optional
 from .retriever import Retriever
 
+# -----------------------------
+# Logging
+# -----------------------------
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
+# -----------------------------
+# Helpers
+# -----------------------------
 def _normalize(value: str) -> str:
     if not isinstance(value, str):
         return ""
-    # remove accents, lowercase, collapse spaces and separators
     v = unicodedata.normalize("NFD", value)
     v = "".join(c for c in v if unicodedata.category(c) != "Mn")
     v = v.lower().replace(" ", "-")
     return v
 
-
 def _category_from_source(source_path: str) -> str:
-    # source_path is relative path like "Guide NGBSS/xxx_chunk1.txt"
     if not source_path:
-        return ""
+        return "unknown"
     norm = os.path.normpath(source_path)
     top = norm.split(os.sep)[0]
     return top
 
-
-def _filters_match(category: str, filters: List[str], metadata: Dict | None = None) -> bool:
+def _filters_match(category: str, filters: List[str], metadata: Optional[Dict] = None) -> bool:
+    filters = [f for f in (filters or []) if isinstance(f, str) and f.strip()]
     if not filters:
         return True
+
     cat_norm = _normalize(category)
-    # Accept both simplified tokens and literal folder names
     accepted = set(_normalize(f) for f in filters)
-    # Common aliases mapping
+
+    # Aliases for categories
     aliases = {
         "conventions": {"convention"},
         "depot-vente": {"depot", "depotvente", "depot_vente", "dépôt-vente", "dépôt", "depot vente"},
@@ -38,7 +45,7 @@ def _filters_match(category: str, filters: List[str], metadata: Dict | None = No
         "offres": {"offre", "offers"},
         "offres-en-arabe": {"offre-ar", "offers-ar", "arabe"},
     }
-    # Map category folder to canonical token
+
     cat_token_map = {
         "convention": "conventions",
         "dépot-vente": "depot-vente",
@@ -47,128 +54,63 @@ def _filters_match(category: str, filters: List[str], metadata: Dict | None = No
         "offres": "offres",
         "offres-en-arabe": "offres-en-arabe",
     }
+
     canonical = cat_token_map.get(cat_norm, cat_norm)
     if canonical in accepted:
         return True
-    # check aliases
     for canon, alias_set in aliases.items():
         if canonical == canon and (canon in accepted or any(a in accepted for a in alias_set)):
             return True
-    # also allow direct match with raw normalized folder name
-    # Also match against metadata values (category, partner, offer_type, sector)
+
     if metadata:
         for key in ("category", "partner", "offer_type", "sector"):
             val = _normalize(str(metadata.get(key, "")))
-            if val and (val in accepted):
+            if val in accepted:
                 return True
+
     return cat_norm in accepted
 
-
-def search_documents(query: str, filters: List[str] = []) -> List[Dict]:
-    """
-    Perform semantic search using the FAISS-backed retriever and return a
-    simplified list compatible with the API schema:
-      [{"id": str, "title": str, "similarity": float}]
-
-    Filters are optional and can accept tokens like:
-      ["conventions", "depot-vente", "guide-ngbss", "offres", "offres-en-arabe"]
-    or literal folder names. Additional structured filters are not yet applied.
-    """
+# -----------------------------
+# Main search function
+# -----------------------------
+def search_documents(query: str, filters: Optional[List[str]] = None) -> List[Dict]:
     if not query:
+        logger.warning("[SEARCH] Empty query received")
         return []
+
+    filters = filters or []
+    filters = [f.strip() for f in filters if f.strip()]
+    logger.info(f"[SEARCH] Query='{query}', Filters={filters}")
 
     retriever = Retriever()
     chunks = retriever.search(query, top_k=20)
+    logger.info(f"[SEARCH] Retrieved {len(chunks)} chunks from retriever")
 
     results: List[Dict] = []
-    i = 0
-    for c in chunks:
+    for i, c in enumerate(chunks, 1):
         orig = c.get("original_source") or c.get("source") or ""
         category = _category_from_source(orig)
+
         if filters and not _filters_match(category, filters, c.get("metadata")):
+            logger.debug(f"[SEARCH] Skipping chunk {i} due to filter mismatch: category='{category}'")
             continue
-        i += 1
+
         title = c.get("source") or os.path.basename(orig) or f"Result {i}"
         sim = float(c.get("boosted_similarity", c.get("similarity", 0.0)))
-
-        # Optional: also extract snippet if chunk exists
         text = c.get("text") or ""
-        snippet = ""
+
+        logger.debug(f"[SEARCH] Chunk {i}: title='{title}', similarity={sim}, source='{orig}'")
 
         results.append({
             "id": str(i),
             "title": title,
-            "chunk": c.get("text", ""),
+            "chunk": text,
             "similarity": sim,
+            "confidence": c.get("confidence"),
             "source": os.path.basename(orig) if orig else title,
             "page": c.get("page", 0),
             "metadata": c.get("metadata", {}),
         })
 
-    # cap to top 10 for API response stability
-    return results[:10]
-
-
-def search_advanced(query: str, filters: List[str] = []) -> List[Dict]:
-    """
-    Advanced results including chunk text and derived category. Useful for
-    internal tooling or evaluation pipelines.
-    """
-    if not query:
-        return []
-    retriever = Retriever()
-    chunks = retriever.search(query, top_k=20)
-
-    out: List[Dict] = []
-    for c in chunks:
-        orig = c.get("original_source") or c.get("source") or ""
-        category = _category_from_source(orig)
-        if filters and not _filters_match(category, filters):
-            continue
-        out.append({
-            "id": c.get("id", ""),
-            "title": c.get("source") or os.path.basename(orig),
-            "chunk": c.get("text", ""),
-            "similarity": float(c.get("boosted_similarity", c.get("similarity", 0.0))),
-            "category": category,
-            "source": c.get("source"),
-            "original_source": orig,
-            "page": c.get("page", 0),
-            "metadata": c.get("metadata", {}),
-        })
-    return out[:10]
-
-
-def predict(query: str, filters: List[str] = []) -> List[Dict]:
-    """
-    Backwards-compatible detailed search function.
-
-    Returns a richer structure per item, including:
-      {"id", "title", "chunk", "similarity", "category"}
-
-    Uses the same FAISS-backed Retriever as search_documents and applies
-    the same folder-derived category filtering.
-    """
-    if not query:
-        return []
-
-    retriever = Retriever()
-    chunks = retriever.search(query, top_k=20)
-
-    results: List[Dict] = []
-    for c in chunks:
-        orig = c.get("original_source") or c.get("source") or ""
-        category = _category_from_source(orig)
-        if filters and not _filters_match(category, filters):
-            continue
-        results.append({
-            "id": c.get("id", ""),
-            "title": c.get("source") or os.path.basename(orig),
-            "chunk": c.get("text", ""),
-            "similarity": float(c.get("boosted_similarity", c.get("similarity", 0.0))),
-            "category": category,
-        })
-
-    # Keep top 10 similar items
-    results.sort(key=lambda x: x.get("similarity", 0.0), reverse=True)
+    logger.info(f"[SEARCH] Returning {len(results[:10])} results")
     return results[:10]

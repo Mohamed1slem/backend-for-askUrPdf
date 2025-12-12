@@ -67,19 +67,21 @@ class Retriever:
             boost = self._keyword_boost(query, txt)
             boosted_percentage = min(100.0, percentage + boost)
 
-            if boosted_percentage >= min_similarity:
-                results.append({
-                    "text": txt,
-                    "source": src_name,
-                    "original_source": orig or src,
-                    "page": page,
-                    "metadata": meta,
-                    "hash": hsh,
-                    "score": float(score),
-                    "similarity": percentage,
-                    "boosted_similarity": boosted_percentage,
-                    "boost": boost
-                })
+            # 🔥 Always append, don’t filter here
+            results.append({
+                "text": txt,
+                "source": src_name,
+                "original_source": orig or src,
+                "page": page,
+                "metadata": meta,
+                "hash": hsh,
+                "score": float(score),
+                "similarity": percentage,
+                "boosted_similarity": boosted_percentage,
+                "boost": boost,
+                # Optional: add confidence flag
+                "confidence": "high" if boosted_percentage >= min_similarity else "low"
+            })
 
         # Sort by boosted similarity and keep top_k chunks directly
         top_chunks = sorted(results, key=lambda x: x["boosted_similarity"], reverse=True)[:top_k]
