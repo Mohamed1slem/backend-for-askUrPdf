@@ -24,7 +24,7 @@ def _category_from_source(source_path: str) -> str:
     return top
 
 
-def _filters_match(category: str, filters: List[str]) -> bool:
+def _filters_match(category: str, filters: List[str], metadata: Dict | None = None) -> bool:
     if not filters:
         return True
     cat_norm = _normalize(category)
@@ -55,6 +55,12 @@ def _filters_match(category: str, filters: List[str]) -> bool:
         if canonical == canon and (canon in accepted or any(a in accepted for a in alias_set)):
             return True
     # also allow direct match with raw normalized folder name
+    # Also match against metadata values (category, partner, offer_type, sector)
+    if metadata:
+        for key in ("category", "partner", "offer_type", "sector"):
+            val = _normalize(str(metadata.get(key, "")))
+            if val and (val in accepted):
+                return True
     return cat_norm in accepted
 
 
@@ -79,7 +85,7 @@ def search_documents(query: str, filters: List[str] = []) -> List[Dict]:
     for c in chunks:
         orig = c.get("original_source") or c.get("source") or ""
         category = _category_from_source(orig)
-        if filters and not _filters_match(category, filters):
+        if filters and not _filters_match(category, filters, c.get("metadata")):
             continue
         i += 1
         title = c.get("source") or os.path.basename(orig) or f"Result {i}"

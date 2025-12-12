@@ -1,6 +1,6 @@
 import os
 import pickle
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 
 import numpy as np
 import faiss
@@ -19,15 +19,28 @@ def build_corpus() -> List[Dict[str, Any]]:
         os.path.join(DATA_DIR, "raw"),
         os.path.join(DATA_DIR, "cleaned"),
     ]
+    seen_hashes = set()
     for root in roots:
         if not os.path.isdir(root):
             continue
         for path in load_all_files(root):
             try:
-                corpus.extend(build_chunks_for_file(path))
+                chunks = build_chunks_for_file(path)
+                for c in chunks:
+                    h = c.get("hash")
+                    if h and h in seen_hashes:
+                        continue
+                    if h:
+                        seen_hashes.add(h)
+                    corpus.append(c)
             except Exception:
                 continue
     return corpus
+
+def _embed_batch_openai(client, model: str, texts: List[str]) -> List[List[float]]:
+    resp = client.embeddings.create(model=model, input=texts)
+    return [d.embedding for d in resp.data]
+
 
 def embed_corpus(corpus: List[Dict[str, Any]]) -> np.ndarray:
     """Create embeddings for all corpus texts using ST model or OpenAI if enabled."""
@@ -36,18 +49,48 @@ def embed_corpus(corpus: List[Dict[str, Any]]) -> np.ndarray:
         try:
             from openai import OpenAI
             client = OpenAI()
-            vectors = []
-            batch = 128
+            vectors: List[List[float]] = []
+            batch = 64
             for i in range(0, len(texts), batch):
                 chunk = texts[i:i+batch]
-                resp = client.embeddings.create(model=OPENAI_EMBEDDING_MODEL, input=chunk)
-                vectors.extend([d.embedding for d in resp.data])
+                vectors.extend(_embed_batch_openai(client, OPENAI_EMBEDDING_MODEL, chunk))
             return np.array(vectors, dtype="float32")
         except Exception:
             pass
     # Fallback to SentenceTransformers
+    # Cache embeddings by chunk hash to avoid recomputation
+    cache_path = os.path.join(EMBEDDINGS_DIR, "embedding_cache.pkl")
+    cache: Dict[str, List[float]] = {}
+    if os.path.exists(cache_path):
+        try:
+            with open(cache_path, "rb") as fh:
+                cache = pickle.load(fh)
+        except Exception:
+            cache = {}
+
     model = SentenceTransformer(EMBEDDING_MODEL_NAME)
-    vectors = model.encode(texts, batch_size=32, show_progress_bar=True, normalize_embeddings=True)
+    vectors_list: List[List[float]] = []
+    to_update: Dict[str, List[float]] = {}
+    for c in corpus:
+        h = c.get("hash") or ""
+        if h and h in cache:
+            vectors_list.append(cache[h])
+        else:
+            v = model.encode([c["text"]], normalize_embeddings=True)
+            vec = list(map(float, v[0]))
+            vectors_list.append(vec)
+            if h:
+                to_update[h] = vec
+
+    if to_update:
+        cache.update(to_update)
+        try:
+            with open(cache_path, "wb") as fh:
+                pickle.dump(cache, fh)
+        except Exception:
+            pass
+
+    vectors = np.array(vectors_list, dtype="float32")
     return np.array(vectors, dtype="float32")
 
 def save_faiss_index(vectors: np.ndarray, corpus: List[Dict[str, Any]]):
@@ -67,6 +110,7 @@ def save_faiss_index(vectors: np.ndarray, corpus: List[Dict[str, Any]]):
         "original_sources": [c.get("original_source", "") for c in corpus],
         "pages": [c.get("page", 0) for c in corpus],
         "metadata": [c.get("metadata", {}) for c in corpus],
+        "hashes": [c.get("hash", "") for c in corpus],
     }
     with open(FAISS_STORE_PATH, "wb") as fh:
         pickle.dump(store, fh)

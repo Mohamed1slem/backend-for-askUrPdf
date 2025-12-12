@@ -55,6 +55,7 @@ class Retriever:
             orig = self.store.get("original_sources", [""])[idx]
             page = self.store.get("pages", [0])[idx]
             meta = self.store.get("metadata", [{}])[idx]
+            hsh = self.store.get("hashes", [""])[idx]
 
             src_name = os.path.basename(src)
 
@@ -73,6 +74,7 @@ class Retriever:
                     "original_source": orig or src,
                     "page": page,
                     "metadata": meta,
+                    "hash": hsh,
                     "score": float(score),
                     "similarity": percentage,
                     "boosted_similarity": boosted_percentage,

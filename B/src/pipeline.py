@@ -1,6 +1,8 @@
 import os
 import io
 from typing import List, Dict, Any, Tuple
+import hashlib
+import re
 
 from PIL import Image
 import pytesseract
@@ -107,11 +109,29 @@ def sentence_split(text: str) -> List[str]:
     return [p.strip() for p in parts if p.strip()]
 
 
+def _adjust_chunk_params(sentences: List[str], base_size: int, base_overlap: int) -> Tuple[int, int]:
+    """Dynamically adjust chunk size/overlap when sentences are too long/short."""
+    if not sentences:
+        return base_size, base_overlap
+    avg_len = sum(len(s) for s in sentences) / max(len(sentences), 1)
+    size = base_size
+    overlap = base_overlap
+    if avg_len > base_size * 0.8:
+        size = int(base_size * 1.3)
+        overlap = int(base_overlap * 0.6)
+    elif avg_len < base_size * 0.25:
+        size = int(base_size * 0.8)
+        overlap = int(base_overlap * 1.2)
+    return max(300, min(size, 1200)), max(30, min(overlap, 300))
+
+
 def chunk_text(text: str, size: int = CHUNK_SIZE, overlap: int = CHUNK_OVERLAP) -> List[str]:
     if not text:
         return []
     sentences = sentence_split(text)
-    chunks = []
+    # dynamic adjust
+    size, overlap = _adjust_chunk_params(sentences, size, overlap)
+    chunks: List[str] = []
     current = ""
     for s in sentences:
         if len(current) + len(s) + 1 <= size:
@@ -145,32 +165,63 @@ def extract_metadata(path: str, text: str) -> Dict[str, Any]:
     sector = ""
 
     base = filename.lower()
-    # Simple heuristics from filename
-    if "algérie télécom" in base or "algerie telecom" in base:
-        partner = "Algérie Télécom"
-    # Offer keywords
-    keywords = [
-        ("fibre", "Fibre"), ("adsl", "ADSL"), ("vdsl", "VDSL"), ("idoom", "Idoom"),
-        ("entreprise", "Entreprise"), ("premium", "Premium"), ("4g", "4G"),
+    # Keyword dictionaries (Arabic + French)
+    partner_dict = [
+        "algérie télécom", "algerie telecom", "ekoteb", "classateck", "classatec", "اتصالات الجزائر"
     ]
-    for k, label in keywords:
-        if k in base and not offer_type:
-            offer_type = label
+    offer_dict = [
+        "ligne temporaire", "idooom 4g lte", "idoom 4g lte", "recharge", "fibre", "adsl", "vdsl",
+        "entreprise", "premium"
+    ]
+    sector_dict = [
+        "education", "éducation", "telecom", "télécom", "commercial", "commerce", "banque", "santé", "industrie"
+    ]
 
-    # Sector from common tokens
-    sectors = ["education", "santé", "sante", "transport", "banque", "industrie", "public"]
-    for s in sectors:
-        if s in base:
+    # Regex patterns for headings on first page
+    head = (text or "")[:1000]
+    head_l = head.lower()
+    heading_patterns = {
+        "partner": [
+            r"(?:partenaire|partner|شريك)[:\s-]*([A-Za-zÀ-ÿ\u0600-\u06FF ]{3,})",
+            r"(?:algérie télécom|اتصالات الجزائر)"
+        ],
+        "offer_type": [
+            r"(?:offre|offer|عرض)[:\s-]*([A-Za-z0-9À-ÿ\u0600-\u06FF \-]{3,})",
+            r"(?:ligne temporaire|idoom 4g lte|recharge|fibre|adsl|vdsl)"
+        ],
+        "sector": [
+            r"(?:secteur|sector|قطاع)[:\s-]*([A-Za-zÀ-ÿ\u0600-\u06FF ]{3,})",
+            r"(?:education|éducation|telecom|télécom|commercial|banque|santé|industrie)"
+        ]
+    }
+
+    # Signals from filename
+    for p in partner_dict:
+        if p in base and not partner:
+            partner = "Algérie Télécom" if "algérie" in p or "اتصالات" in p else p.title()
+    for o in offer_dict:
+        if o in base and not offer_type:
+            offer_type = o.title()
+    for s in sector_dict:
+        if s in base and not sector:
             sector = s.capitalize()
+
+    # Signals from headings
+    for pat in heading_patterns["partner"]:
+        m = re.search(pat, head_l)
+        if m and not partner:
+            partner = (m.group(1).strip() if m.groups() else m.group(0)).title()
             break
-
-    # From text headings (first 800 chars)
-    head = (text or "")[:800].lower()
-    for s in sectors:
-        if s in head and not sector:
-            sector = s.capitalize()
-    if "convention" in head and not partner:
-        partner = "Algérie Télécom"
+    for pat in heading_patterns["offer_type"]:
+        m = re.search(pat, head_l)
+        if m and not offer_type:
+            offer_type = (m.group(1).strip() if m.groups() else m.group(0)).title()
+            break
+    for pat in heading_patterns["sector"]:
+        m = re.search(pat, head_l)
+        if m and not sector:
+            sector = (m.group(1).strip() if m.groups() else m.group(0)).capitalize()
+            break
 
     return {
         "category": category,
@@ -191,6 +242,7 @@ def build_chunks_for_file(path: str) -> List[Dict[str, Any]]:
             md = extract_metadata(path, clean)
             pieces = chunk_text(clean)
             for i, ch in enumerate(pieces):
+                chunk_hash = hashlib.sha256(ch.encode("utf-8", errors="ignore")).hexdigest()
                 out.append({
                     "id": f"{os.path.basename(path)}_p{page_num}_chunk{i}",
                     "text": ch,
@@ -198,6 +250,7 @@ def build_chunks_for_file(path: str) -> List[Dict[str, Any]]:
                     "original_source": path,
                     "page": page_num,
                     "metadata": md,
+                    "hash": chunk_hash,
                 })
     else:
         # DOCX and others handled as one flow (page unknown)
@@ -206,6 +259,7 @@ def build_chunks_for_file(path: str) -> List[Dict[str, Any]]:
         md = extract_metadata(path, clean)
         pieces = chunk_text(clean)
         for i, ch in enumerate(pieces):
+            chunk_hash = hashlib.sha256(ch.encode("utf-8", errors="ignore")).hexdigest()
             out.append({
                 "id": f"{os.path.basename(path)}_chunk{i}",
                 "text": ch,
@@ -213,6 +267,7 @@ def build_chunks_for_file(path: str) -> List[Dict[str, Any]]:
                 "original_source": path,
                 "page": 0,
                 "metadata": md,
+                "hash": chunk_hash,
             })
     return out
 
