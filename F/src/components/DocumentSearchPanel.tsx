@@ -1,4 +1,4 @@
-import { Document, DocumentCategory } from '@/types';
+import { Document, DocumentCategory, Message } from '@/types';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Search, FileText, Check, X } from 'lucide-react';
@@ -11,7 +11,7 @@ interface DocumentSearchPanelProps {
   selectedDocuments: string[];
   onToggleDocument: (docId: string) => void;
   onConfirmSelection: () => void;
-  clientMessage?: string;
+  clientMessage?: Message | null; // ← change from string to Message
 }
 
 const categories: DocumentCategory[] = ['offers', 'conventions', 'guide-ngbss', 'depot-vente'];
@@ -46,14 +46,15 @@ export function DocumentSearchPanel({
   // If setDisplayedDocs is undefined, ensure it's defined or remove this line
   // setDisplayedDocs(results);
   const calculateSimilarity = (doc: Document, query: string): number => {
-    if (!query && !clientMessage) return Math.random() * 30 + 50;
-    
-    const searchText = (query || clientMessage || '').toLowerCase();
+    // Use the clientMessage content if query is empty
+    const searchText = (query || clientMessage?.content || '').toLowerCase();
     const docText = `${doc.title} ${doc.content}`.toLowerCase();
-    
+  
+    if (!searchText) return Math.random() * 30 + 50;
+  
     const words = searchText.split(/\s+/).filter(w => w.length > 2);
     const matches = words.filter(word => docText.includes(word));
-    
+  
     const baseScore = (matches.length / Math.max(words.length, 1)) * 100;
     return Math.min(Math.max(baseScore + Math.random() * 20, 10), 98);
   };

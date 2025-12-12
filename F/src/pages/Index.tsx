@@ -219,7 +219,7 @@ const Index = () => {
               <aside className="w-96 bg-card flex-shrink-0">
                 {activePanel === "ai-assistant" ? (
                   <AIAssistantPanel
-                    clientMessage={lastClientMessage?.content}
+                    clientMessage={lastClientMessage} // ✅ Pass Message, not string
                     isGenerating={isGenerating}
                     generatedResponse={generatedResponse}
                     sources={aiSources}
