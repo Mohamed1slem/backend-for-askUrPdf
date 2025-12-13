@@ -1,0 +1,11 @@
+{
+  "default": {
+    "document_type": "offre",
+    "service": "Idoom Fibre",
+    "last_updated": "2025-12-13T05:30:54.620534"
+  },
+  "test-business-1": {
+    "service": "ADSL",
+    "last_updated": "2025-12-13T05:42:06.656610"
+  }
+}
