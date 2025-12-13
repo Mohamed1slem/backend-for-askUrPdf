@@ -1,103 +1,246 @@
 import os
+import re
 import requests
 from dotenv import load_dotenv
 
 from .config import SYSTEM_PROMPT, DEEPSEEK_API_URL, DEEPSEEK_MODEL
-from .retriever import Retriever
+from .retriever import Retriever, expand_with_related
 
 load_dotenv()
 
 DEBUG_MODE = False
 MIN_SIMILARITY = 60.0
 
+# Lightweight, deterministic semantic groups
+SEMANTIC_GROUPS = {
+    "tarif": ["tarif", "tarifs", "préférentiel", "préférentiels", "preferentiel", "preferentiels", "avantageux"],
+    "idoom_fibre": ["idoom fibre", "idoom", "internet", "services internet", "accès", "acces"],
+    "couvre": ["inclut", "prévoit", "prevoyait", "prévoit", "prévoit", "bénéficie", "beneficie"],
+}
+
+
+def semantic_match(question: str, context: str) -> bool:
+    """
+    Returns True if the question uses any semantic group
+    and the context contains at least one synonym from the same group.
+    Deterministic, rule-based, no external knowledge.
+    """
+    q = (question or "").lower()
+    ctx = (context or "").lower()
+
+    for group, synonyms in SEMANTIC_GROUPS.items():
+        # If the question mentions any word from this group
+        if any(s in q for s in synonyms):
+            # and the context contains any synonym from the same group
+            if any(s in ctx for s in synonyms):
+                return True
+            # Question hits a group, but context doesn't: keep checking other groups
+    return False
+FALLBACK_TEXT = "L'information n'est pas disponible dans les documents."
+
+
 def format_context(chunks):
     """
-    Formats the retrieved document chunks into a context string for the LLM.
+    Formats retrieved document chunks into a context string for the LLM.
     """
     lines = []
     for c in chunks:
-        sim = c.get("boosted_similarity", c["similarity"])
-        chunk_label = ""
-        if "_chunk" in c["source"]:
-            try:
-                chunk_label = f" | {c['source'].split('_chunk')[-1].replace('.txt','')}"
-            except Exception:
-                chunk_label = ""
-        lines.append(f"[Source: {c['source']} | Original: {c.get('original_source','N/A')} | Similarity: {sim}%]")
+        sim = c.get("boosted_similarity", c.get("similarity", 0))
+        lines.append(
+            f"[Source: {c['source']} | Original: {c.get('original_source','N/A')} | Similarity: {sim}%]"
+        )
         lines.append(c["text"])
         lines.append("")
     return "\n".join(lines)
 
+
 def answer_query(query: str):
     """
-    Main function to answer a user query using retrieved document chunks
-    and the DeepSeek API.
+    Final Front Office chatbot logic.
+    - Non-business → LLM only, no sources
+    - Business → RAG
+    - Smart sources
     """
     print("Received query:", query)
 
-    # 1. Retrieve relevant document chunks
-    retriever = Retriever()
-    chunks = retriever.search(query, top_k=10)
-    # Filter by minimum similarity
-    chunks = [c for c in chunks if c.get("boosted_similarity", c["similarity"]) >= MIN_SIMILARITY]
-    chunks = chunks[:5]
+    q = (query or "").lower()
 
-    print("Retrieved sources:", [(c["source"], c.get("boosted_similarity", c["similarity"])) for c in chunks])
-    context = format_context(chunks)
-    print(f"Retrieved {len(chunks)} chunks for context.")
+    # -------------------------
+    # BUSINESS INTENT DETECTION
+    # -------------------------
+    business_keywords = [
+        "algérie télécom", "algerie telecom",
+        "idoom", "fibre", "adsl", "vdsl",
+        "offre", "offres",
+        "convention",
+        "procédure", "procedure",
+        "service", "services",
+        "établissement", "etablissement",
+        "tarif", "tarifs",
+    ]
 
-    # 2. Prepare prompt for DeepSeek
-    user_prompt = (
-        f"Question: {query}\n\n"
-        f"Context:\n{context}\n\n"
-        "Answer using only the context above. "
-        "If unsure, say you don't have sufficient information."
-    )
+    is_business = any(k in q for k in business_keywords)
 
-    # 3. Get API key
+    base = []
+    context = ""
+    est_id = None
+
+    # =========================
+    # BUSINESS MODE → RAG
+    # =========================
+    if is_business:
+        retriever = Retriever()
+        base = retriever.search(query, top_k=10)
+
+        # similarity filter
+        base = [
+            c for c in base
+            if c.get("boosted_similarity", c.get("similarity", 0)) >= MIN_SIMILARITY
+        ]
+        base = base[:5]
+
+        # expand with related docs
+        try:
+            expanded_texts = expand_with_related(base, retriever.store, max_extra=4)
+        except Exception:
+            expanded_texts = [c["text"] for c in base]
+
+        context_chunks = []
+        base_texts = [c["text"] for c in base]
+
+        for i, text in enumerate(expanded_texts):
+            if i < len(base_texts):
+                context_chunks.append(base[i])
+            else:
+                context_chunks.append({
+                    "text": text,
+                    "source": "related",
+                    "original_source": "related",
+                    "similarity": 100.0,
+                    "boosted_similarity": 100.0,
+                })
+
+        context = format_context(context_chunks)
+
+        # extract establishment id
+        m = re.search(r"l[’']?établissement\s+([a-z])", query, re.IGNORECASE)
+        if not m:
+            m = re.search(r"etablissement\s+([a-z])", query, re.IGNORECASE)
+        if m:
+            est_id = m.group(1).upper()
+
+        # Semantic answerability check: if no semantic match, fallback early
+        if not semantic_match(query, context):
+            # Smart sources logic unchanged below; compute and return early
+            # Determine if the query is asking for detailed info
+            detailed_keywords = [
+                "tarif", "tarifs",
+                "procédure", "procedure",
+                "offre", "offres",
+                "convention",
+                "service", "services",
+                "guide", "document", "page",
+            ]
+            wants_detail = any(k in q for k in detailed_keywords)
+
+            if est_id and not wants_detail:
+                sources = [f"L’établissement {est_id}"]
+            else:
+                sources = [
+                    f"{c['source']} ({c.get('boosted_similarity', c.get('similarity', 0))}%)"
+                    for c in base
+                ]
+
+            return {
+                "answer": "L'information n'est pas disponible dans les documents.",
+                "sources": sources,
+            }
+
+    # =========================
+    # PROMPT
+    # =========================
+    if is_business:
+        user_prompt = f"""
+Question:
+{query}
+
+Context:
+{context}
+"""
+    else:
+        user_prompt = f"""
+Question:
+{query}
+"""
+
+    # =========================
+    # API CALL
+    # =========================
     api_key = os.getenv("DEEPSEEK_API_KEY")
     if not api_key:
-        return {
-            "answer": "DEEPSEEK_API_KEY not set. Please configure your environment.",
-            "sources": [f"{c['source']} ({c.get('boosted_similarity', c['similarity'])}%)" for c in chunks]
-        }
+        return {"answer": FALLBACK_TEXT, "sources": []}
 
-    # 4. Debug mode (optional)
-    if DEBUG_MODE:
-        return {
-            "answer": f"[DEBUG] Retrieved {len(chunks)} chunks. Top source: {chunks[0]['source'] if chunks else 'None'}",
-            "sources": [f"{c['source']} ({c.get('boosted_similarity', c['similarity'])}%)" for c in chunks]
-        }
-
-    # 5. Call DeepSeek API (non-streaming)
     payload = {
         "model": DEEPSEEK_MODEL,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_prompt}
+            {"role": "user", "content": user_prompt},
         ],
-        "stream": False
+        "stream": False,
     }
 
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {api_key}"
+        "Authorization": f"Bearer {api_key}",
     }
 
-    answer = ""
     try:
-        print("➡️ Requesting response from DeepSeek API...")
-        response = requests.post(DEEPSEEK_API_URL, headers=headers, json=payload, timeout=20)
+        response = requests.post(
+            DEEPSEEK_API_URL,
+            headers=headers,
+            json=payload,
+            timeout=20
+        )
         response.raise_for_status()
         data = response.json()
-        # Extract answer from response
-        answer = data.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
-        print("✅ Response received:", answer[:100], "..." if len(answer) > 100 else "")
+        answer = (
+            data.get("choices", [{}])[0]
+            .get("message", {})
+            .get("content", "")
+            .strip()
+        )
     except Exception as e:
-        print("❌ Request failed:", e)
-        answer = "⚠️ DeepSeek request failed. Showing sources instead."
+        print("LLM error:", e)
+        answer = FALLBACK_TEXT
 
-    # 6. Prepare sources
-    sources = [f"{c['source']} ({c.get('boosted_similarity', c['similarity'])}%)" for c in chunks]
+    # =========================
+    # SOURCES (SMART & FINAL)
+    # =========================
+    if answer == FALLBACK_TEXT:
+        sources = []
 
-    return {"answer": answer, "sources": sources}
+    elif not is_business:
+        sources = []
+
+    else:
+        detailed_keywords = [
+            "tarif", "tarifs",
+            "procédure", "procedure",
+            "conditions", "détails", "details",
+            "comment", "étapes", "etapes",
+            "guide", "document", "page",
+        ]
+        wants_detail = any(k in q for k in detailed_keywords)
+
+        if est_id and not wants_detail:
+            sources = [f"L’établissement {est_id}"]
+        else:
+            sources = [
+                f"{c['source']} ({c.get('boosted_similarity', c.get('similarity', 0))}%)"
+                for c in base
+            ]
+
+    return {
+        "answer": answer,
+        "sources": sources
+    }

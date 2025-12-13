@@ -12,6 +12,7 @@ from docx import Document as DocxDocument
 import arabic_reshaper
 from bidi.algorithm import get_display
 from unidecode import unidecode
+from .config import BASE_DIR
 
 from .config import (
     CHUNK_SIZE, CHUNK_OVERLAP, TESSERACT_LANGS, TESSERACT_CONFIG, CATEGORY_FOLDERS
@@ -279,3 +280,45 @@ def load_all_files(root: str) -> List[str]:
             if fn.lower().endswith((".pdf", ".doc", ".docx")):
                 paths.append(os.path.join(dirpath, fn))
     return paths
+
+def build_chunks_with_links(root: str) -> List[Dict[str, Any]]:
+    """
+    Build all chunks from files under root, then construct a document graph
+    and integrate linked document ids into each chunk.
+
+    This function does not modify extraction/cleaning/chunking/metadata logic.
+    It only orchestrates a deterministic linking step after chunk generation.
+    """
+    from .linking import build_document_graph, integrate_graph_into_chunks
+
+    all_chunks: List[Dict[str, Any]] = []
+    for path in load_all_files(root):
+        all_chunks += build_chunks_for_file(path)
+
+    graph = build_document_graph(all_chunks)
+    enriched_chunks = integrate_graph_into_chunks(all_chunks, graph)
+
+    final_chunks: List[Dict[str, Any]] = []
+    for ch in enriched_chunks:
+        original = ch.get("original_source") or ch.get("source") or ""
+        link_path = ""
+
+        if original:
+            if os.path.isabs(original):
+                try:
+                    link_path = os.path.relpath(original, BASE_DIR)
+                except Exception:
+                    link_path = original
+            else:
+                link_path = os.path.normpath(original)
+
+        final_chunks.append({
+            "content": ch.get("text", ""),
+            "metadata": ch.get("metadata", {}),
+            "source_links": [link_path] if link_path else [],
+            # هذا هو الربط الحقيقي بين الوثائق (Phase 3)
+            "related_links": ch.get("links", []),
+        })
+
+    return final_chunks
+

@@ -8,17 +8,45 @@ from sentence_transformers import SentenceTransformer
 
 from .config import (
     DATA_DIR, EMBEDDINGS_DIR, FAISS_INDEX_PATH, FAISS_STORE_PATH,
-    EMBEDDING_MODEL_NAME, USE_OPENAI_EMBEDDINGS, OPENAI_EMBEDDING_MODEL
+    EMBEDDING_MODEL_NAME, USE_OPENAI_EMBEDDINGS, OPENAI_EMBEDDING_MODEL, BASE_DIR
 )
-from .pipeline import load_all_files, build_chunks_for_file
+from .pipeline import load_all_files, build_chunks_for_file, build_chunks_with_links
 
 def build_corpus() -> List[Dict[str, Any]]:
-    """Scan DATA_DIR/raw and DATA_DIR/cleaned for files, extract text, clean and chunk."""
+    """Scan DATA_DIR/raw and DATA_DIR/cleaned for files, extract text, clean and chunk.
+
+    Phase-3: also inject linking metadata (source_links, related_links) produced by
+    pipeline.build_chunks_with_links, without altering chunking or embeddings logic.
+    """
     corpus: List[Dict[str, Any]] = []
     roots = [
         os.path.join(DATA_DIR, "raw"),
         os.path.join(DATA_DIR, "cleaned"),
     ]
+
+    # Build a document-level map of links using the pipeline's Phase-3 output
+    doc_links: Dict[str, Dict[str, List[str]]] = {}
+    for root in roots:
+        if not os.path.isdir(root):
+            continue
+        try:
+            lchunks = build_chunks_with_links(root)
+            for lc in lchunks:
+                # Use the first source link as the document key
+                src_links = lc.get("source_links", []) or []
+                if not src_links:
+                    continue
+                key = os.path.normpath(src_links[0])
+                # Store once per document
+                if key not in doc_links:
+                    doc_links[key] = {
+                        "source_links": src_links,
+                        "related_links": list(lc.get("related_links", []) or []),
+                    }
+        except Exception:
+            # Linking is best-effort; proceed even if linking assembly fails
+            pass
+
     seen_hashes = set()
     for root in roots:
         if not os.path.isdir(root):
@@ -27,11 +55,44 @@ def build_corpus() -> List[Dict[str, Any]]:
             try:
                 chunks = build_chunks_for_file(path)
                 for c in chunks:
+                    # Dedup by chunk hash (preserve existing ingestion behavior)
                     h = c.get("hash")
+                    if not h:
+                        # Fallback: hash text content deterministically
+                        try:
+                            import hashlib
+                            h = hashlib.sha256((c.get("text") or "").encode("utf-8", errors="ignore")).hexdigest()
+                            c["hash"] = h
+                        except Exception:
+                            h = None
                     if h and h in seen_hashes:
                         continue
                     if h:
                         seen_hashes.add(h)
+
+                    # Inject Phase-3 linking metadata
+                    original = c.get("original_source") or c.get("source") or ""
+                    if original:
+                        # Normalize to project-relative path for lookup
+                        if os.path.isabs(original):
+                            try:
+                                key = os.path.relpath(original, BASE_DIR)
+                            except Exception:
+                                key = original
+                        else:
+                            key = os.path.normpath(original)
+                    else:
+                        key = ""
+
+                    links_info = doc_links.get(key)
+                    if links_info:
+                        c["source_links"] = list(links_info.get("source_links", []))
+                        c["related_links"] = list(links_info.get("related_links", []))
+                    else:
+                        # Fallback: at least include this chunk's own source path
+                        c["source_links"] = [key] if key else []
+                        c["related_links"] = []
+
                     corpus.append(c)
             except Exception:
                 continue
@@ -111,6 +172,9 @@ def save_faiss_index(vectors: np.ndarray, corpus: List[Dict[str, Any]]):
         "pages": [c.get("page", 0) for c in corpus],
         "metadata": [c.get("metadata", {}) for c in corpus],
         "hashes": [c.get("hash", "") for c in corpus],
+        # Phase-3 linking metadata
+        "source_links": [c.get("source_links", []) for c in corpus],
+        "related_links": [c.get("related_links", []) for c in corpus],
     }
     with open(FAISS_STORE_PATH, "wb") as fh:
         pickle.dump(store, fh)
