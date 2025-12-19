@@ -1,165 +1,173 @@
 import os
 import pickle
-from typing import List, Dict, Any, Tuple
-
+import json
+import hashlib
+from typing import List, Dict, Any
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
 
-from .config import (
-    DATA_DIR, EMBEDDINGS_DIR, FAISS_INDEX_PATH, FAISS_STORE_PATH,
-    EMBEDDING_MODEL_NAME, USE_OPENAI_EMBEDDINGS, OPENAI_EMBEDDING_MODEL, BASE_DIR
-)
-from .pipeline import load_all_files, build_chunks_for_file, build_chunks_with_links
+# ----------------------------
+# Paths
+# ----------------------------
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+REAL_DATASET_DIR = os.path.join(DATA_DIR, "real_dataset")
+VECTOR_DB_DIR = os.path.join(DATA_DIR, "vector_db")
 
-def build_corpus() -> List[Dict[str, Any]]:
-    """Scan DATA_DIR/raw and DATA_DIR/cleaned for files, extract text, clean and chunk.
+os.makedirs(VECTOR_DB_DIR, exist_ok=True)
 
-    Phase-3: also inject linking metadata (source_links, related_links) produced by
-    pipeline.build_chunks_with_links, without altering chunking or embeddings logic.
-    """
-    corpus: List[Dict[str, Any]] = []
-    roots = [
-        os.path.join(DATA_DIR, "raw"),
-        os.path.join(DATA_DIR, "cleaned"),
-    ]
+FAISS_INDEX_PATH = os.path.join(VECTOR_DB_DIR, "index_local.bin")
+FAISS_STORE_PATH = os.path.join(VECTOR_DB_DIR, "faiss_store.pkl")
 
-    # Build a document-level map of links using the pipeline's Phase-3 output
-    doc_links: Dict[str, Dict[str, List[str]]] = {}
-    for root in roots:
-        if not os.path.isdir(root):
+EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+
+# ----------------------------
+# Linking logic (merged here)
+# ----------------------------
+def _doc_id_from_chunk(chunk: Dict[str, Any]) -> str:
+    src = chunk.get("original_source") or chunk.get("source") or ""
+    return os.path.basename(src)
+
+def _merge_metadata(md_list: List[Dict[str, Any]]) -> Dict[str, Any]:
+    out: Dict[str, Any] = {}
+    keys = {k for md in md_list for k in (md or {}).keys()}
+    for k in keys:
+        for md in md_list:
+            v = (md or {}).get(k)
+            if isinstance(v, str):
+                v = v.strip()
+            if v:
+                out[k] = v
+                break
+        if k not in out:
+            out[k] = ""
+    return out
+
+def build_document_graph(chunks: List[Dict[str, Any]]) -> Dict[str, Any]:
+    doc_chunks: Dict[str, List[Dict[str, Any]]] = {}
+    for ch in chunks:
+        did = _doc_id_from_chunk(ch)
+        if not did:
             continue
-        try:
-            lchunks = build_chunks_with_links(root)
-            for lc in lchunks:
-                # Use the first source link as the document key
-                src_links = lc.get("source_links", []) or []
-                if not src_links:
-                    continue
-                key = os.path.normpath(src_links[0])
-                # Store once per document
-                if key not in doc_links:
-                    doc_links[key] = {
-                        "source_links": src_links,
-                        "related_links": list(lc.get("related_links", []) or []),
-                    }
-        except Exception:
-            # Linking is best-effort; proceed even if linking assembly fails
-            pass
+        doc_chunks.setdefault(did, []).append(ch)
+
+    documents: Dict[str, Dict[str, Any]] = {}
+    for did, group in doc_chunks.items():
+        md_list = [c.get("metadata", {}) for c in group]
+        merged = _merge_metadata(md_list)
+        merged["document_id"] = did
+        documents[did] = merged
+
+    def norm(s: Any) -> str:
+        return (s or "").strip().lower()
+
+    conventions, offers = [], []
+    for did, md in documents.items():
+        cat = norm(md.get("category"))
+        if cat == "convention":
+            conventions.append(did)
+        elif cat in ("offres", "offres en arabe"):
+            offers.append(did)
+
+    conventions.sort()
+    offers.sort()
+
+    MAX_LINKS_PER_CONVENTION = 5
+    links: List[Dict[str, Any]] = []
+
+    for c_id in conventions:
+        md_c = documents[c_id]
+        partner_c = norm(md_c.get("partner"))
+        offer_c = norm(md_c.get("offer_type"))
+        if not partner_c:
+            continue
+
+        candidates: List[str] = []
+        for o_id in offers:
+            md_o = documents[o_id]
+            partner_o = norm(md_o.get("partner"))
+            offer_o = norm(md_o.get("offer_type"))
+            if partner_o != partner_c:
+                continue
+            if offer_c and offer_o and offer_c != offer_o:
+                continue
+            candidates.append(o_id)
+
+        candidates.sort()
+        for o_id in candidates[:MAX_LINKS_PER_CONVENTION]:
+            links.append({"source": c_id, "target": o_id, "relation": "offer_convention_link"})
+
+    return {"documents": documents, "links": links}
+
+def integrate_graph_into_chunks(chunks: List[Dict[str, Any]], graph: Dict[str, Any]) -> List[Dict[str, Any]]:
+    adj: Dict[str, set] = {}
+    for link in graph.get("links", []):
+        s, t = link.get("source"), link.get("target")
+        if not s or not t:
+            continue
+        adj.setdefault(s, set()).add(t)
+        adj.setdefault(t, set()).add(s)
+
+    out: List[Dict[str, Any]] = []
+    for ch in chunks:
+        did = _doc_id_from_chunk(ch)
+        new_ch = dict(ch)
+        new_ch["links"] = sorted(adj.get(did, set()))
+        out.append(new_ch)
+    return out
+
+# ----------------------------
+# Load + enrich corpus
+# ----------------------------
+def build_corpus() -> List[Dict[str, Any]]:
+    dataset_path = os.path.join(REAL_DATASET_DIR, "chunks.json")
+    if not os.path.exists(dataset_path):
+        raise FileNotFoundError(f"chunks.json not found at {dataset_path}")
+
+    with open(dataset_path, "r", encoding="utf-8") as f:
+        chunks = json.load(f)
+
+    graph = build_document_graph(chunks)
+    enriched_chunks = integrate_graph_into_chunks(chunks, graph)
 
     seen_hashes = set()
-    for root in roots:
-        if not os.path.isdir(root):
+    corpus: List[Dict[str, Any]] = []
+    for i, c in enumerate(enriched_chunks):
+        text = c.get("text", "")
+        h = c.get("hash")
+        if not h:
+            h = hashlib.sha256(text.encode("utf-8", errors="ignore")).hexdigest()
+            c["hash"] = h
+        if h in seen_hashes:
             continue
-        for path in load_all_files(root):
-            try:
-                chunks = build_chunks_for_file(path)
-                for c in chunks:
-                    # Dedup by chunk hash (preserve existing ingestion behavior)
-                    h = c.get("hash")
-                    if not h:
-                        # Fallback: hash text content deterministically
-                        try:
-                            import hashlib
-                            h = hashlib.sha256((c.get("text") or "").encode("utf-8", errors="ignore")).hexdigest()
-                            c["hash"] = h
-                        except Exception:
-                            h = None
-                    if h and h in seen_hashes:
-                        continue
-                    if h:
-                        seen_hashes.add(h)
+        seen_hashes.add(h)
+        c["id"] = i
+        corpus.append(c)
 
-                    # Inject Phase-3 linking metadata
-                    original = c.get("original_source") or c.get("source") or ""
-                    if original:
-                        # Normalize to project-relative path for lookup
-                        if os.path.isabs(original):
-                            try:
-                                key = os.path.relpath(original, BASE_DIR)
-                            except Exception:
-                                key = original
-                        else:
-                            key = os.path.normpath(original)
-                    else:
-                        key = ""
-
-                    links_info = doc_links.get(key)
-                    if links_info:
-                        c["source_links"] = list(links_info.get("source_links", []))
-                        c["related_links"] = list(links_info.get("related_links", []))
-                    else:
-                        # Fallback: at least include this chunk's own source path
-                        c["source_links"] = [key] if key else []
-                        c["related_links"] = []
-
-                    corpus.append(c)
-            except Exception:
-                continue
     return corpus
 
-def _embed_batch_openai(client, model: str, texts: List[str]) -> List[List[float]]:
-    resp = client.embeddings.create(model=model, input=texts)
-    return [d.embedding for d in resp.data]
-
-
+# ----------------------------
+# Embed corpus
+# ----------------------------
 def embed_corpus(corpus: List[Dict[str, Any]]) -> np.ndarray:
-    """Create embeddings for all corpus texts using ST model or OpenAI if enabled."""
     texts = [c["text"] for c in corpus]
-    if USE_OPENAI_EMBEDDINGS and os.getenv("OPENAI_API_KEY"):
-        try:
-            from openai import OpenAI
-            client = OpenAI()
-            vectors: List[List[float]] = []
-            batch = 64
-            for i in range(0, len(texts), batch):
-                chunk = texts[i:i+batch]
-                vectors.extend(_embed_batch_openai(client, OPENAI_EMBEDDING_MODEL, chunk))
-            return np.array(vectors, dtype="float32")
-        except Exception:
-            pass
-    # Fallback to SentenceTransformers
-    # Cache embeddings by chunk hash to avoid recomputation
-    cache_path = os.path.join(EMBEDDINGS_DIR, "embedding_cache.pkl")
-    cache: Dict[str, List[float]] = {}
-    if os.path.exists(cache_path):
-        try:
-            with open(cache_path, "rb") as fh:
-                cache = pickle.load(fh)
-        except Exception:
-            cache = {}
-
     model = SentenceTransformer(EMBEDDING_MODEL_NAME)
-    vectors_list: List[List[float]] = []
-    to_update: Dict[str, List[float]] = {}
-    for c in corpus:
-        h = c.get("hash") or ""
-        if h and h in cache:
-            vectors_list.append(cache[h])
-        else:
-            v = model.encode([c["text"]], normalize_embeddings=True)
-            vec = list(map(float, v[0]))
-            vectors_list.append(vec)
-            if h:
-                to_update[h] = vec
-
-    if to_update:
-        cache.update(to_update)
-        try:
-            with open(cache_path, "wb") as fh:
-                pickle.dump(cache, fh)
-        except Exception:
-            pass
-
-    vectors = np.array(vectors_list, dtype="float32")
+    vectors = model.encode(
+        texts,
+        batch_size=64,
+        show_progress_bar=True,
+        convert_to_numpy=True,
+        normalize_embeddings=True
+    )
     return np.array(vectors, dtype="float32")
 
+# ----------------------------
+# Save FAISS index + metadata
+# ----------------------------
 def save_faiss_index(vectors: np.ndarray, corpus: List[Dict[str, Any]]):
-    """
-    Save FAISS index and store mapping (id->metadata).
-    """
     dim = vectors.shape[1]
-    index = faiss.IndexFlatIP(dim)  # cosine if normalized embeddings
+    index = faiss.IndexFlatIP(dim)  # cosine similarity
     index.add(vectors)
 
     faiss.write_index(index, FAISS_INDEX_PATH)
@@ -167,31 +175,32 @@ def save_faiss_index(vectors: np.ndarray, corpus: List[Dict[str, Any]]):
     store = {
         "ids": [c["id"] for c in corpus],
         "texts": [c["text"] for c in corpus],
-        "sources": [c["source"] for c in corpus],
+        "sources": [c.get("filename", "") for c in corpus],
         "original_sources": [c.get("original_source", "") for c in corpus],
         "pages": [c.get("page", 0) for c in corpus],
         "metadata": [c.get("metadata", {}) for c in corpus],
         "hashes": [c.get("hash", "") for c in corpus],
-        # Phase-3 linking metadata
-        "source_links": [c.get("source_links", []) for c in corpus],
-        "related_links": [c.get("related_links", []) for c in corpus],
+        "links": [c.get("links", []) for c in corpus],  # ✅ include related doc links
     }
     with open(FAISS_STORE_PATH, "wb") as fh:
         pickle.dump(store, fh)
 
+# ----------------------------
+# Main
+# ----------------------------
 def main():
-    print("Scanning and building corpus from data/raw and data/cleaned...")
+    print("Loading chunks from real_dataset...")
     corpus = build_corpus()
     print(f"Total chunks: {len(corpus)}")
 
     print("Embedding corpus...")
     vectors = embed_corpus(corpus)
 
-    print("Saving FAISS index and store...")
+    print("Saving FAISS index and store to vector_db...")
     save_faiss_index(vectors, corpus)
 
-    print(f"Done. Index saved to {FAISS_INDEX_PATH} and store to {FAISS_STORE_PATH}")
+    print(f"✅ Done. Index saved to {FAISS_INDEX_PATH}")
+    print(f"✅ Metadata saved to {FAISS_STORE_PATH}")
 
 if __name__ == "__main__":
-    # Allow running standalone: python -m src.ingest
     main()

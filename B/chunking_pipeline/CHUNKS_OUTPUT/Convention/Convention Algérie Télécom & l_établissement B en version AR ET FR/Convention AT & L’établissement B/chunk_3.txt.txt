@@ -1,8 +1,0 @@
-OffrestéléphonieIdoomFixe :
-Nb : lesmesurespréférentiellesdelatéléphoniesontvalablesuniquementpourlepremieraccès 
- Étantunclientconventionnéretraité, invalideouveuvepuisjebénéficierdundeuxièmeaccès ? Lepersonnelretraité, invalideetveuvesnouvrentpasdroitàbénéficierdundeuxièmeaccès     
-                                                                              
-Produitsdépôtvente :
-ProduitsCOMPNET :
-NB : Pourprécision, lenombredeproduitsdépôtventequipeutêtrecommercialiséàcettecatégoriedeclientèle (ConventionnésdelétablissementB), estlimitéà unseulproduitparfamille (modem, routeur, répéteurWifi). ProduitsUPGRADECC :
-NB : Pourprécision, lenombredeproduitsdépôtventequipeutêtrecommercialiséàcettecatégoriedeclientèle (ConventionnésdelétablissementB), estlimitéà unseulproduitparfamille (modem, routeur, répéteurWifi).

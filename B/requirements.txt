@@ -13,7 +13,7 @@ PyPDF2
 unidecode
 openai
 pymupdf
-
-
+fitz
+textract
 fastapi
 uvicorn[standard]

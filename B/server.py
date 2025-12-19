@@ -9,6 +9,9 @@ from src.chatbot import answer_query
 from src.ingest import main as ingest_main
 from src.search import search_documents  # FAISS search function
 
+from src.retriever import Retriever
+
+retriever = Retriever()  # global retriever instance
 # -----------------------------
 # Logging configuration
 # -----------------------------
@@ -38,9 +41,13 @@ app.add_middleware(
 class QueryRequest(BaseModel):
     question: str
 
+class SourceInfo(BaseModel):
+    source: str
+    similarity: float
+
 class QueryResponse(BaseModel):
     answer: str
-    sources: Optional[List[str]] = None
+    sources: list[SourceInfo]
 
 # Document search
 class SearchRequest(BaseModel):

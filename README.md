@@ -1,5 +1,10 @@
 # 🤖 AI Assistant – RAG-based Document Chatbot
 
+python -m src.pipeline
+python -m src.ingest    
+uvicorn server:app --reload
+
+
 An **AI-powered document assistant** built during a hackathon.
 The project allows users to **upload/search documents** and **ask questions** using a **Retrieval-Augmented Generation (RAG)** pipeline powered by **FAISS**, **Sentence Transformers**, and a **FastAPI backend**, with a modern frontend interface.
 
