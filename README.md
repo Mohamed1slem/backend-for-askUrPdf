@@ -9,6 +9,10 @@ An **AI-powered document assistant** built during a hackathon.
 The project allows users to **upload/search documents** and **ask questions** using a **Retrieval-Augmented Generation (RAG)** pipeline powered by **FAISS**, **Sentence Transformers**, and a **FastAPI backend**, with a modern frontend interface.
 
 ---
+![pic1](https://github.com/user-attachments/assets/d4baee31-1b2c-4943-b1ff-2ca5fe3ea00e)
+![pic2](https://github.com/user-attachments/assets/e5ceee7c-71d6-4e10-9df6-7730244083a2)
+![pic3](https://github.com/user-attachments/assets/461fb1c7-1fe1-486e-9abc-eea133955068)
+
 
 ## ✨ Features
 
