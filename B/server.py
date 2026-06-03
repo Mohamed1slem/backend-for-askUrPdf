@@ -1,4 +1,15 @@
 # server.py
+import sys
+import os
+
+# Prevent conflicts where Python resolves PyMuPDF's internal 'frontend' module
+# to the React 'frontend' directory in the root of the project.
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path = [p for p in sys.path if p and os.path.abspath(p) != parent_dir]
+if current_dir not in sys.path:
+    sys.path.insert(0, current_dir)
+
 from fastapi import FastAPI, HTTPException, Depends, UploadFile, File, Response, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer
