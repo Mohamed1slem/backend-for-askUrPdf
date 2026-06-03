@@ -54,6 +54,7 @@ app.add_middleware(
         "https://askurpdf.vercel.app",
         "https://backend-for-askurpdf-production.up.railway.app"
     ],
+    allow_origin_regex=r"https://.*askurpdf.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

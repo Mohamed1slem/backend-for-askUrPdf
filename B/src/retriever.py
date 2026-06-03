@@ -2,9 +2,18 @@ import os
 import pickle
 import numpy as np
 import faiss
-from sentence_transformers import SentenceTransformer
 from typing import List, Dict, Any
 from .config import FAISS_INDEX_PATH, FAISS_STORE_PATH, EMBEDDING_MODEL_NAME, TOP_K
+
+_model_instance = None
+
+def get_embedding_model():
+    global _model_instance
+    if _model_instance is None:
+        from sentence_transformers import SentenceTransformer
+        print(f"Loading SentenceTransformer: {EMBEDDING_MODEL_NAME}")
+        _model_instance = SentenceTransformer(EMBEDDING_MODEL_NAME)
+    return _model_instance
 
 class Retriever:
     def __init__(self):
@@ -19,8 +28,9 @@ class Retriever:
         with open(FAISS_STORE_PATH, "rb") as fh:
             self.store = pickle.load(fh)
 
-        # Load embedding model
-        self.model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+    @property
+    def model(self):
+        return get_embedding_model()
 
     def search(self, query: str, top_k: int = TOP_K, min_similarity: float = 60.0, username: str = None) -> List[Dict[str, Any]]:
         results = []
