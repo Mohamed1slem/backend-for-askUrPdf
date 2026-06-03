@@ -1,5 +1,4 @@
 faiss-cpu
-sentence-transformers
 requests
 python-dotenv
 pdfminer.six
@@ -13,7 +12,6 @@ PyPDF2
 unidecode
 openai
 pymupdf
-textract
 fastapi
 uvicorn[standard]
 pymongo

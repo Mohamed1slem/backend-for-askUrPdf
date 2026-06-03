@@ -5,7 +5,6 @@ import hashlib
 from typing import List, Dict, Any
 import numpy as np
 import faiss
-from sentence_transformers import SentenceTransformer
 
 # ----------------------------
 # Paths

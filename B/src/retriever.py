@@ -3,58 +3,53 @@ import pickle
 import numpy as np
 import faiss
 from typing import List, Dict, Any
-from .config import FAISS_INDEX_PATH, FAISS_STORE_PATH, EMBEDDING_MODEL_NAME, TOP_K
+from .config import FAISS_INDEX_PATH, FAISS_STORE_PATH, TOP_K
 
-import requests
-import time
+# OpenAI embedding model — no local model download, zero RAM overhead.
+# Uses the existing OPENAI_API_KEY already configured in Railway.
+OPENAI_EMBEDDING_MODEL = "text-embedding-3-small"
+OPENAI_EMBEDDING_DIM = 1536
 
-class HuggingFaceEmbedder:
-    def __init__(self, model_name: str):
-        self.model_name = model_name
-        self.api_url = f"https://api-inference.huggingface.co/models/{model_name}"
-        self.token = os.getenv("HF_TOKEN") or os.getenv("HF_API_KEY")
+class OpenAIEmbedder:
+    """Calls the OpenAI Embeddings API to produce sentence vectors.
+    Drops in as a replacement for SentenceTransformer — same .encode() interface.
+    """
+    def __init__(self):
+        self.api_key = os.getenv("OPENAI_API_KEY")
+        if not self.api_key:
+            raise RuntimeError("OPENAI_API_KEY environment variable is not set.")
+        self.model = OPENAI_EMBEDDING_MODEL
+        self.api_url = "https://api.openai.com/v1/embeddings"
 
-    def encode(self, sentences, batch_size=16, show_progress_bar=False, convert_to_numpy=True, normalize_embeddings=True, **kwargs):
+    def encode(self, sentences, batch_size=64, normalize_embeddings=True, **kwargs):
+        """Encode a list of sentences into numpy float32 vectors."""
         if isinstance(sentences, str):
             sentences = [sentences]
-            
-        headers = {}
-        if self.token:
-            headers["Authorization"] = f"Bearer {self.token}"
-            
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+        }
+
         all_embeddings = []
         for i in range(0, len(sentences), batch_size):
-            batch = sentences[i:i+batch_size]
-            payload = {
-                "inputs": batch,
-                "options": {"wait_for_model": True}
-            }
-            
-            # Retry mechanism if model is loading on HF servers
-            retries = 5
-            while retries > 0:
-                response = requests.post(self.api_url, headers=headers, json=payload)
-                if response.status_code == 200:
-                    embeddings = response.json()
-                    all_embeddings.extend(embeddings)
-                    break
-                elif response.status_code == 503 and "loading" in response.text.lower():
-                    print("Hugging Face model is loading... waiting 4 seconds")
-                    time.sleep(4)
-                    retries -= 1
-                else:
-                    raise Exception(f"Hugging Face API error {response.status_code}: {response.text}")
-            else:
-                raise Exception("Hugging Face model failed to load after multiple retries.")
-                
+            batch = sentences[i : i + batch_size]
+            payload = {"model": self.model, "input": batch}
+            response = __import__("requests").post(self.api_url, headers=headers, json=payload, timeout=60)
+            if response.status_code != 200:
+                raise Exception(f"OpenAI Embeddings API error {response.status_code}: {response.text}")
+            data = response.json()
+            # data["data"] is sorted by index
+            batch_vecs = [item["embedding"] for item in sorted(data["data"], key=lambda x: x["index"])]
+            all_embeddings.extend(batch_vecs)
+
         vectors = np.array(all_embeddings, dtype="float32")
-        
-        # Manually normalize if requested
+
         if normalize_embeddings:
             norms = np.linalg.norm(vectors, axis=1, keepdims=True)
             norms = np.where(norms == 0, 1.0, norms)
             vectors = vectors / norms
-            
+
         return vectors
 
 _model_instance = None
@@ -62,8 +57,8 @@ _model_instance = None
 def get_embedding_model():
     global _model_instance
     if _model_instance is None:
-        print(f"Initializing Hugging Face serverless embedder for: {EMBEDDING_MODEL_NAME}")
-        _model_instance = HuggingFaceEmbedder(EMBEDDING_MODEL_NAME)
+        print("Initializing OpenAI Embedder (text-embedding-3-small) — no local model loaded.")
+        _model_instance = OpenAIEmbedder()
     return _model_instance
 
 class Retriever:
