@@ -1,14 +1,14 @@
 # server.py
+import sys
 import os
-# Limit PyTorch/math library threads to 1 to prevent OOM spikes and CPU throttling on virtual hosting (Railway)
-os.environ["OMP_NUM_THREADS"] = "1"
-os.environ["MKL_NUM_THREADS"] = "1"
-os.environ["OPENBLAS_NUM_THREADS"] = "1"
-os.environ["VECLIB_MAXIMUM_THREADS"] = "1"
-os.environ["NUMEXPR_NUM_THREADS"] = "1"
 
-import torch
-torch.set_num_threads(1)
+# Prevent conflicts where Python resolves PyMuPDF's internal 'frontend' module
+# to the React 'frontend' directory in the root of the project.
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path = [p for p in sys.path if p and os.path.abspath(p) != parent_dir]
+if current_dir not in sys.path:
+    sys.path.insert(0, current_dir)
 
 from fastapi import FastAPI, HTTPException, Depends, UploadFile, File, Response, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -342,7 +342,7 @@ def create_chat_session(file: UploadFile = File(...), current_user: str = Depend
         # Attempt to clean up file if processing fails
         if os.path.exists(file_location):
             os.remove(file_location)
-        raise HTTPException(status_code=500, detail="Error processing file in index.")
+        raise HTTPException(status_code=500, detail=f"Error processing file in index: {str(e)}")
 
     # Create session document
     chat_id = str(uuid.uuid4())
@@ -564,7 +564,7 @@ def upload_file(file: UploadFile = File(...), current_user: str = Depends(get_cu
         run_ingest(dataset_dir=user_output_dir, vector_db_dir=user_vector_db_dir)
     except Exception as e:
         logger.error(f"Error processing user file: {e}")
-        raise HTTPException(status_code=500, detail="Error processing file.")
+        raise HTTPException(status_code=500, detail=f"Error processing file: {str(e)}")
         
     return {"status": "ok", "message": "File uploaded and processed."}
 
