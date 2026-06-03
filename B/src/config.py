@@ -55,7 +55,7 @@ OPENAI_MODEL = "llama-3.3-70b-versatile"
 # EMBEDDING MODEL
 # ----------------------------
 # SentenceTransformers multilingual model
-EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+EMBEDDING_MODEL_NAME = "intfloat/multilingual-e5-small"
 
 # ----------------------------
 # FAISS INDEX PATHS

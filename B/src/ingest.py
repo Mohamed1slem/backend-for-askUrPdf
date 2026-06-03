@@ -20,7 +20,7 @@ os.makedirs(VECTOR_DB_DIR, exist_ok=True)
 FAISS_INDEX_PATH = os.path.join(VECTOR_DB_DIR, "index_local.bin")
 FAISS_STORE_PATH = os.path.join(VECTOR_DB_DIR, "faiss_store.pkl")
 
-EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+EMBEDDING_MODEL_NAME = "intfloat/multilingual-e5-small"
 
 # ----------------------------
 # Linking logic (merged here)
