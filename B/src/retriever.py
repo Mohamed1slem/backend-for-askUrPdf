@@ -5,27 +5,30 @@ import faiss
 from typing import List, Dict, Any
 from .config import FAISS_INDEX_PATH, FAISS_STORE_PATH, TOP_K
 
-# OpenAI embedding model — no local model download, zero RAM overhead.
-# Uses the existing OPENAI_API_KEY already configured in Railway.
-OPENAI_EMBEDDING_MODEL = "text-embedding-3-small"
-OPENAI_EMBEDDING_DIM = 1536
+# Jina AI embedding model — free tier: 1M tokens/month, no credit card needed.
+# Multilingual (Arabic, French, English). 1024-dimensional vectors.
+# Get a free API key at: https://jina.ai/
+JINA_EMBEDDING_MODEL = "jina-embeddings-v3"
+JINA_EMBEDDING_DIM = 1024
 
-class OpenAIEmbedder:
-    """Calls the OpenAI Embeddings API to produce sentence vectors.
-    Drops in as a replacement for SentenceTransformer — same .encode() interface.
+class JinaEmbedder:
+    """Calls the Jina AI Embeddings API to produce sentence vectors.
+    Drop-in replacement for SentenceTransformer — same .encode() interface.
+    Free tier: 1 million tokens/month at https://jina.ai/
     """
     def __init__(self):
-        self.api_key = os.getenv("OPENAI_API_KEY")
+        self.api_key = os.getenv("JINA_API_KEY")
         if not self.api_key:
-            raise RuntimeError("OPENAI_API_KEY environment variable is not set.")
-        self.model = OPENAI_EMBEDDING_MODEL
-        self.api_url = "https://api.openai.com/v1/embeddings"
+            raise RuntimeError("JINA_API_KEY environment variable is not set. Get a free key at https://jina.ai/")
+        self.model = JINA_EMBEDDING_MODEL
+        self.api_url = "https://api.jina.ai/v1/embeddings"
 
     def encode(self, sentences, batch_size=64, normalize_embeddings=True, **kwargs):
         """Encode a list of sentences into numpy float32 vectors."""
         if isinstance(sentences, str):
             sentences = [sentences]
 
+        import requests
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
@@ -34,13 +37,19 @@ class OpenAIEmbedder:
         all_embeddings = []
         for i in range(0, len(sentences), batch_size):
             batch = sentences[i : i + batch_size]
-            payload = {"model": self.model, "input": batch}
-            response = __import__("requests").post(self.api_url, headers=headers, json=payload, timeout=60)
+            payload = {
+                "model": self.model,
+                "input": batch,
+                "task": "text-matching",
+            }
+            response = requests.post(self.api_url, headers=headers, json=payload, timeout=60)
             if response.status_code != 200:
-                raise Exception(f"OpenAI Embeddings API error {response.status_code}: {response.text}")
+                raise Exception(f"Jina Embeddings API error {response.status_code}: {response.text}")
             data = response.json()
-            # data["data"] is sorted by index
-            batch_vecs = [item["embedding"] for item in sorted(data["data"], key=lambda x: x["index"])]
+            batch_vecs = [
+                item["embedding"]
+                for item in sorted(data["data"], key=lambda x: x["index"])
+            ]
             all_embeddings.extend(batch_vecs)
 
         vectors = np.array(all_embeddings, dtype="float32")
@@ -57,8 +66,8 @@ _model_instance = None
 def get_embedding_model():
     global _model_instance
     if _model_instance is None:
-        print("Initializing OpenAI Embedder (text-embedding-3-small) — no local model loaded.")
-        _model_instance = OpenAIEmbedder()
+        print("Initializing Jina Embedder (jina-embeddings-v3, multilingual) — no local model loaded.")
+        _model_instance = JinaEmbedder()
     return _model_instance
 
 class Retriever:
