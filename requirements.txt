@@ -20,3 +20,4 @@ pymongo
 passlib[bcrypt]
 python-jose
 groq
+python-multipart
