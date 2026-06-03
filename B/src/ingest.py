@@ -152,7 +152,8 @@ def build_corpus(dataset_dir: str = REAL_DATASET_DIR) -> List[Dict[str, Any]]:
 # ----------------------------
 def embed_corpus(corpus: List[Dict[str, Any]]) -> np.ndarray:
     texts = [c["text"] for c in corpus]
-    model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+    from .retriever import get_embedding_model
+    model = get_embedding_model()
     vectors = model.encode(
         texts,
         batch_size=64,
