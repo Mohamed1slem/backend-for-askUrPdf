@@ -178,8 +178,8 @@ def login_for_access_token(req: LoginRequest, response: Response):
         refresh_token = create_refresh_token(data={"sub": user_in_db["username"]})
         
         # Set HttpOnly cookies
-        response.set_cookie(key="access_token", value=access_token, httponly=True, max_age=ACCESS_TOKEN_EXPIRE_MINUTES * 60, samesite="lax")
-        response.set_cookie(key="refresh_token", value=refresh_token, httponly=True, max_age=REFRESH_TOKEN_EXPIRE_DAYS * 24 * 60 * 60, samesite="lax")
+        response.set_cookie(key="access_token", value=access_token, httponly=True, max_age=ACCESS_TOKEN_EXPIRE_MINUTES * 60, samesite="none", secure=True)
+        response.set_cookie(key="refresh_token", value=refresh_token, httponly=True, max_age=REFRESH_TOKEN_EXPIRE_DAYS * 24 * 60 * 60, samesite="none", secure=True)
 
         return {
             "accessToken": access_token, 
@@ -206,7 +206,7 @@ def refresh_token(request: Request, response: Response):
             raise HTTPException(status_code=401, detail="Invalid refresh token")
             
         new_access_token = create_access_token(data={"sub": username})
-        response.set_cookie(key="access_token", value=new_access_token, httponly=True, max_age=ACCESS_TOKEN_EXPIRE_MINUTES * 60, samesite="lax")
+        response.set_cookie(key="access_token", value=new_access_token, httponly=True, max_age=ACCESS_TOKEN_EXPIRE_MINUTES * 60, samesite="none", secure=True)
         
         return {"accessToken": new_access_token, "user": username}
     except JWTError:
