@@ -154,13 +154,20 @@ def embed_corpus(corpus: List[Dict[str, Any]]) -> np.ndarray:
     texts = [c["text"] for c in corpus]
     from .retriever import get_embedding_model
     model = get_embedding_model()
+    
+    # Use a smaller batch size to prevent OOM memory spikes during PyTorch forward pass on CPU
     vectors = model.encode(
         texts,
-        batch_size=64,
-        show_progress_bar=True,
+        batch_size=16,
+        show_progress_bar=False,
         convert_to_numpy=True,
         normalize_embeddings=True
     )
+    
+    # Force garbage collection to release memory immediately
+    import gc
+    gc.collect()
+    
     return np.array(vectors, dtype="float32")
 
 # ----------------------------
