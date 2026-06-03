@@ -85,6 +85,13 @@ def extract_text_from_file(path: str) -> str:
         return extract_pdf(path)
     elif path.lower().endswith((".docx", ".doc")):
         return extract_docx(path)
+    elif path.lower().endswith(".txt"):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return clean_text(f.read())
+        except Exception as e:
+            print(f"❌ TXT error: {path} → {e}")
+            return ""
     else:
         return ""
 
@@ -153,28 +160,32 @@ def load_all_files(root: str) -> List[str]:
     paths = []
     for dirpath, _, filenames in os.walk(root):
         for fn in filenames:
-            if fn.lower().endswith((".pdf", ".doc", ".docx")):
+            if fn.lower().endswith((".pdf", ".doc", ".docx", ".txt")):
                 paths.append(os.path.join(dirpath, fn))
     return paths
 
 # ----------------------------
 # MAIN PIPELINE
 # ----------------------------
-def main():
-    print(f"📂 Scanning files in {FILES_DIR}...")
+def run_pipeline(files_dir: str = FILES_DIR, output_dir: str = OUTPUT_DIR):
+    os.makedirs(output_dir, exist_ok=True)
+    print(f"Scanning files in {files_dir}...")
     all_chunks: List[Dict[str, Any]] = []
-    for path in load_all_files(FILES_DIR):
-        print(f"📄 Processing: {os.path.basename(path)}")
+    for path in load_all_files(files_dir):
+        print(f"Processing: {os.path.basename(path)}")
         all_chunks += build_chunks_for_file(path)
 
     # Save raw chunks (linking handled in ingest)
-    output_file = os.path.join(OUTPUT_DIR, "chunks.json")
+    output_file = os.path.join(output_dir, "chunks.json")
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(all_chunks, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✅ DONE")
-    print(f"📦 Total chunks: {len(all_chunks)}")
-    print(f"💾 Saved to: {output_file}")
+    print(f"\nDONE")
+    print(f"Total chunks: {len(all_chunks)}")
+    print(f"Saved to: {output_file}")
+
+def main():
+    run_pipeline()
 
 if __name__ == "__main__":
     main()

@@ -120,8 +120,8 @@ def integrate_graph_into_chunks(chunks: List[Dict[str, Any]], graph: Dict[str, A
 # ----------------------------
 # Load + enrich corpus
 # ----------------------------
-def build_corpus() -> List[Dict[str, Any]]:
-    dataset_path = os.path.join(REAL_DATASET_DIR, "chunks.json")
+def build_corpus(dataset_dir: str = REAL_DATASET_DIR) -> List[Dict[str, Any]]:
+    dataset_path = os.path.join(dataset_dir, "chunks.json")
     if not os.path.exists(dataset_path):
         raise FileNotFoundError(f"chunks.json not found at {dataset_path}")
 
@@ -165,12 +165,12 @@ def embed_corpus(corpus: List[Dict[str, Any]]) -> np.ndarray:
 # ----------------------------
 # Save FAISS index + metadata
 # ----------------------------
-def save_faiss_index(vectors: np.ndarray, corpus: List[Dict[str, Any]]):
+def save_faiss_index(vectors: np.ndarray, corpus: List[Dict[str, Any]], index_path: str = FAISS_INDEX_PATH, store_path: str = FAISS_STORE_PATH):
     dim = vectors.shape[1]
     index = faiss.IndexFlatIP(dim)  # cosine similarity
     index.add(vectors)
 
-    faiss.write_index(index, FAISS_INDEX_PATH)
+    faiss.write_index(index, index_path)
 
     store = {
         "ids": [c["id"] for c in corpus],
@@ -182,25 +182,40 @@ def save_faiss_index(vectors: np.ndarray, corpus: List[Dict[str, Any]]):
         "hashes": [c.get("hash", "") for c in corpus],
         "links": [c.get("links", []) for c in corpus],  # ✅ include related doc links
     }
-    with open(FAISS_STORE_PATH, "wb") as fh:
+    with open(store_path, "wb") as fh:
         pickle.dump(store, fh)
 
 # ----------------------------
 # Main
 # ----------------------------
-def main():
-    print("Loading chunks from real_dataset...")
-    corpus = build_corpus()
+def run_ingest(dataset_dir: str = REAL_DATASET_DIR, vector_db_dir: str = VECTOR_DB_DIR):
+    os.makedirs(vector_db_dir, exist_ok=True)
+    index_path = os.path.join(vector_db_dir, "index_local.bin")
+    store_path = os.path.join(vector_db_dir, "faiss_store.pkl")
+
+    print(f"Loading chunks from {dataset_dir}...")
+    try:
+        corpus = build_corpus(dataset_dir)
+    except FileNotFoundError:
+        print("No chunks found. Skipping ingest.")
+        return
     print(f"Total chunks: {len(corpus)}")
+
+    if len(corpus) == 0:
+        print("Empty corpus. Skipping.")
+        return
 
     print("Embedding corpus...")
     vectors = embed_corpus(corpus)
 
-    print("Saving FAISS index and store to vector_db...")
-    save_faiss_index(vectors, corpus)
+    print("Saving FAISS index and store...")
+    save_faiss_index(vectors, corpus, index_path, store_path)
 
-    print(f"✅ Done. Index saved to {FAISS_INDEX_PATH}")
-    print(f"✅ Metadata saved to {FAISS_STORE_PATH}")
+    print(f"✅ Done. Index saved to {index_path}")
+    print(f"✅ Metadata saved to {store_path}")
+
+def main():
+    run_ingest()
 
 if __name__ == "__main__":
     main()

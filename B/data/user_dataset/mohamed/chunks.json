@@ -1,0 +1,695 @@
+[
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk0",
+    "text": "LIG-TEAM CHATBOT PROJECT (\"ASKYOURPDF\")\nAcademic Project Report for University Graduation (\"Soutenance\")\n👥 Administrative Details\n•\nProject Title: AskYourPdf: A High-Performance, Premium Workspace Interface for AI-\nPowered Retrieval-Augmented Generation (RAG)\n•\nAcademic Year: 2025/2026\n•\nUniversity: [Insert University Name]\n•\nFaculty / Department: [Insert Department, e.g., Computer Science / Software Engineering]\n•\nDegree Program: [Insert Degree, e.g., Bachelor of Science / Master in Computer Science]\n•\nLead Software Architect (Frontend, Security, & Backend Server Systems): Mohamed Islem\n•\nBackend AI & Document Pipeline Engineer: Ahmed (GitHub: @0ahmed0ghoul)\n•\nAcademic Supervisor: [Insert Supervisor's Name and Title]\n📑 Table of Contents\n1.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "c8f5003ca4fbf359b159ce1a3695de2216c0ccc01fe2c6271bf93a34ef26ea41"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk1",
+    "text": "b: @0ahmed0ghoul)\n•\nAcademic Supervisor: [Insert Supervisor's Name and Title]\n📑 Table of Contents\n1. Executive Summary\n2. Introduction & Project Context\n•\nProblem Statement\n•\nObjectives\n•\nCollaboration Scope & Detailed Division of Labor\n3. Dynamic Premium Design System (Frontend)\n•\nThe 10-Theme Color Engine\n•\nThe 7-Font Global Typography Engine\n•\nInteractive Micro-Animations & 3D WebGL Features\n4.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "3ba89cd4a0075f72c37bd08156609fb88e66201b5758fb08384dbbe21ef46829"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk2",
+    "text": "r Engine\n•\nThe 7-Font Global Typography Engine\n•\nInteractive Micro-Animations & 3D WebGL Features\n4. Backend System Engineering & Database Schema\n•\nFastAPI Server Framework\n•\nMongoDB Integration & Document Collections\n•\nOAuth2 & JWT Security Infrastructure\n•\nFile Management & I/O Controllers\n•\nCommunity Boards & Social Features\n5.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "fb89e6ff464f429364b48074a1dd5ecdbd8b32b7453adba7e12874f3ef122a99"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk3",
+    "text": "Security Infrastructure\n•\nFile Management & I/O Controllers\n•\nCommunity Boards & Social Features\n5. AI core: Document Ingestion, Vectors & RAG (Retrieval-Augmented Generation)\n•\nMulti-Format Text Extraction & Parsing\n•\nVector Database Indexing (FAISS)\n•\nContextual Prompt Synthesis & LLM Integrations\n6. Functional Architecture & Core Workspace Features\n•\nPremium Chat Workspace\n•\nInteractive Document Preview & Citation Panel\n•\nDrag-and-Drop Session Management\n7.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "05faa12307da245bbdaf76648562a7ff38b7342c92b8422cae6d12206447b340"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk4",
+    "text": "Chat Workspace\n•\nInteractive Document Preview & Citation Panel\n•\nDrag-and-Drop Session Management\n7. State Management & Network Synchronization\n•\nRedux Toolkit Global Client State\n•\nRTK Query Network Layer & Automatic Token Refresh\n8. Directory Map & Project Structure\n9. System Workflow & Architecture Diagrams\n10.Setup, Installation & Deployment Guide\n11.Conclusion & Future Outlook\n1.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "f61e7f78919b5c7e89887fdba4c5c179dc7a5845f88cdea64209ec52c516bcd3"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk5",
+    "text": "& Architecture Diagrams\n10.Setup, Installation & Deployment Guide\n11.Conclusion & Future Outlook\n1. Executive Summary\nThe AskYourPdf (LIG-Team Chatbot) is a highly specialized, premium workspace environment designed to revolutionize the way users interact with complex documents.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "ebbc34f894a8f44ea201f831f7c9558a7f6f78a3e99973707808ad0db14f530f"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk6",
+    "text": "emium workspace environment designed to revolutionize the way users interact with complex documents. By bridging high-\nperformance Retrieval-Augmented Generation (RAG) backend algorithms with an ultra-\npremium, interactive React-based frontend, the platform transforms static files (PDF, DOCX, TXT) into smart conversational nodes. This report outlines the full-stack software engineering, database integration, security systems, and UI/UX design implemented for the project.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "bb3c273bc90fa566581b04ae2c9913498ef04c316b1d9ebdacdbc8b81bf350a5"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk7",
+    "text": "e engineering, database integration, security systems, and UI/UX design implemented for the project. Built utilizing a modern stack composed of React 19, Vite, Redux Toolkit, Tailwind CSS v4, FastAPI (Python), and MongoDB, the application is optimized for visual excellence, micro-interactions, and secure state management.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "a44d50fe5275264ea78efbe1c41bfa41850b53066d40290de4fef202798a6881"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk8",
+    "text": "the application is optimized for visual excellence, micro-interactions, and secure state management. Key accomplishments include a dynamic 10-theme color engine, a 7-font global typography switcher, an advanced user authentication platform supporting secure HttpOnly cookie tokens, persistent multi-session chat workspaces, and a premium 3D particle simulation field using Three.js (React Three Fiber). 2.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "05f6ced7a49dbfcd93330c428d234196381f6efd2b737b7ff2005ac6445248b9"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk9",
+    "text": "n chat workspaces, and a premium 3D particle simulation field using Three.js (React Three Fiber). 2. Introduction & Project Context\nProblem Statement\nIn academic, legal, and corporate environments, extracting specific information from extensive documents (such as textbooks, contracts, and research papers) is notoriously time-consuming.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "be548a5da2ddb140d5e2f59b3e5c883f8d6f398764ac4c4cbd0e0cca7feccd3a"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk10",
+    "text": "tensive documents (such as textbooks, contracts, and research papers) is notoriously time-consuming. Classic keyword searches fail to capture context, while general-purpose Large Language Models (LLMs) suffer from hallucinations and lack knowledge of private files. Objectives\nTo address these issues, the LIG-Team Chatbot provides an isolated, intelligence-scoped workspace that:\n1. Allows users to securely upload private documents up to 10MB. 2.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "bb20190ecbee0df034ba5e6733e47d5a1458705e3c49fd573d40f933bb4f41a0"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk11",
+    "text": "elligence-scoped workspace that:\n1. Allows users to securely upload private documents up to 10MB. 2. Generates localized vector embeddings to allow semantic, context-aware querying. 3. Synthesizes precise answers sourced strictly from the uploaded material (RAG). 4. Engages the user in an ultra-modern, beautiful workspace that maintains visual appeal, high readability, and fluid transitions to maximize productivity.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "3ef2b5dd86d75bb8db52301e401b215bb1488782e04f7bf3e3ad05c146b72b3f"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk12",
+    "text": "pace that maintains visual appeal, high readability, and fluid transitions to maximize productivity. Collaboration Scope & Detailed Division of Labor\nThe engineering distribution for this project was clearly structured. Mohamed Islem spearheaded the complete application design, the entire frontend workspace, client-side security flows, and the bulk of the FastAPI backend server infrastructure (including databases, security schemas, user sessions, cookie transactions, and CRUD systems).",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "10fa46bd9c1958d49a5b6c7ac168c7f7db7ec19946550b180d5f15b30a101942"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk13",
+    "text": "cture (including databases, security schemas, user sessions, cookie transactions, and CRUD systems). Ahmed engineered the core backend text ingestion pipeline, vector indices, and natural language question-and-answer search. •\nMohamed Islem (Lead Software Architect):\n•\nFrontend UI/UX Architecture: Designed the entire client workspace, layout grids, settings panel, dynamic theme engine (10 themes), and global typography selectors (7 fonts).",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "af9feec95171caf858b2e3c046e567740e0d0320b115d9b0ce6e9c6088ef4602"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk14",
+    "text": "grids, settings panel, dynamic theme engine (10 themes), and global typography selectors (7 fonts). •\nInteractive Visuals: Engineered the 3D particle WebGL field using Three.js / React Three Fiber (Antigravity.jsx), GSAP ScrollTrigger transitions, smooth inertia scrolling with Lenis, and custom cursor click sparks. •\nBackend Server Infrastructure: Designed and programmed the main FastAPI application (server.py), logging setups, and middleware CORS configurations.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "d3ad92ddbdbb891e9d08b4d9c9b7a69111ec34dc12218a765e58a218cec70113"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk15",
+    "text": "rammed the main FastAPI application (server.py), logging setups, and middleware CORS configurations. •\nDatabase Engineering (MongoDB): Developed the entire MongoDB connector schema, integrating active dynamic databases to model user credentials, chat histories, active chat rooms, and public discussion comments.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "d9305cdf58abf9d25c95a93c3e77509d74499422004bece23374cb97a3d4432b"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk16",
+    "text": "abases to model user credentials, chat histories, active chat rooms, and public discussion comments. •\nSecurity & User Authentication: Developed the end-to-end security framework including bcrypt password hashing, JWT signature controls (src/auth.py), HTTP-Only session cookies parsing/issuance middleware, token refresh handlers (/refresh), and user registration, login, and logout endpoints.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "6ee2ea777041056e43236e88b3353a6cfd1037933f6508041e0b82ed8934bf23"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk17",
+    "text": "e middleware, token refresh handlers (/refresh), and user registration, login, and logout endpoints. •\nState & Networking Orchestration: Standardized client-side state hooks via Redux Toolkit and managed parallel server state queries through RTK Query, implementing automatic re-authentication interceptors. •\nClient/Server CRUD Systems: Programmed controllers for file retrieval APIs, chat session list generation, starring features, and clean document purging routines.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "85714c0d4b3fb0ade78fe05ecf654982afafca5d44b09012ada7c2bd551f2429"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk18",
+    "text": "etrieval APIs, chat session list generation, starring features, and clean document purging routines. •\nAhmed (Backend AI Core Developer):\n•\nDocument Processing Pipeline: Structured standard file extraction for DOCX, TXT, and PDF documents using libraries like PyMuPDF (fitz), PDFMiner, and pytesseract OCR parsing.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "ff2f618995d0417e63f09d46b02d342adb23a65f5e1ef844a02366ee2a60e981"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk19",
+    "text": ", TXT, and PDF documents using libraries like PyMuPDF (fitz), PDFMiner, and pytesseract OCR parsing. •\nVector DB & Index Ingestion (ingest.py, pipeline.py): Configured sentence transformer bindings (all-MiniLM-L6-v2) to map text chunks into high-density 384-dimensional mathematical arrays and integrated local FAISS indexes. •\nQ&A Generative Logic (chatbot.py): Programmed search similarity algorithms and wired LLM completion APIs to formulate answers derived from context. 3.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "6d4437d2dba0fb32aa63182ec8f425523370822a8ce084de938c10fe50506e2f"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk20",
+    "text": "ch similarity algorithms and wired LLM completion APIs to formulate answers derived from context. 3. Dynamic Premium Design System (Frontend)\nOne of the defining aspects of the AskYourPdf frontend is its commitment to visual elegance. Instead of creating a static dashboard, the workspace is treated as an active, customizable canvas designed to match the user's focus, ambient lighting, or device hardware.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "b41e09539d745c9c80bdab41fad3d4b99680ba83bc4317dbdcc11e66b7593a4a"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk21",
+    "text": "ctive, customizable canvas designed to match the user's focus, ambient lighting, or device hardware. 🎨 The 10-Theme Color Engine\nThe system implements a premium CSS Custom Property override system, enabling users to swap the entire layout palette with a single click.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "8c151a0126c2af6b9481ac6a9c715527167fe9492b7064e30d9b69c55e8826f8"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk22",
+    "text": "stom Property override system, enabling users to swap the entire layout palette with a single click. Theme Identifier\nName\nDescription\nKey Accents\nindigo (Default)\nMidnight Void\nOriginal deep cosmic dark mode layout\nCosmic Indigo (#4f46e5), Charcoal Panel (#13141A)\nemerald\nAbyssal Slate\nDeep slate ocean dark mode with cyan\nElectric Cyan (#06b6d4), Slate Ocean (#0f172a)\nrose\nVolcanic Ash\nWarm stone dark mode with deep magma\nMagma Crimson (#e11d48), Stone Grey (#292524)\namber\nCyberpunk Gold\nRadiant yellow-gold layout with dark amber\nGlowing Amber (#f59e0b), Warm Cyberpunk (#211a0a)\ndracula\nDracula Purple\nClassic developer aesthetic with neon pink\nNeon Dracula Pink (#ff79c6), Dracula Slate (#44475a)\nforest\nDeep Forest\nLush pine green with glowing lime accents\nForest Emerald (#10b981), Moss Green (#064e3b)\nmonochrome\nPure OLED Black\nUltra-high contrast pitch black for OLED\nPure White (#ffffff), Ink Black (#000000)\nTheme Identifier\nName\nDescription\nKey Accents\ncherry\nCherry Blossom\nDark maroon with soft spring pink accents\nSakura Pink (#ec4899), Velvet Maroon (#4a1224)\nsynthwave\nSynthwave Neon\nRetro-futuristic 80s violet and neon cyan\nCyber Neon Cyan (#06b6d4), Retro Violet (#312e81)\nsepia\nVintage Espresso\nExtremely comfortable warm coffee dark mode\nDark Espresso (#3d342b), Warm Sepia Gold (#d97706)\nlight\nClean Snow\nPristine white layout with indigo accents\nCrisp Indigo (#4f46e5), Snow White (#ffffff) The 7-Font Global Typography Engine\n✍️\nTo enhance readability and provide personalization, a typography engine dynamically injects font family declarations across all parent DOM trees:\n1.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "925b1ad2651b7bd6a7083ebe45a11ca38852a27bc329a34c41e6f4a665db6a52"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk23",
+    "text": "on, a typography engine dynamically injects font family declarations across all parent DOM trees:\n1. Outfit (Default): Clean, modern, and extremely friendly geometric sans-serif. 2. Inter: The absolute industry standard of crisp, high-legibility UI design. 3. Plus Jakarta Sans: A wide, expansive, premium corporate look. 4. Space Grotesk: A tech-forward, futuristic developer-oriented geometric face. 5. DM Sans: Highly minimal, lightweight, and modern aesthetic. 6.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "e33dc7cfb65f92dd16e4b06dee287dd81fcf553a8658fbc77776c0bd98dd53fe"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk24",
+    "text": "developer-oriented geometric face. 5. DM Sans: Highly minimal, lightweight, and modern aesthetic. 6. JetBrains Mono: Tech/hacker aesthetic providing monospace focus. 7. Playfair Display: High-end luxury serif for a sophisticated, editorial vibe. ✨ Interactive Micro-Animations & 3D WebGL Features\n•\nThree.js / React Three Fiber (Antigravity.jsx): Renders a high-performance 3D particle field under the landing page.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "299b473d3611a6bed684b4a38a5cc69b18f8a4640685248c39a3d30d343016b5"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk25",
+    "text": "Three Fiber (Antigravity.jsx): Renders a high-performance 3D particle field under the landing page. Particles are affected by mouse magnetism, shifting coordinates dynamically in real-time. If the mouse is idle, an automatic sinusoidal mathematical wave animates the vector particles. •\nGSAP & ScrollTrigger: Implements scroll-driven layout reveals. Landing page panels glide, rotate, and scale based on active scrolling indices.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "c7dfef91d12c3d14f21ff70c1d3d92f13dd6f36572b73aecb8709f58622bcaf0"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk26",
+    "text": "iven layout reveals. Landing page panels glide, rotate, and scale based on active scrolling indices. •\nLenis Smooth Scrolling: Eliminates browser-native jumpy scrolling, wrapping inputs in a beautiful physical inertia engine. •\nCustom UI Sprites:\n•\nClickSpark: Emit geometric light bursts at click coordinates. •\nLightRays: Multi-angle dynamic light beams forming a futuristic background halo. •\nLetterGlitch: Retro cyberpunk terminal text scramble interactions.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "eb7094ce3812608126f805d183cf2e55ee4fdff8c5dce80f7785b273d0da077b"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk27",
+    "text": "g a futuristic background halo. •\nLetterGlitch: Retro cyberpunk terminal text scramble interactions. •\nRotatingText & ScrollFloat: Liquid-smooth text transitions. 4. Backend System Engineering & Database Schema\nEngineered and Developed by Mohamed Islem\nThe backend core of the application utilizes FastAPI (Python), chosen for its asynchronous capability, automated API documentation (Swagger), and extreme processing speed.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "5e43035da3828a547af952bc0bb4765eb44f43abae1293ba9660cab4705f4166"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk28",
+    "text": "or its asynchronous capability, automated API documentation (Swagger), and extreme processing speed. The server is structured around clean REST endpoints communicating with a local MongoDB database cluster to orchestrate system configurations. MongoDB Integration & Document Collections\n🗄️\nThe database holds persistent workspace files, structured around four primary collections:\n1. users: Models user credentials and profiles.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "14816a76443c181ce4022c1202f2b77e97c2141744aa08d6734af42fd7491eae"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk29",
+    "text": "e files, structured around four primary collections:\n1. users: Models user credentials and profiles. { \"_id\": \"ObjectId\", \"username\": \"string\", \"email\": \"string\", \"hashed_password\": \"string (bcrypt)\", \"role\": \"string\"\n}\n2. chat_sessions: Tracks active workspace nodes mapping back to a specific document. { \"_id\": \"ObjectId\", \"chat_id\": \"string (uuid4)\", \"username\": \"string\", \"filename\": \"string\", \"is_starred\": \"boolean\", \"created_at\": \"datetime\"\n}\n3. chats: Stores chronological text threads.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "31cce1f0c0a1f62befb6331ff227333ef70424c799e6b5c0ad37f71267ae3220"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk30",
+    "text": "g\", \"is_starred\": \"boolean\", \"created_at\": \"datetime\"\n}\n3. chats: Stores chronological text threads. { \"_id\": \"ObjectId\", \"chat_id\": \"string\", \"username\": \"string\", \"question\": \"string\", \"answer\": \"string\", \"sources\": [{\"source\": \"string\", \"similarity\": \"float\"}], \"timestamp\": \"datetime\"\n}\n4. comments: Tracks posts published on the public discussion board.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "4fc062a2526d2359582799b1e41a254ca3a30eb98f12b08a34f0032c35c2040a"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk31",
+    "text": "at\"}], \"timestamp\": \"datetime\"\n}\n4. comments: Tracks posts published on the public discussion board. { \"_id\": \"ObjectId\", \"username\": \"string\", \"text\": \"string\", \"timestamp\": \"datetime\"\n}\n🔐 OAuth2 & JWT Security Infrastructure\nSession safety is constructed utilizing cryptographic signatures and strict cookie restrictions:\n•\nPassword Hashing: Passwords are cryptographically salted and hashed using bcrypt via the passlib library before DB insertion.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "e7db1d0081b23cbd84eb3eb0917f79dbab3da5647edc2bc6b50690b100dd2a2d"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk32",
+    "text": "ds are cryptographically salted and hashed using bcrypt via the passlib library before DB insertion. •\nDouble-Token Generation: Valid logins generate both a short-term Access Token (expires in 15 minutes) and a long-term Refresh Token (expires in 7 days) signed via HMAC-\nSHA256 (JWT). •\nHttpOnly Cookies Transmission: To mitigate Cross-Site Scripting (XSS) risks, tokens are never exposed to browser javascript.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "6fc742940ffa0a18ea5d4a44bd9d1f802f193595df914a2704af489d6a27d33a"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk33",
+    "text": "ssion: To mitigate Cross-Site Scripting (XSS) risks, tokens are never exposed to browser javascript. Instead, they are returned in HTTP headers via Set-\nCookie labeled as httponly=True, samesite=\"lax\", and path=\"/\". •\nGuard Middleware: Custom Dependency injections (get_current_user) intercept active routers, extract cookie parameters, decode JWT headers, validate username signatures, and raise standard 401 exceptions if credentials are missing or expired.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "9a05f79ec12ca69ae7e6c797036c3707bea6356c1bbfcbccecf3c9ff99f7fd7a"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk34",
+    "text": "lidate username signatures, and raise standard 401 exceptions if credentials are missing or expired. 📂 File Management & I/O Controllers\nTo avoid server disk clutter, file management modules utilize logical database constraints:\n•\nLimits Validation: Prior to accepting file uploads, the server queries the database count of active workspaces, enforcing a maximum limit of 10 file upload nodes per user.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "be4f8eb2ebe8d6f2652805475f16f485bd6c9d6afc9299a610f7b0003b4b9fc1"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk35",
+    "text": "the database count of active workspaces, enforcing a maximum limit of 10 file upload nodes per user. •\nI/O Storage Scoping: Document uploads are partitioned cleanly by username on the storage disk (data/user_files/{username}/{filename}). •\nCRUD Deletion Integrity: Triggering a chat deletion safely drops the corresponding session mapping, flushes the chronological message history, removes the physical file from the storage directory, and rebuilds the localized vector database indexes.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "aeef2b99fc6562235189e4cc8290d2e538f94cc1f30dbe9b872d3edc3ac6b2b6"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk36",
+    "text": "es the physical file from the storage directory, and rebuilds the localized vector database indexes. •\nBinary Delivery Interfaces: Dynamic endpoint APIs (GET /user-files/{filename}/view) read raw PDF documents directly into stream outputs, converting raw texts or DOCX layouts into optimized inline HTML wrappers.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "1f0b14483fc83954e3b15448846ac07d46cec66aed8049f52c7cde8a7eb69103"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk37",
+    "text": "ectly into stream outputs, converting raw texts or DOCX layouts into optimized inline HTML wrappers. 💬 Community Boards & Social Features\nTo foster cooperation, a global Comments Section allows active users to share notes:\n•\nUsers can fetch (GET /comments) or publish (POST /comments) message packets. •\nSecurity guards ensure users can only delete comments matching their active username (DELETE /comments/{comment_id}). 5.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "c4ec13e2d7f82e044cf53e98055e81f536d445f23f9963ff3582e9b690df5786"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk38",
+    "text": "re users can only delete comments matching their active username (DELETE /comments/{comment_id}). 5. AI Core: Document Ingestion, Vectors & RAG\nEngineered and Developed by Ahmed\nThe AI processing segment focuses on turning static, text-heavy documents into searchable data nodes by generating local vector embeddings and applying semantic retrieval strategies. 📝 Multi-Format Text Extraction & Parsing\n•\nHandles diverse formats including PDFs, DOCX, and TXT files.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "34b58f3cc90997082f08240919d7feacde981041751fe024b82d017dcebf09d8"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk39",
+    "text": "ulti-Format Text Extraction & Parsing\n•\nHandles diverse formats including PDFs, DOCX, and TXT files. •\nUses PyMuPDF (fitz) and PDFMiner to extract raw text blocks while maintaining structural readability. •\nIntegrates Tesseract OCR capabilities via the pytesseract library, allowing the parser to extract and read embedded text inside images and scanned pages within documents.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "ce5583975595d783003b9b04ef096e77cb8e369114a5251144c5478cb18db811"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk40",
+    "text": "owing the parser to extract and read embedded text inside images and scanned pages within documents. 📂 Vector Database Indexing (FAISS)\n•\nText Chunking: Extracted texts are split into readable chunks using logical character offsets to maintain local semantic context. •\nMathematical Encoding: Chunks are translated into high-dimensional vector spaces using the all-MiniLM-L6-v2 model from the sentence-transformers library, which maps texts into 384-dimensional mathematical arrays.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "8cb0634af919b6a14260b9a71cc591a279f4ddde336ebed87424ec16fd38ed45"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk41",
+    "text": "l from the sentence-transformers library, which maps texts into 384-dimensional mathematical arrays. •\nFAISS Storage Index: Indexes are stored in secure local partitions (data/user_vector_db/{username}). Chunks are indexed inside FAISS (Facebook AI Similarity Search) matrices. 💬 Contextual Prompt Synthesis & LLM Integrations\n•\nSemantic Matching: When a user queries the bot, the query is mapped to the same 384-\ndimensional vector space.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "b143ca1975a3a07830e3e455ca6c21bca5ac0731306dd19b419743889baa20cd"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk42",
+    "text": "atching: When a user queries the bot, the query is mapped to the same 384-\ndimensional vector space. Chunks showing high cosine similarity are fetched from the local FAISS index. •\nContext-Injected Prompts: Top matching text chunks are formatted alongside prompt templates, instructing the generative model to answer strictly using the provided context. •\nLLM API Integration: Prompts are sent to generative models (e.g.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "eae88f65aa57d0d7c70c33a6b5f5267a6a68d7a8f91d60e6186d720ab8547f82"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk43",
+    "text": "ictly using the provided context. •\nLLM API Integration: Prompts are sent to generative models (e.g. OpenAI completions) to produce accurate, context-aware answers, return citation filenames, and compute similarity scores. 6.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "848803abbe4c031123ac498d5126c73ee05b04ec06fde8258dbcd73b38e7a880"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk44",
+    "text": "roduce accurate, context-aware answers, return citation filenames, and compute similarity scores. 6. Functional Architecture & Core Workspace Features\ngraph TD User([User Client]) -->|Interacts & Logs In| UI[React Frontend Workspace] UI -->|Cookie Credentials / JWT| RTK[Redux RTK Query] RTK -->|JWT Credentials / HttpOnly| BE[FastAPI Backend - Port 8000] subgraph Frontend Components [Developed by Mohamed Islem] UI --> Home[Home / Landing Page] UI --> AuthForms[Login, Register & Logout Routes] UI --> ChatWorkspace[Chat / Active Workspace] ChatWorkspace --> DocPreview[Live Document Preview] ChatWorkspace --> ChatWindow[Active Chat Thread] ChatWorkspace --> Customizer[Theme & Font Customizer] end subgraph Backend Routing & DB [Developed by Mohamed Islem] BE --> AuthRouter[Auth, Cookie & Refresh Middleware] BE --> CRUD[Sessions, Stars, Files, & Forums CRUD APIs] CRUD --> Mongo[(MongoDB Server Database)] end subgraph Backend AI RAG Core [Developed by Ahmed] BE --> IngestPipeline[Doc Parser, Chunking & OCR Ingestion] BE --> QueryRouter[Retrieval-Augmented Generator Q&A Core] IngestPipeline -->|384 Dimensions| FAISS[(FAISS Vector Storage)] QueryRouter -->|Cosine Semantic Search| FAISS QueryRouter -->|Augmented Prompt Context| LLM[LLM Generation Engine] end\n1.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "ced362ad7005406b78b12020e971d8128f86df92a859e43d960f8b29b9286ef3"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk45",
+    "text": "e Semantic Search| FAISS QueryRouter -->|Augmented Prompt Context| LLM[LLM Generation Engine] end\n1. Premium Chat Workspace (Chat.jsx)\nThe core workspace is divided into an ergonomic multi-panel grid system:\n•\nLeft Control Panel: Handles session lists (showing uploaded documents). Starred chats are grouped at the top, and current document storage constraints are animated with slot-tracking bars (e.g., maximum 10 documents limit).",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "c4b85119c30a7ddf0f10343fb7b0326ed3366cc6addbedb844069221c400ead9"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk46",
+    "text": "ocument storage constraints are animated with slot-tracking bars (e.g., maximum 10 documents limit). •\nWorkspace Settings: Houses the real-time Theme and Font switchers, plus database update controllers. •\nDocument Hub / Steppers: Houses quick-start visual guides and embedded video tutorials with custom-built media player controls. 2.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "a796d40f86910eaa8c33f4facbf328b8de467642edc62538ccc6e996d5089d0f"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk47",
+    "text": "s quick-start visual guides and embedded video tutorials with custom-built media player controls. 2. Interactive Document Preview & Citation Panel\nTo prevent workspace fragmentation, an inline visualizer utilizes an iframe sandbox to view documents natively on the left side of the screen. Users can pop out the viewer to a new tab or reference active text side-by-side with chat inputs.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "9196bb44344d116fc5b9806226bda5514c3be0bbc9ae49b78749d67210a9bf2d"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk48",
+    "text": "n. Users can pop out the viewer to a new tab or reference active text side-by-side with chat inputs. When responses are output, precise details (similarity percentages and source filenames) appear in custom citation nodes. 3. Drag-and-Drop Session Management (Chatbot.jsx)\nUploading a document is fully intuitive:\n•\nEntering drag states overlays an active backdrop glow. •\nDropping a valid document immediately communicates with the backend ingestion endpoint (/chat-sessions).",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "3a7085efe7ea35d13030591bdb43a4ac9046010d641126e2a5469c23fe0001cc"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk49",
+    "text": "ping a valid document immediately communicates with the backend ingestion endpoint (/chat-sessions). •\nThe document is parsed, indexed, and a new persistent session is added to the sidebar. 7. State Management & Network Synchronization\nEngineered and Developed by Mohamed Islem\nTo keep complex client panels synced with backend database endpoints, the application implements a unified state management layer on the client side.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "cb893abe235a8b2e3f048d6656a7d538a658d01f844d7835ffa5b26f2bad963c"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk50",
+    "text": "database endpoints, the application implements a unified state management layer on the client side. Redux Toolkit Global Client State\n📦\n•\nUser Session Sync (authSlice.jsx): Parses user details directly from cookies. Reducers manage authentication states, updating cookie records upon successful registration or login, and purging them on logout. •\nLayout & Workspace States: Coordinates global settings, sidebar states, active chat references, and custom typography/theme selections.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "819fd9c3116fc0c98c5224099dd3e40e79589d65c56127623429a76435f578b2"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk51",
+    "text": "tes global settings, sidebar states, active chat references, and custom typography/theme selections. 🔄 RTK Query Network Layer & Automatic Token Refresh\nNetwork synchronization uses RTK Query to manage caching, request states, and server endpoints:\n•\nBase API Injection: apiSlice.jsx injects endpoints across the workspace (e.g., /auth, /register, /chat-sessions, /comments), avoiding repetitive backend query configurations.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "83a121a27ad80e4e0018ab513c617a431d5ba3fa6bfa666e11b8da3add07e09c"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk52",
+    "text": ".g., /auth, /register, /chat-sessions, /comments), avoiding repetitive backend query configurations. •\nAsynchronous Token Interceptor: Coordinates the re-authentication sequence: [Server Returns 401 / 403 (Token Expired)] │ ▼ [Intercept Request in apiSlice] │ ▼ [Send Asynchronous POST to /refresh] │ ┌───────────┴───────────┐ ▼ (Success) ▼ (Failure) [Save New Access Cookie] [Dispatch Logout State] │ │ ▼ ▼ [Retry Original Request] [Redirect to Landing Page]\n8.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "22ed61896e0237929ea70d0cf19c090258daee66bb3bbabb3dc91bce7a7fd091"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk53",
+    "text": "ccess Cookie] [Dispatch Logout State] │ │ ▼ ▼ [Retry Original Request] [Redirect to Landing Page]\n8. Directory Map & Project Structure\nLIG-Team-project/\n├── B/ # BACKEND SYSTEM (FastAPI & MongoDB)\n│ ├── server.py # Main API server routes & core endpoints (Mohamed Islem)\n│ ├── requirements.txt # Backend dependencies (FastAPI, FAISS, PyMuPDF)\n│ ├── src/\n│ │ ├── auth.py # Password hashing, JWT & Security (Mohamed Islem)\n│ │ ├── config.py # Environment settings (Mohamed Islem)\n│ │ ├── chatbot.py # Prompt configurations & QA answering logic (Ahmed)\n│ │ ├── ingest.py # Embedding execution & FAISS indexing (Ahmed)\n│ │ ├── pipeline.py # Text extraction, PDF OCR parsing (Ahmed)\n│ │ ├── retriever.py # Similarity calculation matches (Ahmed)\n│ │ ├── search.py # Dense/lexical matching parameters (Ahmed)\n│ │ └── utils.py # Parsing utilities and helpers\n│ └── data/ # Storage node for files, vector bin indexes, & DB\n└── frontend/ # FRONTEND APPLICATION (React 19 & Tailwind v4) ├── package.json # Frontend dependencies (R3F, Redux, GSAP) ├── src/ │ ├── main.jsx # App entry point │ ├── App.jsx # Router parameters and layout routes │ ├── app/ │ │ ├── store.jsx # Redux global store compiler │ │ └── api/ │ │ └── apiSlice.jsx# RTK base configurations & security interceptor │ ├── features/ │ │ ├── auth/ # Login, Register pages, auth reducers │ │ └── chat/ # Sidebar sessions, drag uploader, citation loops │ └── components/ │ ├── Chat.jsx # Theme and font switcher panels │ ├── Antigravity.jsx# 3D interactive WebGL background canvas │ └── ui/ # Cursor click sparks, light beams, custom buttons\n9.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "c208495348b8f97c26370fd4f55dcaca2e56d6da8bda46eb04c7261f9f4e9346"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk54",
+    "text": "interactive WebGL background canvas │ └── ui/ # Cursor click sparks, light beams, custom buttons\n9. System Workflow & Architecture Diagrams\nDuring active sessions, client interactions execute clean transactional pipelines:\n[User Type Question] │ ▼\n[React Chat Feature (Chatbot.jsx)] │ ▼ (Sends HTTP POST to /query)\n[FastAPI Backend - Route: /query] │ ├─► [Query FAISS Vector Store for Similar Document Chunks] │ ├─► [Retrieve Top-K Matching Text Chunks] │ └─► [Pass Prompt to LLM Generation Engine] │ ▼ (Synthesizes Answer + Computes Similarity Scores)\n[FastAPI Returns JSON Payload] │ ▼\n[React UI Updates Message Feed] - Smooth animation injection - Bullet-proof citation tabs displaying document sources & similarity metrics (%)\n10.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "50d10218696fdbee0a0a9977b7ad8109b2a6b533783151f4f3f9b536413f30e5"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk55",
+    "text": "tion injection - Bullet-proof citation tabs displaying document sources & similarity metrics (%)\n10. Setup, Installation & Deployment Guide\nPrerequisites\n•\nPython: version 3.10.0 or higher. •\nMongoDB: Local community server active on mongodb://127.0.0.1:27017. •\nNode.js & npm: Node version 18.0.0+ / npm version 9.0.0+. 1. Backend Ingestion Server Setup\n1. Navigate to the backend directory B:\ncd B\n2. Establish and launch a python virtual environment:\npython -m venv venv\nvenv\\Scripts\\activate\n3.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "16c68a3f123ed03fc41d02dbc21734a24efd5dbc502430b1c777dc3d0d024381"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk56",
+    "text": "B\n2. Establish and launch a python virtual environment:\npython -m venv venv\nvenv\\Scripts\\activate\n3. Install dependencies:\npip install -r requirements.txt\n4. Run the FastAPI local server:\nuvicorn server.py --reload --port 8000\n2. Frontend Application Setup\n1. Navigate to the frontend directory:\ncd ../frontend\n2. Install packages:\nnpm install\n3. Launch the hot-reloading development server:\nnpm run dev\n11.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "4be07661d3d2d87e1e9c7d29e19ae6fcadb35c2340f4029fa770ea17ce4f9be1"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk57",
+    "text": "end\n2. Install packages:\nnpm install\n3. Launch the hot-reloading development server:\nnpm run dev\n11. Conclusion & Future Outlook\nThe AskYourPdf Workspace delivers a high-performance, beautifully interactive, and context-\naware workspace.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "83449f82fd6cafaa3a9250ff33b4042e987d03689f2af60c4629a014961e6f44"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk58",
+    "text": "ourPdf Workspace delivers a high-performance, beautifully interactive, and context-\naware workspace. Through the deployment of modern design elements (React 19, Redux, Tailwind v4, Three.js) and secure backend integrations (FastAPI, MongoDB, OAuth2, FAISS RAG), the project demonstrates that complex technical tools can be made highly accessible, transparent, and aesthetically pleasing. Key Milestones Achieved:\n1.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "a669168458459f10229d15ebc878fad0354ee675ef0666ac9e0fa3df296e21a6"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk59",
+    "text": "can be made highly accessible, transparent, and aesthetically pleasing. Key Milestones Achieved:\n1. Lead Architecture Coordination: Successful deployment of fully modular full-stack client-server structures. 2. Robust Backend Integrity: Secure implementation of MongoDB collections, session cookies validation middleware, security handshakes, and public social comment threads. 3. Dynamic Customization Canvas: Customizers supporting 10 color settings and 7 typographic options to boost productivity.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "19906fd0b95ec459e73b4bf08a525b2121e369229bbdaaa6c129038db368a9a0"
+  },
+  {
+    "id": "academic_soutenance_reporttt.pdf_chunk60",
+    "text": "on Canvas: Customizers supporting 10 color settings and 7 typographic options to boost productivity. 4. Premium WebGL Aesthetics: Smooth 3D particle canvas renders improving user interaction. Full-Stack Architecture, Interactive UI/UX, Security Systems, & Database Integrations engineered by Mohamed Islem. Document Processing Pipeline, FAISS Vector Indexing, & AI Retrieval Logic developed by Ahmed.",
+    "filename": "academic_soutenance_reporttt.pdf",
+    "original_source": "data\\user_files\\mohamed\\academic_soutenance_reporttt.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "08c79dc7bf975f25d024ca9459deaa942cb96597e0f0d2c77ce04a32fccc2d60"
+  },
+  {
+    "id": "PFE Final Version.pdf_chunk0",
+    "text": "People’s Democratic Republic of Algeria\nMinistry of Higher Education and Scientific Research\nUniversity of Abdelhamid Mehri – Constantine 2\nFaculty of New Technologies of Information and Communication (NTIC)\nDepartment of Fundamental Computing and its Applications (IFA)\nBACHELOR’S DISSERTATION\nto obtain the diploma of Bachelor degree in Computer Science\nOption: Computer Sciences (SCI)\n——————————–\nA Website for Personalized Dietary Assessment\nand AI-Assisted Calorie Tracking\n——————————–\nRealized by:\nUnder supervision of:\nMohamed Elmoundji Boucenna\nDr.",
+    "filename": "PFE Final Version.pdf",
+    "original_source": "data\\user_files\\mohamed\\PFE Final Version.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "dad1791c9c120ca0840c02f519dadbed918545c425a1728f4f176fb6ada59291"
+  },
+  {
+    "id": "PFE Final Version.pdf_chunk1",
+    "text": "isted Calorie Tracking\n——————————–\nRealized by:\nUnder supervision of:\nMohamed Elmoundji Boucenna\nDr. Bechinia Hadjer\nSeif Elislam Leksir\nJune 2026",
+    "filename": "PFE Final Version.pdf",
+    "original_source": "data\\user_files\\mohamed\\PFE Final Version.pdf",
+    "page": 0,
+    "metadata": {
+      "category": ""
+    },
+    "hash": "982aac553226e714a349a5696aea65ca0b63ed41c79f7a03bdf761865bee7538"
+  }
+]

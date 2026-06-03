@@ -22,59 +22,75 @@ class Retriever:
         # Load embedding model
         self.model = SentenceTransformer(EMBEDDING_MODEL_NAME)
 
-    def search(self, query: str, top_k: int = TOP_K, min_similarity: float = 60.0) -> List[Dict[str, Any]]:
+    def search(self, query: str, top_k: int = TOP_K, min_similarity: float = 60.0, username: str = None) -> List[Dict[str, Any]]:
+        results = []
+        
+        if username:
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            user_vector_db_dir = os.path.join(base_dir, "data", "user_vector_db", username)
+            index_path = os.path.join(user_vector_db_dir, "index_local.bin")
+            store_path = os.path.join(user_vector_db_dir, "faiss_store.pkl")
+            
+            if os.path.exists(index_path) and os.path.exists(store_path):
+                try:
+                    u_index = faiss.read_index(index_path)
+                    with open(store_path, "rb") as fh:
+                        u_store = pickle.load(fh)
+                    results = self._search_index(query, u_index, u_store, top_k)
+                except Exception as e:
+                    print(f"Error loading user index: {e}")
+                    
+        return sorted(results, key=lambda x: x["boosted_similarity"], reverse=True)[:top_k]
+
+    def _search_index(self, query: str, index, store, top_k: int) -> List[Dict[str, Any]]:
         q_vec = self.model.encode([query], normalize_embeddings=True)
         q_vec = np.array(q_vec, dtype="float32")
-        scores, idxs = self.index.search(q_vec, top_k)
+        scores, idxs = index.search(q_vec, top_k)
 
         results = []
         for score, idx in zip(scores[0], idxs[0]):
             if idx == -1:
                 continue
 
-            # Extract chunk info from store
             chunk = {
-                "id": self.store["ids"][idx],
-                "text": self.store["texts"][idx],
-                "source": self.store["sources"][idx],
-                "original_source": self.store["original_sources"][idx],
-                "page": self.store["pages"][idx],
-                "metadata": self.store["metadata"][idx],
-                "hash": self.store["hashes"][idx],
-                "links": self.store["links"][idx],
+                "id": store["ids"][idx],
+                "text": store["texts"][idx],
+                "source": store["sources"][idx],
+                "original_source": store["original_sources"][idx],
+                "page": store["pages"][idx],
+                "metadata": store["metadata"][idx],
+                "hash": store["hashes"][idx],
+                "links": store["links"][idx],
             }
 
-            percentage = round(score * 100, 2)  # cosine similarity percentage
-
+            percentage = round(score * 100, 2)
             chunk["score"] = float(score)
             chunk["similarity"] = percentage
             chunk["boosted_similarity"] = percentage
 
             results.append(chunk)
 
-            # Expand with linked chunks
             for linked_id in chunk["links"]:
                 try:
-                    linked_idx = self.store["ids"].index(linked_id)
+                    linked_idx = store["ids"].index(linked_id)
                     linked_chunk = {
-                        "id": self.store["ids"][linked_idx],
-                        "text": self.store["texts"][linked_idx],
-                        "source": self.store["sources"][linked_idx],
-                        "original_source": self.store["original_sources"][linked_idx],
-                        "page": self.store["pages"][linked_idx],
-                        "metadata": self.store["metadata"][linked_idx],
-                        "hash": self.store["hashes"][linked_idx],
-                        "links": self.store["links"][linked_idx],
-                        "score": float(score),  # inherit parent score
+                        "id": store["ids"][linked_idx],
+                        "text": store["texts"][linked_idx],
+                        "source": store["sources"][linked_idx],
+                        "original_source": store["original_sources"][linked_idx],
+                        "page": store["pages"][linked_idx],
+                        "metadata": store["metadata"][linked_idx],
+                        "hash": store["hashes"][linked_idx],
+                        "links": store["links"][linked_idx],
+                        "score": float(score),
                         "similarity": percentage,
-                        "boosted_similarity": percentage - 5,  # slightly lower boost
+                        "boosted_similarity": percentage - 5,
                     }
                     results.append(linked_chunk)
                 except ValueError:
                     continue
 
-        # Sort by boosted similarity
-        return sorted(results, key=lambda x: x["boosted_similarity"], reverse=True)[:top_k]
+        return results
 
 def expand_with_related(base_results, store, max_extra=4):
     """

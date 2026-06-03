@@ -50,7 +50,7 @@ CATEGORY_FOLDERS = [
 SYSTEM_PROMPT = """You are an AI assistant that answers questions based on retrieved documents.
 Always cite sources clearly and keep answers concise and accurate.
 """
-OPENAI_MODEL = "gpt-4o-mini"
+OPENAI_MODEL = "llama-3.3-70b-versatile"
 # ----------------------------
 # EMBEDDING MODEL
 # ----------------------------
