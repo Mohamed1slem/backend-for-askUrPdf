@@ -63,13 +63,18 @@ app.add_middleware(
         "http://localhost:5173", 
         "http://127.0.0.1:5173",
         "https://askurpdf.vercel.app",
-        "https://backend-for-askurpdf-production.up.railway.app"
+        "https://backend-for-askurpdf-production.up.railway.app",
+        "*"
     ],
-    allow_origin_regex=r"https://.*askurpdf.*\.vercel\.app",
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["*"],
 )
+
+# Add OPTIONS handler for preflight requests
+@app.options("/{full_path:path}")
+async def preflight_handler(full_path: str):
+    return {"status": "ok"}
 
 def get_current_user(request: Request):
     token = request.cookies.get("access_token")
