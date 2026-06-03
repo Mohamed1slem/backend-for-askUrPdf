@@ -24,7 +24,7 @@ from bson.objectid import ObjectId
 # ---------------------------
 # MongoDB Connection
 # ---------------------------
-MONGO_URI = "mongodb://127.0.0.1:27017"
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")  # Default to local MongoDB if not set
 try:
     client = MongoClient(MONGO_URI)
     db = client["chatbot_app"]
@@ -646,4 +646,4 @@ def delete_comment(comment_id: str, current_user: str = Depends(get_current_user
     except Exception as e:
         logger.error(f"Error deleting comment: {e}")
         raise HTTPException(status_code=500, detail="Could not delete comment")
-
+

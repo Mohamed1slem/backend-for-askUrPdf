@@ -183,4 +183,10 @@ This project is licensed under the **MIT License**.
 
 ---
 
+## 👥 Credits
+
+**Mohamed Islem**: Ghool Ahmed did the logic of AI and I did the rest of it all.
+
+---
+
 ⭐ If you like this project, give it a star!
